@@ -1,0 +1,1602 @@
+{
+  "src/components/atoms/Card.tsx": {
+    "filename": "Card.tsx",
+    "path": "src/components/atoms/Card.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "5757bd": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606226,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "7e884f09",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "344f2a": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778607130,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "9cc6ed1b",
+          "files": "0587bb37"
+        },
+        "hash": "31b85f7a",
+        "messageId": "system_77ebec70-4e26-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "f830e2": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778607130,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "9cc6ed1b",
+          "files": "0587bb37"
+        },
+        "hash": "ec53fd6c",
+        "messageId": "system_77ebec70-4e26-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "817a8e": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778608243,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "5f480de0",
+          "files": "0587bb37"
+        },
+        "hash": "7f747269",
+        "messageId": "system_3a5a1090-4e2a-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "817a8e",
+        "hash": "4783ed27",
+        "encoded": "'use%20client';",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "817a8e",
+        "hash": "890f6342",
+        "encoded": "import%20React,%20%7B%20forwardRef%20%7D%20from%20'react';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "817a8e",
+        "hash": "717084e9",
+        "encoded": "import%20%7B%20cn%20%7D%20from%20'@/utils/classNames';",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "5757bd",
+        "hash": "36730fbd",
+        "encoded": "import%20%7B%20cn%20%7D%20from%20'@/utils/classNames';",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "5757bd",
+        "hash": "0c406ec5",
+        "encoded": "//%20Card%20variant%20types",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "5757bd",
+        "hash": "aa681814",
+        "encoded": "export%20type%20CardVariant%20=%20'basic'%20%7C%20'interactive'%20%7C%20'media'%20%7C%20'statistics';",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "5757bd",
+        "hash": "d0e84fd9",
+        "encoded": "export%20type%20CardElevation%20=%20'none'%20%7C%20'low'%20%7C%20'medium'%20%7C%20'high';",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "5757bd",
+        "hash": "3c3338cf",
+        "encoded": "export%20type%20CardPadding%20=%20'none'%20%7C%20'sm'%20%7C%20'md'%20%7C%20'lg'%20%7C%20'xl';",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "5757bd",
+        "hash": "8c63d01e",
+        "encoded": "//%20Card%20component%20props%20interface",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "5757bd",
+        "hash": "83436a85",
+        "encoded": "export%20interface%20CardProps%20extends%20React.HTMLAttributes%3CHTMLDivElement%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "5757bd",
+        "hash": "bbfe4b6e",
+        "encoded": "/**%20Card%20variant%20determines%20the%20visual%20style%20and%20behavior%20*/",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "5757bd",
+        "hash": "6463e8a2",
+        "encoded": "variant?:%20CardVariant;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "5757bd",
+        "hash": "2ceb2ced",
+        "encoded": "/**%20Elevation%20level%20controls%20shadow%20depth%20*/",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "5757bd",
+        "hash": "132e1e89",
+        "encoded": "elevation?:%20CardElevation;",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "5757bd",
+        "hash": "67506a50",
+        "encoded": "/**%20Padding%20size%20for%20card%20content%20*/",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "5757bd",
+        "hash": "f189da2a",
+        "encoded": "padding?:%20CardPadding;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "5757bd",
+        "hash": "2da91408",
+        "encoded": "/**%20Whether%20the%20card%20should%20be%20clickable%20(adds%20hover%20effects)%20*/",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "5757bd",
+        "hash": "d5a12b18",
+        "encoded": "clickable?:%20boolean;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "5757bd",
+        "hash": "81e8f192",
+        "encoded": "/**%20Whether%20the%20card%20is%20in%20a%20selected%20state%20*/",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "5757bd",
+        "hash": "33e9510b",
+        "encoded": "selected?:%20boolean;",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "5757bd",
+        "hash": "48dca1e3",
+        "encoded": "/**%20Whether%20the%20card%20is%20in%20a%20disabled%20state%20*/",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "5757bd",
+        "hash": "aaa1e2f8",
+        "encoded": "disabled?:%20boolean;",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "5757bd",
+        "hash": "40477187",
+        "encoded": "/**%20Custom%20className%20for%20additional%20styling%20*/",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "5757bd",
+        "hash": "ca7cbe43",
+        "encoded": "className?:%20string;",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "5757bd",
+        "hash": "48302c0f",
+        "encoded": "/**%20Card%20content%20*/",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "5757bd",
+        "hash": "5d7944f0",
+        "encoded": "children:%20React.ReactNode;",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "5757bd",
+        "hash": "763fcb06",
+        "encoded": "/**%20Optional%20click%20handler%20for%20interactive%20cards%20*/",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "5757bd",
+        "hash": "3c0a8e29",
+        "encoded": "onClick?:%20(event:%20React.MouseEvent%3CHTMLDivElement%3E)%20=%3E%20void;",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "5757bd",
+        "hash": "34a7cd4d",
+        "encoded": "/**%20ARIA%20label%20for%20accessibility%20*/",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "5757bd",
+        "hash": "d1a5959e",
+        "encoded": "'aria-label'?:%20string;",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "5757bd",
+        "hash": "0ac9419c",
+        "encoded": "/**%20ARIA%20role%20for%20semantic%20meaning%20*/",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "5757bd",
+        "hash": "1f4e1a1f",
+        "encoded": "role?:%20string;",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "5757bd",
+        "hash": "dfad4947",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "5757bd",
+        "hash": "b950c03c",
+        "encoded": "//%20Compound%20components%20for%20Card%20structure",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "5757bd",
+        "hash": "863b4ff7",
+        "encoded": "export%20interface%20CardHeaderProps%20extends%20React.HTMLAttributes%3CHTMLDivElement%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "5757bd",
+        "hash": "c6ad0729",
+        "encoded": "className?:%20string;",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "5757bd",
+        "hash": "cb567ef0",
+        "encoded": "children:%20React.ReactNode;",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "5757bd",
+        "hash": "98f83ab6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "5757bd",
+        "hash": "b30c6b2e",
+        "encoded": "export%20interface%20CardBodyProps%20extends%20React.HTMLAttributes%3CHTMLDivElement%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "5757bd",
+        "hash": "271b23fb",
+        "encoded": "className?:%20string;",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "5757bd",
+        "hash": "52fc1946",
+        "encoded": "children:%20React.ReactNode;",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "5757bd",
+        "hash": "f9b2449c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "5757bd",
+        "hash": "b6c99980",
+        "encoded": "export%20interface%20CardFooterProps%20extends%20React.HTMLAttributes%3CHTMLDivElement%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "5757bd",
+        "hash": "6309b5cd",
+        "encoded": "className?:%20string;",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "5757bd",
+        "hash": "22f60051",
+        "encoded": "children:%20React.ReactNode;",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "5757bd",
+        "hash": "38b604dc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "5757bd",
+        "hash": "f400022c",
+        "encoded": "//%20Variant%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "5757bd",
+        "hash": "aac77ca8",
+        "encoded": "const%20variantStyles:%20Record%3CCardVariant,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "5757bd",
+        "hash": "c99d94e4",
+        "encoded": "basic:%20'bg-surface%20border%20border-border',",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "5757bd",
+        "hash": "fe247e63",
+        "encoded": "interactive:%20'bg-surface%20border%20border-border%20transition-all%20duration-200%20hover:border-brand-primary/50%20hover:shadow-lg%20cursor-pointer',",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "5757bd",
+        "hash": "cdb17f2b",
+        "encoded": "media:%20'bg-surface%20border%20border-border%20overflow-hidden',",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "5757bd",
+        "hash": "08de4354",
+        "encoded": "statistics:%20'bg-gradient-to-br%20from-surface%20to-surface/80%20border%20border-brand-primary/20%20backdrop-blur-sm'",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "5757bd",
+        "hash": "cbe7488b",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "5757bd",
+        "hash": "57081bef",
+        "encoded": "//%20Elevation%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "5757bd",
+        "hash": "910941e6",
+        "encoded": "const%20elevationStyles:%20Record%3CCardElevation,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "5757bd",
+        "hash": "ad5be5bf",
+        "encoded": "none:%20'',",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "5757bd",
+        "hash": "10e176dd",
+        "encoded": "low:%20'shadow-sm',",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "5757bd",
+        "hash": "e2805ae1",
+        "encoded": "medium:%20'shadow-md',",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "5757bd",
+        "hash": "0784df0e",
+        "encoded": "high:%20'shadow-tactical'",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "5757bd",
+        "hash": "f74f24ea",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "5757bd",
+        "hash": "abef4d08",
+        "encoded": "//%20Padding%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "5757bd",
+        "hash": "720590f5",
+        "encoded": "const%20paddingStyles:%20Record%3CCardPadding,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "5757bd",
+        "hash": "5265c23e",
+        "encoded": "none:%20'p-0',",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "5757bd",
+        "hash": "9f48916b",
+        "encoded": "sm:%20'p-3',",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "5757bd",
+        "hash": "a6ff5ca1",
+        "encoded": "md:%20'p-4',",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "5757bd",
+        "hash": "ead5e641",
+        "encoded": "lg:%20'p-6',",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "5757bd",
+        "hash": "d2ab9348",
+        "encoded": "xl:%20'p-8'",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "5757bd",
+        "hash": "8d7d086a",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "5757bd",
+        "hash": "1439656b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "5757bd",
+        "hash": "d3d66dc0",
+        "encoded": "*%20Card%20component%20-%20A%20flexible%20container%20for%20grouping%20related%20content",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "5757bd",
+        "hash": "fb2c96ac",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "5757bd",
+        "hash": "e1fcdf15",
+        "encoded": "*%20Features:",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "5757bd",
+        "hash": "12c7a5cd",
+        "encoded": "*%20-%20Multiple%20variants%20(basic,%20interactive,%20media,%20statistics)",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "5757bd",
+        "hash": "8166e4a0",
+        "encoded": "*%20-%20Configurable%20elevation%20and%20padding",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "5757bd",
+        "hash": "3fd5e5cc",
+        "encoded": "*%20-%20Accessibility%20support%20with%20proper%20ARIA%20attributes",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "5757bd",
+        "hash": "9f0ac08a",
+        "encoded": "*%20-%20Keyboard%20navigation%20for%20interactive%20cards",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "5757bd",
+        "hash": "aaa969d3",
+        "encoded": "*%20-%20Compound%20components%20for%20structured%20content%20(Header,%20Body,%20Footer)",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "5757bd",
+        "hash": "47548f8b",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "5757bd",
+        "hash": "3d8ce54a",
+        "encoded": "*%20@example",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "5757bd",
+        "hash": "0a34399f",
+        "encoded": "*%20%60%60%60tsx",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "5757bd",
+        "hash": "fc13a8e0",
+        "encoded": "*%20%3CCard%20variant=%22interactive%22%20elevation=%22medium%22%20padding=%22lg%22%20onClick=%7BhandleClick%7D%3E",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "5757bd",
+        "hash": "c3940c93",
+        "encoded": "*%20%20%20%3CCard.Header%3E",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "5757bd",
+        "hash": "be460dc8",
+        "encoded": "*%20%20%20%20%20%3Ch3%3ECard%20Title%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "5757bd",
+        "hash": "aabc7644",
+        "encoded": "*%20%20%20%3C/Card.Header%3E",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "5757bd",
+        "hash": "b16e4c44",
+        "encoded": "*%20%20%20%3CCard.Body%3E",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "5757bd",
+        "hash": "c5366593",
+        "encoded": "*%20%20%20%20%20%3Cp%3ECard%20content%20goes%20here%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "5757bd",
+        "hash": "ed90e1fe",
+        "encoded": "*%20%20%20%3C/Card.Body%3E",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "5757bd",
+        "hash": "e8692be9",
+        "encoded": "*%20%20%20%3CCard.Footer%3E",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "5757bd",
+        "hash": "5172cf7f",
+        "encoded": "*%20%20%20%20%20%3CButton%3EAction%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "5757bd",
+        "hash": "52d75455",
+        "encoded": "*%20%20%20%3C/Card.Footer%3E",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "5757bd",
+        "hash": "d6fa15c1",
+        "encoded": "*%20%3C/Card%3E",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "5757bd",
+        "hash": "90b3544f",
+        "encoded": "*%20%60%60%60",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "5757bd",
+        "hash": "ade6f48e",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "5757bd",
+        "hash": "bb71203b",
+        "encoded": "export%20const%20Card%20=%20forwardRef%3CHTMLDivElement,%20CardProps%3E((",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "5757bd",
+        "hash": "33fc84d6",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "5757bd",
+        "hash": "c087abd5",
+        "encoded": "variant%20=%20'basic',",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "5757bd",
+        "hash": "1ed2dafb",
+        "encoded": "elevation%20=%20'low',",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "5757bd",
+        "hash": "5d72f19f",
+        "encoded": "padding%20=%20'md',",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "5757bd",
+        "hash": "8b3c10a7",
+        "encoded": "clickable%20=%20false,",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "5757bd",
+        "hash": "8db79c3d",
+        "encoded": "selected%20=%20false,",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "5757bd",
+        "hash": "b5f6e6f4",
+        "encoded": "disabled%20=%20false,",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "5757bd",
+        "hash": "7a7727cc",
+        "encoded": "className,",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "5757bd",
+        "hash": "342aaa38",
+        "encoded": "children,",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "5757bd",
+        "hash": "078461c1",
+        "encoded": "onClick,",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "5757bd",
+        "hash": "d82e912a",
+        "encoded": "'aria-label':%20ariaLabel,",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "5757bd",
+        "hash": "81fa3e20",
+        "encoded": "role,",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "5757bd",
+        "hash": "61d46046",
+        "encoded": "...props",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "5757bd",
+        "hash": "7c0ad85a",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "5757bd",
+        "hash": "31554500",
+        "encoded": "ref",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "5757bd",
+        "hash": "38091d54",
+        "encoded": ")%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "5757bd",
+        "hash": "e054f730",
+        "encoded": "//%20Determine%20if%20card%20should%20be%20interactive",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "5757bd",
+        "hash": "48741943",
+        "encoded": "const%20isInteractive%20=%20clickable%20%7C%7C%20onClick%20%7C%7C%20variant%20===%20'interactive';",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "5757bd",
+        "hash": "7b35fccd",
+        "encoded": "//%20Handle%20keyboard%20events%20for%20accessibility",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "5757bd",
+        "hash": "0bed315e",
+        "encoded": "const%20handleKeyDown%20=%20(event:%20React.KeyboardEvent%3CHTMLDivElement%3E)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "5757bd",
+        "hash": "fad8022d",
+        "encoded": "if%20(isInteractive%20&&%20!disabled%20&&%20(event.key%20===%20'Enter'%20%7C%7C%20event.key%20===%20'%20'))%20%7B",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "5757bd",
+        "hash": "fe40fa26",
+        "encoded": "event.preventDefault();",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "5757bd",
+        "hash": "57e746e6",
+        "encoded": "onClick?.(event%20as%20any);",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "5757bd",
+        "hash": "74f7c40c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "5757bd",
+        "hash": "22e15308",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "5757bd",
+        "hash": "a1f21eca",
+        "encoded": "//%20Combine%20all%20styles",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "5757bd",
+        "hash": "85bf4a20",
+        "encoded": "const%20cardClasses%20=%20cn(",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "5757bd",
+        "hash": "4f51dacf",
+        "encoded": "//%20Base%20styles",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "5757bd",
+        "hash": "159eb0e4",
+        "encoded": "'rounded-lg%20transition-colors%20duration-200%20focus-visible:outline-none%20focus-visible:ring-2%20focus-visible:ring-brand-primary%20focus-visible:ring-offset-2%20focus-visible:ring-offset-background',",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "5757bd",
+        "hash": "ef9cd900",
+        "encoded": "//%20Variant%20styles",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "5757bd",
+        "hash": "83cd6900",
+        "encoded": "variantStyles%5Bvariant%5D,",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "5757bd",
+        "hash": "9366e3ac",
+        "encoded": "//%20Elevation%20styles",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "5757bd",
+        "hash": "6ecddc4f",
+        "encoded": "elevationStyles%5Belevation%5D,",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "5757bd",
+        "hash": "354063fd",
+        "encoded": "//%20Padding%20styles",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "5757bd",
+        "hash": "ac0f8066",
+        "encoded": "paddingStyles%5Bpadding%5D,",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "5757bd",
+        "hash": "589d6df7",
+        "encoded": "//%20Interactive%20states",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "5757bd",
+        "hash": "724891c2",
+        "encoded": "isInteractive%20&&%20!disabled%20&&%20%5B",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "5757bd",
+        "hash": "27954e19",
+        "encoded": "'focus-visible:outline-none',",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "5757bd",
+        "hash": "369ca7b2",
+        "encoded": "'hover:shadow-lg',",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "5757bd",
+        "hash": "c655c3f6",
+        "encoded": "variant%20===%20'interactive'%20&&%20'hover:border-brand-primary/50'",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "5757bd",
+        "hash": "8dad1741",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "5757bd",
+        "hash": "9f9dc606",
+        "encoded": "//%20Selected%20state",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "5757bd",
+        "hash": "646fee53",
+        "encoded": "selected%20&&%20%5B",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "5757bd",
+        "hash": "e70f16ac",
+        "encoded": "'border-brand-primary',",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "5757bd",
+        "hash": "153872aa",
+        "encoded": "'ring-2%20ring-brand-primary/20'",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "5757bd",
+        "hash": "09b6cca9",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "5757bd",
+        "hash": "0cd043b0",
+        "encoded": "//%20Disabled%20state",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "5757bd",
+        "hash": "0793a20b",
+        "encoded": "disabled%20&&%20%5B",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "5757bd",
+        "hash": "58ff83ea",
+        "encoded": "'opacity-50',",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "5757bd",
+        "hash": "9498f064",
+        "encoded": "'cursor-not-allowed',",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "5757bd",
+        "hash": "44dc51af",
+        "encoded": "'pointer-events-none'",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "5757bd",
+        "hash": "eb3d936b",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "5757bd",
+        "hash": "b6a51d1b",
+        "encoded": "//%20Custom%20className",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "5757bd",
+        "hash": "5d0f93e0",
+        "encoded": "className",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "5757bd",
+        "hash": "eca65ec8",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "5757bd",
+        "hash": "ae945b75",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "5757bd",
+        "hash": "a9aeb7d0",
+        "encoded": "%3Cdiv",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "5757bd",
+        "hash": "f7e00f2c",
+        "encoded": "ref=%7Bref%7D",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "5757bd",
+        "hash": "f83288d1",
+        "encoded": "className=%7BcardClasses%7D",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "5757bd",
+        "hash": "d6e3909c",
+        "encoded": "onClick=%7B!disabled%20?%20onClick%20:%20undefined%7D",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "5757bd",
+        "hash": "497ee9d6",
+        "encoded": "onKeyDown=%7B!disabled%20?%20handleKeyDown%20:%20undefined%7D",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "5757bd",
+        "hash": "f1ac6f00",
+        "encoded": "tabIndex=%7BisInteractive%20&&%20!disabled%20?%200%20:%20undefined%7D",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "5757bd",
+        "hash": "c9ae44b3",
+        "encoded": "role=%7Brole%20%7C%7C%20(isInteractive%20?%20'button'%20:%20undefined)%7D",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "5757bd",
+        "hash": "dd73e6e7",
+        "encoded": "aria-label=%7BariaLabel%7D",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "5757bd",
+        "hash": "10a252a1",
+        "encoded": "aria-disabled=%7Bdisabled%7D",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "5757bd",
+        "hash": "73100206",
+        "encoded": "aria-pressed=%7Bselected%7D",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "5757bd",
+        "hash": "dc96377b",
+        "encoded": "%7B...props%7D",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "5757bd",
+        "hash": "7d76e597",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "5757bd",
+        "hash": "1d41c6bb",
+        "encoded": "%7Bchildren%7D",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "5757bd",
+        "hash": "10e61c9c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "5757bd",
+        "hash": "609fd84c",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "5757bd",
+        "hash": "74e4a0a3",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "5757bd",
+        "hash": "5697992a",
+        "encoded": "Card.displayName%20=%20'Card';",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "5757bd",
+        "hash": "ca4eefe4",
+        "encoded": "//%20Card%20Header%20component",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "5757bd",
+        "hash": "17dfecfd",
+        "encoded": "export%20const%20CardHeader%20=%20forwardRef%3CHTMLDivElement,%20CardHeaderProps%3E((",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "5757bd",
+        "hash": "db6c66ab",
+        "encoded": "%7B%20className,%20children,%20...props%20%7D,",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "5757bd",
+        "hash": "3cd693d2",
+        "encoded": "ref",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "5757bd",
+        "hash": "f9cf25fc",
+        "encoded": ")%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "5757bd",
+        "hash": "135c9a21",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "5757bd",
+        "hash": "09244b61",
+        "encoded": "%3Cdiv",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "5757bd",
+        "hash": "b8860b09",
+        "encoded": "ref=%7Bref%7D",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "5757bd",
+        "hash": "575e9cae",
+        "encoded": "className=%7Bcn(",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "5757bd",
+        "hash": "00cf3d6e",
+        "encoded": "'flex%20flex-col%20space-y-1.5%20p-6%20pb-0',",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "5757bd",
+        "hash": "fee04940",
+        "encoded": "className",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "5757bd",
+        "hash": "6a640bba",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "5757bd",
+        "hash": "bce845de",
+        "encoded": "%7B...props%7D",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "5757bd",
+        "hash": "96576e58",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "5757bd",
+        "hash": "4ce3333c",
+        "encoded": "%7Bchildren%7D",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "5757bd",
+        "hash": "0dd5c6ce",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "5757bd",
+        "hash": "6277b705",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "5757bd",
+        "hash": "08a5d128",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "5757bd",
+        "hash": "d7c248e8",
+        "encoded": "CardHeader.displayName%20=%20'CardHeader';",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "5757bd",
+        "hash": "b189820e",
+        "encoded": "//%20Card%20Body%20component",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "5757bd",
+        "hash": "7076cdfe",
+        "encoded": "export%20const%20CardBody%20=%20forwardRef%3CHTMLDivElement,%20CardBodyProps%3E((",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "5757bd",
+        "hash": "6eeaa473",
+        "encoded": "%7B%20className,%20children,%20...props%20%7D,",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "5757bd",
+        "hash": "ee21d60d",
+        "encoded": "ref",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "5757bd",
+        "hash": "41950ae2",
+        "encoded": ")%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "5757bd",
+        "hash": "6e34d529",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "5757bd",
+        "hash": "4c9d382e",
+        "encoded": "%3Cdiv",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "5757bd",
+        "hash": "2495ded9",
+        "encoded": "ref=%7Bref%7D",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "5757bd",
+        "hash": "52091d1a",
+        "encoded": "className=%7Bcn(",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "5757bd",
+        "hash": "6b0cee2f",
+        "encoded": "'p-6%20pt-0',",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "5757bd",
+        "hash": "58596b14",
+        "encoded": "className",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "5757bd",
+        "hash": "b5a96e81",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "5757bd",
+        "hash": "b9750dea",
+        "encoded": "%7B...props%7D",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "5757bd",
+        "hash": "295e6247",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "5757bd",
+        "hash": "deadac21",
+        "encoded": "%7Bchildren%7D",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "5757bd",
+        "hash": "7cef686a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "5757bd",
+        "hash": "da32be78",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "5757bd",
+        "hash": "e314528a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "5757bd",
+        "hash": "d6816ec0",
+        "encoded": "CardBody.displayName%20=%20'CardBody';",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "5757bd",
+        "hash": "892433e2",
+        "encoded": "//%20Card%20Footer%20component",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "5757bd",
+        "hash": "6ca896a7",
+        "encoded": "export%20const%20CardFooter%20=%20forwardRef%3CHTMLDivElement,%20CardFooterProps%3E((",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "5757bd",
+        "hash": "31e4cdba",
+        "encoded": "%7B%20className,%20children,%20...props%20%7D,",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "5757bd",
+        "hash": "77ec8a77",
+        "encoded": "ref",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "5757bd",
+        "hash": "4e2a6eb1",
+        "encoded": ")%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "5757bd",
+        "hash": "87037521",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "5757bd",
+        "hash": "ddd9b21f",
+        "encoded": "%3Cdiv",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "5757bd",
+        "hash": "ca1c9519",
+        "encoded": "ref=%7Bref%7D",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "5757bd",
+        "hash": "84166e22",
+        "encoded": "className=%7Bcn(",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "5757bd",
+        "hash": "3947721c",
+        "encoded": "'flex%20items-center%20p-6%20pt-0',",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "5757bd",
+        "hash": "3956ef3d",
+        "encoded": "className",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "5757bd",
+        "hash": "483be13b",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "5757bd",
+        "hash": "04fcd57a",
+        "encoded": "%7B...props%7D",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "5757bd",
+        "hash": "8adc8921",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "5757bd",
+        "hash": "b14a3c4a",
+        "encoded": "%7Bchildren%7D",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "5757bd",
+        "hash": "9d41698b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "5757bd",
+        "hash": "25354049",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "5757bd",
+        "hash": "5263d6d7",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "5757bd",
+        "hash": "b7e5c9bd",
+        "encoded": "CardFooter.displayName%20=%20'CardFooter';",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "f830e2",
+        "hash": "886e5c92",
+        "encoded": "//%20Create%20compound%20component%20with%20proper%20TypeScript%20typing",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "f830e2",
+        "hash": "02519543",
+        "encoded": "type%20CardComponent%20=%20React.ForwardRefExoticComponent%3CCardProps%20&%20React.RefAttributes%3CHTMLDivElement%3E%3E%20&%20%7B",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "f830e2",
+        "hash": "4abbed81",
+        "encoded": "Header:%20typeof%20CardHeader;",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "f830e2",
+        "hash": "2a1f4ddf",
+        "encoded": "Body:%20typeof%20CardBody;",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "f830e2",
+        "hash": "80c5c17b",
+        "encoded": "Footer:%20typeof%20CardFooter;",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "f830e2",
+        "hash": "b4bb1184",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "f830e2",
+        "hash": "9cb18f1a",
+        "encoded": "//%20Attach%20compound%20components%20to%20main%20Card%20component",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "f830e2",
+        "hash": "25aa7469",
+        "encoded": "(Card%20as%20CardComponent).Header%20=%20CardHeader;",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "f830e2",
+        "hash": "950b1629",
+        "encoded": "(Card%20as%20CardComponent).Body%20=%20CardBody;",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "f830e2",
+        "hash": "a0875a6f",
+        "encoded": "(Card%20as%20CardComponent).Footer%20=%20CardFooter;",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "f830e2",
+        "hash": "46ac9102",
+        "encoded": "//%20Export%20the%20properly%20typed%20Card%20component",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "f830e2",
+        "hash": "e143ffd0",
+        "encoded": "export%20%7B%20Card%20as%20default%20%7D;",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "f830e2",
+        "hash": "792e4dca",
+        "encoded": "export%20%7B%20CardHeader,%20CardBody,%20CardFooter%20%7D;",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "f830e2",
+        "hash": "8ec0e317",
+        "encoded": "//%20Types%20are%20already%20exported%20above",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "344f2a",
+        "hash": "6664ce4a",
+        "encoded": "type%20CardComponent%20=%20React.ForwardRefExoticComponent%3CCardProps%20&%20React.RefAttributes%3CHTMLDivElement%3E%3E%20&%20%7B",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "344f2a",
+        "hash": "5e6284ce",
+        "encoded": "Header:%20typeof%20CardHeader;",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "344f2a",
+        "hash": "fdfa1231",
+        "encoded": "Body:%20typeof%20CardBody;",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "344f2a",
+        "hash": "79e9084b",
+        "encoded": "Footer:%20typeof%20CardFooter;",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "344f2a",
+        "hash": "49cbc768",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "344f2a",
+        "hash": "eee73144",
+        "encoded": "//%20Attach%20compound%20components%20to%20main%20Card%20component",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "344f2a",
+        "hash": "a32673de",
+        "encoded": "(Card%20as%20CardComponent).Header%20=%20CardHeader;",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "344f2a",
+        "hash": "66d671cd",
+        "encoded": "(Card%20as%20CardComponent).Body%20=%20CardBody;",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "344f2a",
+        "hash": "6639f9a1",
+        "encoded": "(Card%20as%20CardComponent).Footer%20=%20CardFooter;",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "344f2a",
+        "hash": "ba294892",
+        "encoded": "//%20Types%20are%20already%20exported%20above",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "5757bd",
+        "hash": "2b4f75ae",
+        "encoded": "Card.Header%20=%20CardHeader;",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "5757bd",
+        "hash": "6f2c86a5",
+        "encoded": "Card.Body%20=%20CardBody;",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "5757bd",
+        "hash": "d677eeca",
+        "encoded": "Card.Footer%20=%20CardFooter;",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "5757bd",
+        "hash": "50bd71f5",
+        "encoded": "//%20Export%20types%20for%20external%20use",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "5757bd",
+        "hash": "ef8d16e3",
+        "encoded": "export%20type%20%7B%20CardProps,%20CardHeaderProps,%20CardBodyProps,%20CardFooterProps%20%7D;",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,2592 @@
+{
+  "src/components/atoms/Button.test.tsx": {
+    "filename": "Button.test.tsx",
+    "path": "src/components/atoms/Button.test.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "ce8e53": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606227,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "76923b58",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "ce8e53",
+        "hash": "98ac06df",
+        "encoded": "import%20React%20from%20'react';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "ce8e53",
+        "hash": "4f2a951b",
+        "encoded": "import%20%7B%20render,%20screen,%20fireEvent,%20waitFor%20%7D%20from%20'@testing-library/react';",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "ce8e53",
+        "hash": "c9114392",
+        "encoded": "import%20userEvent%20from%20'@testing-library/user-event';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "ce8e53",
+        "hash": "3a9f20b6",
+        "encoded": "import%20%7B%20axe,%20toHaveNoViolations%20%7D%20from%20'jest-axe';",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "ce8e53",
+        "hash": "a8ef073d",
+        "encoded": "import%20%7B%20Button%20%7D%20from%20'./Button';",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "ce8e53",
+        "hash": "c0703e5a",
+        "encoded": "import%20type%20%7B%20ButtonProps%20%7D%20from%20'./Button';",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "ce8e53",
+        "hash": "d50747c4",
+        "encoded": "//%20Extend%20Jest%20matchers",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "ce8e53",
+        "hash": "df88c78f",
+        "encoded": "expect.extend(toHaveNoViolations);",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "ce8e53",
+        "hash": "8d62b58c",
+        "encoded": "//%20Mock%20icon%20component%20for%20testing",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "ce8e53",
+        "hash": "f0b0b2db",
+        "encoded": "const%20MockIcon%20=%20(%7B%20name%20%7D:%20%7B%20name:%20string%20%7D)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "ce8e53",
+        "hash": "7026f716",
+        "encoded": "%3Cspan%20data-testid=%7B%60icon-$%7Bname%7D%60%7D%3E%7Bname%7D%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "ce8e53",
+        "hash": "15d9ead7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "ce8e53",
+        "hash": "cab77bd3",
+        "encoded": "describe('Button%20Component',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "ce8e53",
+        "hash": "9eb95f4e",
+        "encoded": "//%20Test%201:%20Component%20Rendering%20-%20Default%20props",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "ce8e53",
+        "hash": "a8e672cc",
+        "encoded": "describe('Component%20Rendering',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "ce8e53",
+        "hash": "9a54798e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "ce8e53",
+        "hash": "1d70abd5",
+        "encoded": "*%20Test%20that%20Button%20renders%20correctly%20with%20default%20props",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "ce8e53",
+        "hash": "f1109749",
+        "encoded": "*%20Scenario:%20Button%20with%20minimal%20props",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "ce8e53",
+        "hash": "5b1c2b88",
+        "encoded": "*%20Expected:%20Button%20renders%20with%20default%20variant,%20size,%20and%20content",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "ce8e53",
+        "hash": "d3c91f81",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "ce8e53",
+        "hash": "800f8b0c",
+        "encoded": "test('should%20render%20with%20default%20props',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "ce8e53",
+        "hash": "7507e74a",
+        "encoded": "render(%3CButton%3EClick%20me%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "ce8e53",
+        "hash": "30deb522",
+        "encoded": "const%20button%20=%20screen.getByRole('button',%20%7B%20name:%20/click%20me/i%20%7D);",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "ce8e53",
+        "hash": "7b87c908",
+        "encoded": "expect(button).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "ce8e53",
+        "hash": "94a1fc44",
+        "encoded": "expect(button).toHaveClass('bg-brand-primary');%20//%20primary%20variant",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "ce8e53",
+        "hash": "fc26bafb",
+        "encoded": "expect(button).toHaveClass('px-4',%20'py-2');%20//%20md%20size",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ce8e53",
+        "hash": "f5cc1f3f",
+        "encoded": "expect(button).toHaveAttribute('type',%20'button');",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "ce8e53",
+        "hash": "0322bb6d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "ce8e53",
+        "hash": "a2d434cb",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "ce8e53",
+        "hash": "ddb47934",
+        "encoded": "*%20Test%20that%20Button%20renders%20with%20custom%20content",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "ce8e53",
+        "hash": "1c3b8a36",
+        "encoded": "*%20Scenario:%20Button%20with%20JSX%20children",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "ce8e53",
+        "hash": "68ff5d08",
+        "encoded": "*%20Expected:%20Button%20renders%20complex%20content%20correctly",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "ce8e53",
+        "hash": "cfda9889",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "ce8e53",
+        "hash": "77b9ad6c",
+        "encoded": "test('should%20render%20with%20custom%20content',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "ce8e53",
+        "hash": "13de86b8",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "ce8e53",
+        "hash": "1d5b5abd",
+        "encoded": "%3CButton%3E",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "ce8e53",
+        "hash": "a163c148",
+        "encoded": "%3Cspan%3ECustom%3C/span%3E%20Content",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "ce8e53",
+        "hash": "1cd81513",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "ce8e53",
+        "hash": "975971db",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "ce8e53",
+        "hash": "1dccb706",
+        "encoded": "expect(screen.getByText('Custom')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "ce8e53",
+        "hash": "11224563",
+        "encoded": "expect(screen.getByText('Content')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "ce8e53",
+        "hash": "6c3f165a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "ce8e53",
+        "hash": "0fc0ec26",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "ce8e53",
+        "hash": "c8b670de",
+        "encoded": "//%20Test%202:%20Props%20Validation%20-%20All%20variants,%20sizes,%20states",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "ce8e53",
+        "hash": "0af75b13",
+        "encoded": "describe('Props%20Validation',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "ce8e53",
+        "hash": "e47331a7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "ce8e53",
+        "hash": "d49e8b67",
+        "encoded": "*%20Test%20all%20button%20variants%20render%20with%20correct%20styles",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "ce8e53",
+        "hash": "b947c2e7",
+        "encoded": "*%20Scenario:%20Button%20with%20different%20variant%20props",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "ce8e53",
+        "hash": "2a3a269a",
+        "encoded": "*%20Expected:%20Each%20variant%20applies%20correct%20CSS%20classes",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "ce8e53",
+        "hash": "d877908f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "ce8e53",
+        "hash": "c19e560a",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "ce8e53",
+        "hash": "cb70f04f",
+        "encoded": "%5B'primary',%20'bg-brand-primary'%5D,",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "ce8e53",
+        "hash": "8e6050bd",
+        "encoded": "%5B'secondary',%20'bg-brand-secondary'%5D,",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "ce8e53",
+        "hash": "36efd841",
+        "encoded": "%5B'tertiary',%20'bg-surface'%5D,",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "ce8e53",
+        "hash": "21cad883",
+        "encoded": "%5B'danger',%20'bg-red-600'%5D,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "ce8e53",
+        "hash": "912d880d",
+        "encoded": "%5B'ghost',%20'bg-transparent'%5D",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "ce8e53",
+        "hash": "45d81833",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20variant%20correctly',%20(variant,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "ce8e53",
+        "hash": "b4000b7c",
+        "encoded": "render(%3CButton%20variant=%7Bvariant%7D%3ETest%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "ce8e53",
+        "hash": "828e15e9",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "ce8e53",
+        "hash": "1e9e79be",
+        "encoded": "expect(button).toHaveClass(expectedClass);",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "ce8e53",
+        "hash": "f238e051",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "ce8e53",
+        "hash": "b5d2d83c",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "ce8e53",
+        "hash": "cb5c3a49",
+        "encoded": "*%20Test%20all%20button%20sizes%20render%20with%20correct%20styles",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "ce8e53",
+        "hash": "82461e84",
+        "encoded": "*%20Scenario:%20Button%20with%20different%20size%20props",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "ce8e53",
+        "hash": "2078c55c",
+        "encoded": "*%20Expected:%20Each%20size%20applies%20correct%20padding%20and%20height%20classes",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "ce8e53",
+        "hash": "e3774e70",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "ce8e53",
+        "hash": "b5cbecb4",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "ce8e53",
+        "hash": "6d180468",
+        "encoded": "%5B'xs',%20'px-2',%20'py-1',%20'min-h-%5B24px%5D'%5D,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "ce8e53",
+        "hash": "c6f90b6d",
+        "encoded": "%5B'sm',%20'px-3',%20'py-1.5',%20'min-h-%5B32px%5D'%5D,",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "ce8e53",
+        "hash": "7f8586b7",
+        "encoded": "%5B'md',%20'px-4',%20'py-2',%20'min-h-%5B40px%5D'%5D,",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "ce8e53",
+        "hash": "f8eabdd5",
+        "encoded": "%5B'lg',%20'px-6',%20'py-2.5',%20'min-h-%5B48px%5D'%5D,",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "ce8e53",
+        "hash": "aa00d69f",
+        "encoded": "%5B'xl',%20'px-8',%20'py-3',%20'min-h-%5B56px%5D'%5D",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "ce8e53",
+        "hash": "9258252d",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20size%20correctly',%20(size,%20px,%20py,%20minHeight)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "ce8e53",
+        "hash": "d018940a",
+        "encoded": "render(%3CButton%20size=%7Bsize%7D%3ETest%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "ce8e53",
+        "hash": "a0388a55",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "ce8e53",
+        "hash": "5395dafd",
+        "encoded": "expect(button).toHaveClass(px,%20py,%20minHeight);",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "ce8e53",
+        "hash": "82716009",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "ce8e53",
+        "hash": "5fea1916",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "ce8e53",
+        "hash": "30211b44",
+        "encoded": "*%20Test%20button%20loading%20state",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "ce8e53",
+        "hash": "df6c6014",
+        "encoded": "*%20Scenario:%20Button%20with%20loading%20prop",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "ce8e53",
+        "hash": "714ccbea",
+        "encoded": "*%20Expected:%20Button%20shows%20spinner,%20hides%20text,%20and%20is%20disabled",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "ce8e53",
+        "hash": "14261a2c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "ce8e53",
+        "hash": "3230a69d",
+        "encoded": "test('should%20render%20loading%20state%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "ce8e53",
+        "hash": "43540ff7",
+        "encoded": "render(%3CButton%20loading%3ELoading%20Button%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "ce8e53",
+        "hash": "3b421568",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "ce8e53",
+        "hash": "f816b73a",
+        "encoded": "expect(button).toBeDisabled();",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "ce8e53",
+        "hash": "45045ab7",
+        "encoded": "expect(button).toHaveAttribute('aria-busy',%20'true');",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "ce8e53",
+        "hash": "c63e4399",
+        "encoded": "//%20Loading%20spinner%20should%20be%20present",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "ce8e53",
+        "hash": "6c989d84",
+        "encoded": "const%20spinner%20=%20button.querySelector('svg');",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "ce8e53",
+        "hash": "9d92ac49",
+        "encoded": "expect(spinner).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "ce8e53",
+        "hash": "7ec898c7",
+        "encoded": "expect(spinner).toHaveClass('animate-spin');",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "ce8e53",
+        "hash": "45db09ae",
+        "encoded": "//%20Text%20should%20be%20hidden%20but%20present",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "ce8e53",
+        "hash": "4e9e0016",
+        "encoded": "const%20textSpan%20=%20button.querySelector('span');",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "ce8e53",
+        "hash": "1960f0e3",
+        "encoded": "expect(textSpan).toHaveClass('opacity-0');",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "ce8e53",
+        "hash": "85a98f91",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "ce8e53",
+        "hash": "aa3ddf39",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "ce8e53",
+        "hash": "314f2845",
+        "encoded": "*%20Test%20button%20disabled%20state",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "ce8e53",
+        "hash": "c2622e3e",
+        "encoded": "*%20Scenario:%20Button%20with%20disabled%20prop",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "ce8e53",
+        "hash": "41112796",
+        "encoded": "*%20Expected:%20Button%20is%20disabled%20and%20has%20correct%20styling",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "ce8e53",
+        "hash": "72691e39",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "ce8e53",
+        "hash": "a44eca57",
+        "encoded": "test('should%20render%20disabled%20state%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "ce8e53",
+        "hash": "6818ca3a",
+        "encoded": "render(%3CButton%20disabled%3EDisabled%20Button%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "ce8e53",
+        "hash": "1a917520",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "ce8e53",
+        "hash": "de146826",
+        "encoded": "expect(button).toBeDisabled();",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "ce8e53",
+        "hash": "b43f93dd",
+        "encoded": "expect(button).toHaveClass('disabled:cursor-not-allowed',%20'disabled:opacity-50');",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "ce8e53",
+        "hash": "c4a7e6ed",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "ce8e53",
+        "hash": "b5d0264f",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "ce8e53",
+        "hash": "5fc5a2d8",
+        "encoded": "*%20Test%20button%20full%20width%20prop",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "ce8e53",
+        "hash": "60a926fa",
+        "encoded": "*%20Scenario:%20Button%20with%20fullWidth%20prop",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "ce8e53",
+        "hash": "81315875",
+        "encoded": "*%20Expected:%20Button%20takes%20full%20width",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "ce8e53",
+        "hash": "e9fb4d6b",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "ce8e53",
+        "hash": "42c085de",
+        "encoded": "test('should%20render%20full%20width%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "ce8e53",
+        "hash": "026a1054",
+        "encoded": "render(%3CButton%20fullWidth%3EFull%20Width%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "ce8e53",
+        "hash": "d3004a67",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "ce8e53",
+        "hash": "29482365",
+        "encoded": "expect(button).toHaveClass('w-full');",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "ce8e53",
+        "hash": "f62e8b2d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "ce8e53",
+        "hash": "2f646a43",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "ce8e53",
+        "hash": "ca3e5bb0",
+        "encoded": "*%20Test%20button%20type%20attribute",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "ce8e53",
+        "hash": "125add15",
+        "encoded": "*%20Scenario:%20Button%20with%20different%20type%20props",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "ce8e53",
+        "hash": "d9df3f3e",
+        "encoded": "*%20Expected:%20Button%20has%20correct%20type%20attribute",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "ce8e53",
+        "hash": "ec23f9c5",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "ce8e53",
+        "hash": "923c6e4b",
+        "encoded": "test.each(%5B'button',%20'submit',%20'reset'%5D%20as%20const)('should%20set%20type%20attribute%20to%20%25s',%20(type)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "ce8e53",
+        "hash": "e7379a72",
+        "encoded": "render(%3CButton%20type=%7Btype%7D%3ETest%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "ce8e53",
+        "hash": "d8ca8df2",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "ce8e53",
+        "hash": "222da703",
+        "encoded": "expect(button).toHaveAttribute('type',%20type);",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "ce8e53",
+        "hash": "0ef91a6b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "ce8e53",
+        "hash": "bd5f57a4",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "ce8e53",
+        "hash": "ce11351b",
+        "encoded": "//%20Test%203:%20Event%20Handling%20-%20Click%20handlers,%20keyboard%20events",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "ce8e53",
+        "hash": "f627d258",
+        "encoded": "describe('Event%20Handling',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "ce8e53",
+        "hash": "2c7f2d75",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "ce8e53",
+        "hash": "d2476944",
+        "encoded": "*%20Test%20button%20click%20handler",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "ce8e53",
+        "hash": "893a894d",
+        "encoded": "*%20Scenario:%20Button%20with%20onClick%20prop",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "ce8e53",
+        "hash": "a9b0a3eb",
+        "encoded": "*%20Expected:%20onClick%20is%20called%20when%20button%20is%20clicked",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "ce8e53",
+        "hash": "0bcb05be",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "ce8e53",
+        "hash": "7cba5fe4",
+        "encoded": "test('should%20handle%20click%20events',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "ce8e53",
+        "hash": "28d8e104",
+        "encoded": "const%20handleClick%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "ce8e53",
+        "hash": "5f5a9ff8",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "ce8e53",
+        "hash": "39d4d889",
+        "encoded": "render(%3CButton%20onClick=%7BhandleClick%7D%3EClick%20me%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "ce8e53",
+        "hash": "61d94ef5",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "ce8e53",
+        "hash": "95e56430",
+        "encoded": "await%20user.click(button);",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "ce8e53",
+        "hash": "edf3ecb0",
+        "encoded": "expect(handleClick).toHaveBeenCalledTimes(1);",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "ce8e53",
+        "hash": "ddcb42e4",
+        "encoded": "expect(handleClick).toHaveBeenCalledWith(expect.any(Object));",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "ce8e53",
+        "hash": "cc284540",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "ce8e53",
+        "hash": "0e45e54e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "ce8e53",
+        "hash": "67285b35",
+        "encoded": "*%20Test%20disabled%20button%20does%20not%20trigger%20click",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "ce8e53",
+        "hash": "1e553ff7",
+        "encoded": "*%20Scenario:%20Disabled%20button%20with%20onClick",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "ce8e53",
+        "hash": "a374fbad",
+        "encoded": "*%20Expected:%20onClick%20is%20not%20called",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "ce8e53",
+        "hash": "3503ba55",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "ce8e53",
+        "hash": "a9b4fc47",
+        "encoded": "test('should%20not%20handle%20click%20when%20disabled',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "ce8e53",
+        "hash": "16200fd7",
+        "encoded": "const%20handleClick%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "ce8e53",
+        "hash": "d7225363",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "ce8e53",
+        "hash": "00239504",
+        "encoded": "render(%3CButton%20disabled%20onClick=%7BhandleClick%7D%3EDisabled%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "ce8e53",
+        "hash": "0cdfa681",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "ce8e53",
+        "hash": "250dc4a9",
+        "encoded": "await%20user.click(button);",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "ce8e53",
+        "hash": "e215ec81",
+        "encoded": "expect(handleClick).not.toHaveBeenCalled();",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "ce8e53",
+        "hash": "4607d1e0",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "ce8e53",
+        "hash": "dbce507e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "ce8e53",
+        "hash": "e7e5a831",
+        "encoded": "*%20Test%20loading%20button%20does%20not%20trigger%20click",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "ce8e53",
+        "hash": "b2c61491",
+        "encoded": "*%20Scenario:%20Loading%20button%20with%20onClick",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "ce8e53",
+        "hash": "1a7261b4",
+        "encoded": "*%20Expected:%20onClick%20is%20not%20called",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "ce8e53",
+        "hash": "8beaf36f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "ce8e53",
+        "hash": "1076ca3d",
+        "encoded": "test('should%20not%20handle%20click%20when%20loading',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "ce8e53",
+        "hash": "7d540091",
+        "encoded": "const%20handleClick%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "ce8e53",
+        "hash": "7c17c579",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "ce8e53",
+        "hash": "6d1ea985",
+        "encoded": "render(%3CButton%20loading%20onClick=%7BhandleClick%7D%3ELoading%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "ce8e53",
+        "hash": "a547c600",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "ce8e53",
+        "hash": "a35ba865",
+        "encoded": "await%20user.click(button);",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "ce8e53",
+        "hash": "4d3ffda8",
+        "encoded": "expect(handleClick).not.toHaveBeenCalled();",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "ce8e53",
+        "hash": "ad4c4656",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "ce8e53",
+        "hash": "4aa6255d",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "ce8e53",
+        "hash": "206d1cb0",
+        "encoded": "*%20Test%20keyboard%20navigation",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "ce8e53",
+        "hash": "70c1b379",
+        "encoded": "*%20Scenario:%20Button%20focused%20and%20activated%20with%20keyboard",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "ce8e53",
+        "hash": "702b8777",
+        "encoded": "*%20Expected:%20Button%20can%20be%20focused%20and%20activated%20with%20Enter/Space",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "ce8e53",
+        "hash": "95459c34",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "ce8e53",
+        "hash": "8ecde8ca",
+        "encoded": "test('should%20handle%20keyboard%20events',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "ce8e53",
+        "hash": "2732ede5",
+        "encoded": "const%20handleClick%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "ce8e53",
+        "hash": "5afaf2bb",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "ce8e53",
+        "hash": "068527d5",
+        "encoded": "render(%3CButton%20onClick=%7BhandleClick%7D%3EKeyboard%20Test%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "ce8e53",
+        "hash": "410fd7f9",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "ce8e53",
+        "hash": "b40ef5f5",
+        "encoded": "//%20Focus%20the%20button",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "ce8e53",
+        "hash": "f54b34af",
+        "encoded": "await%20user.tab();",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "ce8e53",
+        "hash": "5e71fa90",
+        "encoded": "expect(button).toHaveFocus();",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "ce8e53",
+        "hash": "bbf0de02",
+        "encoded": "//%20Activate%20with%20Enter",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "ce8e53",
+        "hash": "8263c753",
+        "encoded": "await%20user.keyboard('%7BEnter%7D');",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "ce8e53",
+        "hash": "099ce0e0",
+        "encoded": "expect(handleClick).toHaveBeenCalledTimes(1);",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "ce8e53",
+        "hash": "25829919",
+        "encoded": "//%20Activate%20with%20Space",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "ce8e53",
+        "hash": "1bb0b780",
+        "encoded": "await%20user.keyboard('%20');",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "ce8e53",
+        "hash": "f377bb14",
+        "encoded": "expect(handleClick).toHaveBeenCalledTimes(2);",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "ce8e53",
+        "hash": "e3f2467f",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "ce8e53",
+        "hash": "e314528a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "ce8e53",
+        "hash": "18ed359a",
+        "encoded": "//%20Test%204:%20Icon%20Support",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "ce8e53",
+        "hash": "d70afd5b",
+        "encoded": "describe('Icon%20Support',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "ce8e53",
+        "hash": "acbb622b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "ce8e53",
+        "hash": "62e81a97",
+        "encoded": "*%20Test%20button%20with%20leading%20icon",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "ce8e53",
+        "hash": "412ac7ed",
+        "encoded": "*%20Scenario:%20Button%20with%20icon%20and%20iconPosition=%22leading%22",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "ce8e53",
+        "hash": "b9a9e30a",
+        "encoded": "*%20Expected:%20Icon%20appears%20before%20text",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "ce8e53",
+        "hash": "bc3d8ad6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "ce8e53",
+        "hash": "4c99bdf3",
+        "encoded": "test('should%20render%20with%20leading%20icon',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "ce8e53",
+        "hash": "31521912",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "ce8e53",
+        "hash": "a8062e66",
+        "encoded": "%3CButton%20icon=%7B%3CMockIcon%20name=%22plus%22%20/%3E%7D%20iconPosition=%22leading%22%3E",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "ce8e53",
+        "hash": "03f4ad72",
+        "encoded": "Add%20Item",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "ce8e53",
+        "hash": "d285103c",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "ce8e53",
+        "hash": "b6cbb83a",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "ce8e53",
+        "hash": "585250ce",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "ce8e53",
+        "hash": "cd43090b",
+        "encoded": "const%20icon%20=%20screen.getByTestId('icon-plus');",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "ce8e53",
+        "hash": "de8337ba",
+        "encoded": "expect(icon).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "ce8e53",
+        "hash": "6c5c4728",
+        "encoded": "//%20Check%20order:%20icon%20should%20come%20before%20text",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "ce8e53",
+        "hash": "45c1c27b",
+        "encoded": "const%20buttonContent%20=%20button.textContent;",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "ce8e53",
+        "hash": "4af8fe59",
+        "encoded": "expect(buttonContent).toBe('plusAdd%20Item');",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "ce8e53",
+        "hash": "85d1ceb3",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "ce8e53",
+        "hash": "b7d5f3b3",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "ce8e53",
+        "hash": "776e8d54",
+        "encoded": "*%20Test%20button%20with%20trailing%20icon",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "ce8e53",
+        "hash": "22ed0e1d",
+        "encoded": "*%20Scenario:%20Button%20with%20icon%20and%20iconPosition=%22trailing%22",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "ce8e53",
+        "hash": "7ebf4a80",
+        "encoded": "*%20Expected:%20Icon%20appears%20after%20text",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "ce8e53",
+        "hash": "0bcda2f2",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "ce8e53",
+        "hash": "53f1f5b2",
+        "encoded": "test('should%20render%20with%20trailing%20icon',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "ce8e53",
+        "hash": "3e26fa7c",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "ce8e53",
+        "hash": "315ba0f6",
+        "encoded": "%3CButton%20icon=%7B%3CMockIcon%20name=%22arrow%22%20/%3E%7D%20iconPosition=%22trailing%22%3E",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "ce8e53",
+        "hash": "52412b29",
+        "encoded": "Next",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "ce8e53",
+        "hash": "3bad4357",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "ce8e53",
+        "hash": "17c517e4",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "ce8e53",
+        "hash": "b5da5a92",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "ce8e53",
+        "hash": "57dbf718",
+        "encoded": "const%20icon%20=%20screen.getByTestId('icon-arrow');",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "ce8e53",
+        "hash": "27274601",
+        "encoded": "expect(icon).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "ce8e53",
+        "hash": "b2b66663",
+        "encoded": "//%20Check%20order:%20text%20should%20come%20before%20icon",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "ce8e53",
+        "hash": "8d14c744",
+        "encoded": "const%20buttonContent%20=%20button.textContent;",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "ce8e53",
+        "hash": "bf9618b2",
+        "encoded": "expect(buttonContent).toBe('Nextarrow');",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "ce8e53",
+        "hash": "74719792",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "ce8e53",
+        "hash": "0489295e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "ce8e53",
+        "hash": "e60f5190",
+        "encoded": "*%20Test%20icon-only%20button",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "ce8e53",
+        "hash": "4d22fd27",
+        "encoded": "*%20Scenario:%20Button%20with%20iconPosition=%22only%22",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "ce8e53",
+        "hash": "9767bede",
+        "encoded": "*%20Expected:%20Only%20icon%20is%20shown,%20no%20text",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "ce8e53",
+        "hash": "1b1afe80",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "ce8e53",
+        "hash": "9f641087",
+        "encoded": "test('should%20render%20icon-only%20button',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "ce8e53",
+        "hash": "9949ac2f",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "ce8e53",
+        "hash": "85839253",
+        "encoded": "%3CButton",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "ce8e53",
+        "hash": "a37aeff0",
+        "encoded": "icon=%7B%3CMockIcon%20name=%22close%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "ce8e53",
+        "hash": "078e997f",
+        "encoded": "iconPosition=%22only%22",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "ce8e53",
+        "hash": "ded9dd30",
+        "encoded": "aria-label=%22Close%22",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "ce8e53",
+        "hash": "7a6efa33",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "ce8e53",
+        "hash": "d6c4a5c7",
+        "encoded": "Hidden%20Text",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "ce8e53",
+        "hash": "30d4f260",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "ce8e53",
+        "hash": "051997b5",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "ce8e53",
+        "hash": "39a0fb28",
+        "encoded": "const%20button%20=%20screen.getByRole('button',%20%7B%20name:%20/close/i%20%7D);",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "ce8e53",
+        "hash": "6cd631e7",
+        "encoded": "const%20icon%20=%20screen.getByTestId('icon-close');",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "ce8e53",
+        "hash": "707948c0",
+        "encoded": "expect(icon).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "ce8e53",
+        "hash": "a63c96cf",
+        "encoded": "expect(button).toHaveAttribute('aria-label',%20'Close');",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "ce8e53",
+        "hash": "54464e6a",
+        "encoded": "//%20Text%20should%20not%20be%20rendered",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "ce8e53",
+        "hash": "ea960b6f",
+        "encoded": "expect(screen.queryByText('Hidden%20Text')).not.toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "ce8e53",
+        "hash": "9e550863",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "ce8e53",
+        "hash": "8eedf37f",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "ce8e53",
+        "hash": "3f51faff",
+        "encoded": "*%20Test%20icon%20sizing%20based%20on%20button%20size",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "ce8e53",
+        "hash": "575c1f1b",
+        "encoded": "*%20Scenario:%20Icons%20in%20different%20sized%20buttons",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "ce8e53",
+        "hash": "4b328c6b",
+        "encoded": "*%20Expected:%20Icon%20size%20matches%20button%20size",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "ce8e53",
+        "hash": "7026700a",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "ce8e53",
+        "hash": "54a18ad6",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "ce8e53",
+        "hash": "51e9d9f0",
+        "encoded": "%5B'xs',%20'w-3%20h-3'%5D,",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "ce8e53",
+        "hash": "bb24dee7",
+        "encoded": "%5B'sm',%20'w-4%20h-4'%5D,",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "ce8e53",
+        "hash": "b5f03f6d",
+        "encoded": "%5B'md',%20'w-4%20h-4'%5D,",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "ce8e53",
+        "hash": "3ed4ac1f",
+        "encoded": "%5B'lg',%20'w-5%20h-5'%5D,",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "ce8e53",
+        "hash": "89b54f2f",
+        "encoded": "%5B'xl',%20'w-6%20h-6'%5D",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "ce8e53",
+        "hash": "78dca729",
+        "encoded": "%5D%20as%20const)('should%20size%20icon%20correctly%20for%20%25s%20button',%20(size,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "ce8e53",
+        "hash": "91cd7df0",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "ce8e53",
+        "hash": "49099829",
+        "encoded": "%3CButton%20size=%7Bsize%7D%20icon=%7B%3CMockIcon%20name=%22test%22%20/%3E%7D%3E",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "ce8e53",
+        "hash": "c8e94012",
+        "encoded": "Test",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "ce8e53",
+        "hash": "30ad56c8",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "ce8e53",
+        "hash": "f6aa9fe6",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "ce8e53",
+        "hash": "ad865b4c",
+        "encoded": "const%20iconWrapper%20=%20screen.getByTestId('icon-test').parentElement;",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "ce8e53",
+        "hash": "661971b2",
+        "encoded": "expect(iconWrapper).toHaveClass(expectedClass);",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "ce8e53",
+        "hash": "5bcfb68b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "ce8e53",
+        "hash": "777c75ba",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "ce8e53",
+        "hash": "5437ef08",
+        "encoded": "//%20Test%205:%20Accessibility",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "ce8e53",
+        "hash": "dbad6535",
+        "encoded": "describe('Accessibility',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "ce8e53",
+        "hash": "f9ef4103",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "ce8e53",
+        "hash": "2b063007",
+        "encoded": "*%20Test%20ARIA%20attributes",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "ce8e53",
+        "hash": "142692ed",
+        "encoded": "*%20Scenario:%20Button%20with%20aria-label%20and%20aria-describedby",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "ce8e53",
+        "hash": "54802004",
+        "encoded": "*%20Expected:%20Proper%20ARIA%20attributes%20are%20set",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "ce8e53",
+        "hash": "c44c5d16",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "ce8e53",
+        "hash": "1a4c4b9e",
+        "encoded": "test('should%20have%20proper%20ARIA%20attributes',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "ce8e53",
+        "hash": "8ff0877e",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "ce8e53",
+        "hash": "7b82214c",
+        "encoded": "%3CButton",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "ce8e53",
+        "hash": "5d8e53a8",
+        "encoded": "aria-label=%22Custom%20label%22",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "ce8e53",
+        "hash": "17a53564",
+        "encoded": "aria-describedby=%22description%22",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "ce8e53",
+        "hash": "dc3a4512",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "ce8e53",
+        "hash": "a679ed11",
+        "encoded": "Button",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "ce8e53",
+        "hash": "6ebe6cf5",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "ce8e53",
+        "hash": "8ecce59b",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "ce8e53",
+        "hash": "8f113f34",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "ce8e53",
+        "hash": "d526188d",
+        "encoded": "expect(button).toHaveAttribute('aria-label',%20'Custom%20label');",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "ce8e53",
+        "hash": "2a917212",
+        "encoded": "expect(button).toHaveAttribute('aria-describedby',%20'description');",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "ce8e53",
+        "hash": "68877d4f",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "ce8e53",
+        "hash": "c1ababd7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "ce8e53",
+        "hash": "c640593e",
+        "encoded": "*%20Test%20loading%20state%20accessibility",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "ce8e53",
+        "hash": "1d4a545d",
+        "encoded": "*%20Scenario:%20Button%20in%20loading%20state",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "ce8e53",
+        "hash": "0290b05b",
+        "encoded": "*%20Expected:%20aria-busy%20is%20set%20to%20true",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "ce8e53",
+        "hash": "9dac6fb0",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "ce8e53",
+        "hash": "1cf99225",
+        "encoded": "test('should%20set%20aria-busy%20when%20loading',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "ce8e53",
+        "hash": "30221104",
+        "encoded": "render(%3CButton%20loading%3ELoading%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "ce8e53",
+        "hash": "d079330b",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "ce8e53",
+        "hash": "2f89f76d",
+        "encoded": "expect(button).toHaveAttribute('aria-busy',%20'true');",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "ce8e53",
+        "hash": "9d18bb34",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "ce8e53",
+        "hash": "ef76f3f7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "ce8e53",
+        "hash": "9b35c77d",
+        "encoded": "*%20Test%20icon-only%20button%20accessibility",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "ce8e53",
+        "hash": "b95c44a1",
+        "encoded": "*%20Scenario:%20Icon-only%20button%20without%20aria-label",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "ce8e53",
+        "hash": "7085b972",
+        "encoded": "*%20Expected:%20Default%20aria-label%20is%20provided",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "ce8e53",
+        "hash": "c55fbb05",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "ce8e53",
+        "hash": "aaf3643e",
+        "encoded": "test('should%20provide%20default%20aria-label%20for%20icon-only%20button',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "ce8e53",
+        "hash": "e33caa92",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "ce8e53",
+        "hash": "5c7da976",
+        "encoded": "%3CButton%20icon=%7B%3CMockIcon%20name=%22test%22%20/%3E%7D%20iconPosition=%22only%22%3E",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "ce8e53",
+        "hash": "b2ca917e",
+        "encoded": "Hidden",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "ce8e53",
+        "hash": "6eabc91f",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "ce8e53",
+        "hash": "fccee379",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "ce8e53",
+        "hash": "a3d86e8e",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "ce8e53",
+        "hash": "20719873",
+        "encoded": "expect(button).toHaveAttribute('aria-label',%20'Button');",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "ce8e53",
+        "hash": "f6261752",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "ce8e53",
+        "hash": "a8b6f2a0",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "ce8e53",
+        "hash": "0b01c549",
+        "encoded": "*%20Test%20focus%20management",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "ce8e53",
+        "hash": "f24b81a3",
+        "encoded": "*%20Scenario:%20Button%20focus%20states",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "ce8e53",
+        "hash": "21837109",
+        "encoded": "*%20Expected:%20Button%20is%20focusable%20and%20has%20focus%20styles",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "ce8e53",
+        "hash": "ed3433dd",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "ce8e53",
+        "hash": "020be253",
+        "encoded": "test('should%20be%20focusable%20and%20have%20focus%20styles',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "ce8e53",
+        "hash": "abcdd8c6",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "382": {
+        "chunkId": "ce8e53",
+        "hash": "10f60517",
+        "encoded": "render(%3CButton%3EFocusable%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "384": {
+        "chunkId": "ce8e53",
+        "hash": "593a5cf4",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "386": {
+        "chunkId": "ce8e53",
+        "hash": "3863d384",
+        "encoded": "await%20user.tab();",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "ce8e53",
+        "hash": "bfec37bf",
+        "encoded": "expect(button).toHaveFocus();",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "ce8e53",
+        "hash": "d46157fa",
+        "encoded": "expect(button).toHaveClass('focus-visible:outline-none');",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "ce8e53",
+        "hash": "0cf7dda5",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "ce8e53",
+        "hash": "5210eab3",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "392": {
+        "chunkId": "ce8e53",
+        "hash": "e8e4b37d",
+        "encoded": "*%20Test%20accessibility%20compliance%20with%20axe",
+        "prevChunkIds": []
+      },
+      "393": {
+        "chunkId": "ce8e53",
+        "hash": "eaef0598",
+        "encoded": "*%20Scenario:%20Button%20component",
+        "prevChunkIds": []
+      },
+      "394": {
+        "chunkId": "ce8e53",
+        "hash": "b97a1d5a",
+        "encoded": "*%20Expected:%20No%20accessibility%20violations",
+        "prevChunkIds": []
+      },
+      "395": {
+        "chunkId": "ce8e53",
+        "hash": "61799e68",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "396": {
+        "chunkId": "ce8e53",
+        "hash": "9fe5ab9b",
+        "encoded": "test('should%20not%20have%20accessibility%20violations',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "ce8e53",
+        "hash": "e60c4e46",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "398": {
+        "chunkId": "ce8e53",
+        "hash": "a0ee69ce",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "ce8e53",
+        "hash": "eb5dc957",
+        "encoded": "%3CButton%3EDefault%20Button%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "ce8e53",
+        "hash": "1a5f935f",
+        "encoded": "%3CButton%20variant=%22secondary%22%20disabled%3EDisabled%20Button%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "ce8e53",
+        "hash": "09f3af3a",
+        "encoded": "%3CButton%20loading%3ELoading%20Button%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "ce8e53",
+        "hash": "7e355537",
+        "encoded": "%3CButton%20icon=%7B%3CMockIcon%20name=%22icon%22%20/%3E%7D%20aria-label=%22Icon%20button%22%20iconPosition=%22only%22%3E",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "ce8e53",
+        "hash": "f99cc0af",
+        "encoded": "Icon%20Only",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "ce8e53",
+        "hash": "fc76b8e8",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "ce8e53",
+        "hash": "82d638b0",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "406": {
+        "chunkId": "ce8e53",
+        "hash": "53d6870c",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "408": {
+        "chunkId": "ce8e53",
+        "hash": "0fb0ad08",
+        "encoded": "const%20results%20=%20await%20axe(container);",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "ce8e53",
+        "hash": "05a1a174",
+        "encoded": "expect(results).toHaveNoViolations();",
+        "prevChunkIds": []
+      },
+      "410": {
+        "chunkId": "ce8e53",
+        "hash": "be023d9a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "ce8e53",
+        "hash": "8c7871c6",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "413": {
+        "chunkId": "ce8e53",
+        "hash": "60b0af68",
+        "encoded": "//%20Test%206:%20Edge%20Cases",
+        "prevChunkIds": []
+      },
+      "414": {
+        "chunkId": "ce8e53",
+        "hash": "e0453d7a",
+        "encoded": "describe('Edge%20Cases',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "ce8e53",
+        "hash": "f6e1cd55",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "ce8e53",
+        "hash": "d0c638ee",
+        "encoded": "*%20Test%20button%20with%20no%20children",
+        "prevChunkIds": []
+      },
+      "417": {
+        "chunkId": "ce8e53",
+        "hash": "915e8e66",
+        "encoded": "*%20Scenario:%20Button%20without%20text%20content",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "ce8e53",
+        "hash": "013b70d1",
+        "encoded": "*%20Expected:%20Button%20renders%20without%20errors",
+        "prevChunkIds": []
+      },
+      "419": {
+        "chunkId": "ce8e53",
+        "hash": "61767409",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "420": {
+        "chunkId": "ce8e53",
+        "hash": "5a546a00",
+        "encoded": "test('should%20handle%20empty%20children',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "ce8e53",
+        "hash": "ed0abf32",
+        "encoded": "render(%3CButton%20/%3E);",
+        "prevChunkIds": []
+      },
+      "423": {
+        "chunkId": "ce8e53",
+        "hash": "da25eabe",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "424": {
+        "chunkId": "ce8e53",
+        "hash": "a1a3b6d4",
+        "encoded": "expect(button).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "ce8e53",
+        "hash": "f84174c7",
+        "encoded": "expect(button.textContent).toBe('');",
+        "prevChunkIds": []
+      },
+      "426": {
+        "chunkId": "ce8e53",
+        "hash": "321569a9",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "428": {
+        "chunkId": "ce8e53",
+        "hash": "ed86c72f",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "ce8e53",
+        "hash": "d149bf32",
+        "encoded": "*%20Test%20button%20with%20custom%20className",
+        "prevChunkIds": []
+      },
+      "430": {
+        "chunkId": "ce8e53",
+        "hash": "015d9c88",
+        "encoded": "*%20Scenario:%20Button%20with%20additional%20CSS%20classes",
+        "prevChunkIds": []
+      },
+      "431": {
+        "chunkId": "ce8e53",
+        "hash": "3dd21f95",
+        "encoded": "*%20Expected:%20Custom%20classes%20are%20applied",
+        "prevChunkIds": []
+      },
+      "432": {
+        "chunkId": "ce8e53",
+        "hash": "16ece016",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "ce8e53",
+        "hash": "b92fbc76",
+        "encoded": "test('should%20apply%20custom%20className',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "ce8e53",
+        "hash": "c31e6586",
+        "encoded": "render(%3CButton%20className=%22custom-class%22%3ETest%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "436": {
+        "chunkId": "ce8e53",
+        "hash": "83077519",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "ce8e53",
+        "hash": "94ce9ecb",
+        "encoded": "expect(button).toHaveClass('custom-class');",
+        "prevChunkIds": []
+      },
+      "438": {
+        "chunkId": "ce8e53",
+        "hash": "372e5ea4",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "440": {
+        "chunkId": "ce8e53",
+        "hash": "3ff5e451",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "441": {
+        "chunkId": "ce8e53",
+        "hash": "56efc749",
+        "encoded": "*%20Test%20button%20ref%20forwarding",
+        "prevChunkIds": []
+      },
+      "442": {
+        "chunkId": "ce8e53",
+        "hash": "b79d2122",
+        "encoded": "*%20Scenario:%20Button%20with%20ref",
+        "prevChunkIds": []
+      },
+      "443": {
+        "chunkId": "ce8e53",
+        "hash": "2a5cb6f1",
+        "encoded": "*%20Expected:%20Ref%20is%20properly%20forwarded%20to%20button%20element",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "ce8e53",
+        "hash": "6a26fa49",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "445": {
+        "chunkId": "ce8e53",
+        "hash": "2ab39ccb",
+        "encoded": "test('should%20forward%20ref%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "446": {
+        "chunkId": "ce8e53",
+        "hash": "6ff78908",
+        "encoded": "const%20ref%20=%20React.createRef%3CHTMLButtonElement%3E();",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "ce8e53",
+        "hash": "f5bce25d",
+        "encoded": "render(%3CButton%20ref=%7Bref%7D%3ERef%20Test%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "ce8e53",
+        "hash": "47319631",
+        "encoded": "expect(ref.current).toBeInstanceOf(HTMLButtonElement);",
+        "prevChunkIds": []
+      },
+      "451": {
+        "chunkId": "ce8e53",
+        "hash": "1b28457e",
+        "encoded": "expect(ref.current).toBe(screen.getByRole('button'));",
+        "prevChunkIds": []
+      },
+      "452": {
+        "chunkId": "ce8e53",
+        "hash": "f6e1d825",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "454": {
+        "chunkId": "ce8e53",
+        "hash": "9998a562",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "455": {
+        "chunkId": "ce8e53",
+        "hash": "93d53332",
+        "encoded": "*%20Test%20button%20with%20both%20loading%20and%20disabled",
+        "prevChunkIds": []
+      },
+      "456": {
+        "chunkId": "ce8e53",
+        "hash": "64a7d1a0",
+        "encoded": "*%20Scenario:%20Button%20with%20both%20loading%20and%20disabled%20props",
+        "prevChunkIds": []
+      },
+      "457": {
+        "chunkId": "ce8e53",
+        "hash": "ff553be6",
+        "encoded": "*%20Expected:%20Button%20behaves%20as%20disabled",
+        "prevChunkIds": []
+      },
+      "458": {
+        "chunkId": "ce8e53",
+        "hash": "88447c86",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "459": {
+        "chunkId": "ce8e53",
+        "hash": "15ebc725",
+        "encoded": "test('should%20handle%20both%20loading%20and%20disabled%20states',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "ce8e53",
+        "hash": "32cc7209",
+        "encoded": "render(%3CButton%20loading%20disabled%3ETest%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "ce8e53",
+        "hash": "7225d8a0",
+        "encoded": "const%20button%20=%20screen.getByRole('button');",
+        "prevChunkIds": []
+      },
+      "463": {
+        "chunkId": "ce8e53",
+        "hash": "baf601fd",
+        "encoded": "expect(button).toBeDisabled();",
+        "prevChunkIds": []
+      },
+      "464": {
+        "chunkId": "ce8e53",
+        "hash": "2aa93945",
+        "encoded": "expect(button).toHaveAttribute('aria-busy',%20'true');",
+        "prevChunkIds": []
+      },
+      "465": {
+        "chunkId": "ce8e53",
+        "hash": "b3df8eb9",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "466": {
+        "chunkId": "ce8e53",
+        "hash": "1afb24f8",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "468": {
+        "chunkId": "ce8e53",
+        "hash": "c96a820a",
+        "encoded": "//%20Test%207:%20Snapshot%20Testing",
+        "prevChunkIds": []
+      },
+      "469": {
+        "chunkId": "ce8e53",
+        "hash": "8d1173bc",
+        "encoded": "describe('Snapshot%20Testing',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "470": {
+        "chunkId": "ce8e53",
+        "hash": "19d885f5",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "471": {
+        "chunkId": "ce8e53",
+        "hash": "f1726e6e",
+        "encoded": "*%20Test%20visual%20regression%20with%20snapshots",
+        "prevChunkIds": []
+      },
+      "472": {
+        "chunkId": "ce8e53",
+        "hash": "4a2731d1",
+        "encoded": "*%20Scenario:%20Different%20button%20configurations",
+        "prevChunkIds": []
+      },
+      "473": {
+        "chunkId": "ce8e53",
+        "hash": "7242833a",
+        "encoded": "*%20Expected:%20Consistent%20rendering%20across%20changes",
+        "prevChunkIds": []
+      },
+      "474": {
+        "chunkId": "ce8e53",
+        "hash": "dad62da5",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "475": {
+        "chunkId": "ce8e53",
+        "hash": "ebceae4b",
+        "encoded": "test('should%20match%20snapshot%20for%20all%20variants',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "476": {
+        "chunkId": "ce8e53",
+        "hash": "2e8887a6",
+        "encoded": "const%20variants:%20ButtonProps%5B'variant'%5D%5B%5D%20=%20%5B'primary',%20'secondary',%20'tertiary',%20'danger',%20'ghost'%5D;",
+        "prevChunkIds": []
+      },
+      "478": {
+        "chunkId": "ce8e53",
+        "hash": "093411b7",
+        "encoded": "variants.forEach(variant%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "479": {
+        "chunkId": "ce8e53",
+        "hash": "cb2ddf7c",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(%3CButton%20variant=%7Bvariant%7D%3ETest%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "480": {
+        "chunkId": "ce8e53",
+        "hash": "a4eb7b69",
+        "encoded": "expect(container.firstChild).toMatchSnapshot(%60button-$%7Bvariant%7D%60);",
+        "prevChunkIds": []
+      },
+      "481": {
+        "chunkId": "ce8e53",
+        "hash": "9a8f8420",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "482": {
+        "chunkId": "ce8e53",
+        "hash": "565e26a9",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "484": {
+        "chunkId": "ce8e53",
+        "hash": "eb19ed19",
+        "encoded": "test('should%20match%20snapshot%20for%20all%20sizes',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "485": {
+        "chunkId": "ce8e53",
+        "hash": "e12a84bf",
+        "encoded": "const%20sizes:%20ButtonProps%5B'size'%5D%5B%5D%20=%20%5B'xs',%20'sm',%20'md',%20'lg',%20'xl'%5D;",
+        "prevChunkIds": []
+      },
+      "487": {
+        "chunkId": "ce8e53",
+        "hash": "f5a6310c",
+        "encoded": "sizes.forEach(size%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "488": {
+        "chunkId": "ce8e53",
+        "hash": "3c095eb8",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(%3CButton%20size=%7Bsize%7D%3ETest%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "489": {
+        "chunkId": "ce8e53",
+        "hash": "d46d14d5",
+        "encoded": "expect(container.firstChild).toMatchSnapshot(%60button-$%7Bsize%7D%60);",
+        "prevChunkIds": []
+      },
+      "490": {
+        "chunkId": "ce8e53",
+        "hash": "bda68ef3",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "491": {
+        "chunkId": "ce8e53",
+        "hash": "0aa2e7d6",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "493": {
+        "chunkId": "ce8e53",
+        "hash": "d1513ef4",
+        "encoded": "test('should%20match%20snapshot%20for%20special%20states',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "494": {
+        "chunkId": "ce8e53",
+        "hash": "33b9ade1",
+        "encoded": "const%20%7B%20container:%20loadingContainer%20%7D%20=%20render(%3CButton%20loading%3ELoading%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "495": {
+        "chunkId": "ce8e53",
+        "hash": "b8279507",
+        "encoded": "expect(loadingContainer.firstChild).toMatchSnapshot('button-loading');",
+        "prevChunkIds": []
+      },
+      "497": {
+        "chunkId": "ce8e53",
+        "hash": "81daf36a",
+        "encoded": "const%20%7B%20container:%20disabledContainer%20%7D%20=%20render(%3CButton%20disabled%3EDisabled%3C/Button%3E);",
+        "prevChunkIds": []
+      },
+      "498": {
+        "chunkId": "ce8e53",
+        "hash": "29d08d61",
+        "encoded": "expect(disabledContainer.firstChild).toMatchSnapshot('button-disabled');",
+        "prevChunkIds": []
+      },
+      "500": {
+        "chunkId": "ce8e53",
+        "hash": "a5eacc27",
+        "encoded": "const%20%7B%20container:%20iconContainer%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "501": {
+        "chunkId": "ce8e53",
+        "hash": "13947764",
+        "encoded": "%3CButton%20icon=%7B%3CMockIcon%20name=%22test%22%20/%3E%7D%3EWith%20Icon%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "502": {
+        "chunkId": "ce8e53",
+        "hash": "581aa230",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "503": {
+        "chunkId": "ce8e53",
+        "hash": "20861b9f",
+        "encoded": "expect(iconContainer.firstChild).toMatchSnapshot('button-with-icon');",
+        "prevChunkIds": []
+      },
+      "504": {
+        "chunkId": "ce8e53",
+        "hash": "cd875c2d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "505": {
+        "chunkId": "ce8e53",
+        "hash": "c6ef5641",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "506": {
+        "chunkId": "ce8e53",
+        "hash": "1e215566",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

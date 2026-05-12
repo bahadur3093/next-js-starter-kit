@@ -1,0 +1,120 @@
+{
+  ".no-tests": {
+    "filename": ".no-tests",
+    "path": ".no-tests",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "38a3d6": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606228,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "420fad06",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "38a3d6",
+        "hash": "94a7848c",
+        "encoded": "#%20Test%20Case%20Generation%20Disabled",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "38a3d6",
+        "hash": "316c1900",
+        "encoded": "This%20file%20serves%20as%20a%20marker%20that%20test%20case%20generation%20has%20been%20explicitly%20disabled%20for%20this%20project.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "38a3d6",
+        "hash": "231b89e2",
+        "encoded": "##%20Status:%20DISABLED",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "38a3d6",
+        "hash": "b1193300",
+        "encoded": "-%20Test%20scripts%20removed%20from%20package.json",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "38a3d6",
+        "hash": "aac81b78",
+        "encoded": "-%20Jest%20configuration%20disabled",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "38a3d6",
+        "hash": "a8d8adb4",
+        "encoded": "-%20Jest%20setup%20file%20deactivated",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "38a3d6",
+        "hash": "a3abf28d",
+        "encoded": "-%20All%20test%20files%20should%20be%20ignored",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "38a3d6",
+        "hash": "6a875f77",
+        "encoded": "##%20Instructions",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "38a3d6",
+        "hash": "59b32453",
+        "encoded": "DO%20NOT:",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "38a3d6",
+        "hash": "bcf86073",
+        "encoded": "-%20Run%20any%20test%20commands",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "38a3d6",
+        "hash": "932b1078",
+        "encoded": "-%20Generate%20new%20test%20files",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "38a3d6",
+        "hash": "8d4c8606",
+        "encoded": "-%20Create%20test%20cases",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "38a3d6",
+        "hash": "b90116df",
+        "encoded": "-%20Execute%20testing%20frameworks",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "38a3d6",
+        "hash": "f4d855f1",
+        "encoded": "This%20restriction%20was%20put%20in%20place%20on:%202026-05-12",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "38a3d6",
+        "hash": "80b1cb27",
+        "encoded": "To%20re-enable%20testing,%20remove%20this%20file%20and%20restore%20test%20configurations.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

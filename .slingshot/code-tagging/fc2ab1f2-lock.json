@@ -1,0 +1,54 @@
+{
+  "src/utils/index.ts": {
+    "filename": "index.ts",
+    "path": "src/utils/index.ts",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "bff1fd": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606226,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "1dbfa0f0",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "bff1fd",
+        "hash": "1fcfe92a",
+        "encoded": "//%20Utility%20functions",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "bff1fd",
+        "hash": "ace3a377",
+        "encoded": "export%20%7B%20cn,%20createVariants,%20conditionalClasses%20%7D%20from%20'./classNames';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "bff1fd",
+        "hash": "7cfba90b",
+        "encoded": "//%20Export%20all%20utility%20functions%20from%20this%20index",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "bff1fd",
+        "hash": "4d2bf88b",
+        "encoded": "//%20This%20will%20be%20expanded%20as%20we%20add%20more%20utilities",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

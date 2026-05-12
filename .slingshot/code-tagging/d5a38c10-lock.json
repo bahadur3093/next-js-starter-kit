@@ -1,0 +1,1404 @@
+{
+  "src/components/atoms/Badge.tsx": {
+    "filename": "Badge.tsx",
+    "path": "src/components/atoms/Badge.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "421f01": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606227,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "9c7b4deb",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "7949d7": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778607130,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "9cc6ed1b",
+          "files": "0587bb37"
+        },
+        "hash": "6cd825de",
+        "messageId": "system_77ebec70-4e26-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "421f01",
+        "hash": "5006fbca",
+        "encoded": "import%20React,%20%7B%20forwardRef%20%7D%20from%20'react';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "421f01",
+        "hash": "643bc624",
+        "encoded": "import%20%7B%20cn%20%7D%20from%20'@/utils/classNames';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "421f01",
+        "hash": "e70fa4be",
+        "encoded": "//%20Badge%20variant%20and%20size%20types",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "421f01",
+        "hash": "eb37db6c",
+        "encoded": "export%20type%20BadgeVariant%20=%20'default'%20%7C%20'primary'%20%7C%20'secondary'%20%7C%20'success'%20%7C%20'warning'%20%7C%20'error'%20%7C%20'info';",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "421f01",
+        "hash": "83ca66e3",
+        "encoded": "export%20type%20BadgeSize%20=%20'sm'%20%7C%20'md'%20%7C%20'lg';",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "421f01",
+        "hash": "c881054c",
+        "encoded": "export%20type%20BadgeShape%20=%20'rounded'%20%7C%20'pill';",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "421f01",
+        "hash": "4797b052",
+        "encoded": "//%20Badge%20component%20props%20interface",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "421f01",
+        "hash": "589f038d",
+        "encoded": "export%20interface%20BadgeProps%20extends%20React.HTMLAttributes%3CHTMLSpanElement%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "421f01",
+        "hash": "5834454b",
+        "encoded": "/**%20Badge%20variant%20determines%20the%20color%20scheme%20*/",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "421f01",
+        "hash": "958193b6",
+        "encoded": "variant?:%20BadgeVariant;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "421f01",
+        "hash": "bb522137",
+        "encoded": "/**%20Badge%20size%20*/",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "421f01",
+        "hash": "bbf0ceea",
+        "encoded": "size?:%20BadgeSize;",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "421f01",
+        "hash": "3f1b8c2a",
+        "encoded": "/**%20Badge%20shape%20*/",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "421f01",
+        "hash": "2b11454a",
+        "encoded": "shape?:%20BadgeShape;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "421f01",
+        "hash": "60893b98",
+        "encoded": "/**%20Whether%20the%20badge%20can%20be%20removed%20*/",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "421f01",
+        "hash": "5f31d446",
+        "encoded": "removable?:%20boolean;",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "421f01",
+        "hash": "0258e6ee",
+        "encoded": "/**%20Icon%20element%20to%20display%20*/",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "421f01",
+        "hash": "7ab8cb33",
+        "encoded": "icon?:%20React.ReactNode;",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "421f01",
+        "hash": "2cb9dad0",
+        "encoded": "/**%20Position%20of%20the%20icon%20relative%20to%20text%20*/",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "421f01",
+        "hash": "5fa480f3",
+        "encoded": "iconPosition?:%20'leading'%20%7C%20'trailing';",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "421f01",
+        "hash": "2c310571",
+        "encoded": "/**%20Custom%20className%20for%20additional%20styling%20*/",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "421f01",
+        "hash": "7d2264c2",
+        "encoded": "className?:%20string;",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "421f01",
+        "hash": "2c7b8cb3",
+        "encoded": "/**%20Badge%20content%20*/",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "421f01",
+        "hash": "bb50b3f3",
+        "encoded": "children?:%20React.ReactNode;",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "421f01",
+        "hash": "06762afa",
+        "encoded": "/**%20Remove%20handler%20for%20removable%20badges%20*/",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "421f01",
+        "hash": "7f3571fa",
+        "encoded": "onRemove?:%20(event:%20React.MouseEvent%3CHTMLButtonElement%3E)%20=%3E%20void;",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "421f01",
+        "hash": "239ff6c5",
+        "encoded": "/**%20ARIA%20label%20for%20accessibility%20*/",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "421f01",
+        "hash": "57cb59c3",
+        "encoded": "'aria-label'?:%20string;",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "421f01",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "421f01",
+        "hash": "6909ad1a",
+        "encoded": "//%20Variant%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "421f01",
+        "hash": "f69adb13",
+        "encoded": "const%20variantStyles:%20Record%3CBadgeVariant,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "421f01",
+        "hash": "edece6aa",
+        "encoded": "default:%20%5B",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "421f01",
+        "hash": "86b48448",
+        "encoded": "'bg-surface%20text-text-main%20border%20border-border',",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "421f01",
+        "hash": "22bdb14e",
+        "encoded": "'hover:bg-surface/80'",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "421f01",
+        "hash": "51d1833d",
+        "encoded": "%5D.join('%20'),",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "421f01",
+        "hash": "63135456",
+        "encoded": "primary:%20%5B",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "421f01",
+        "hash": "215159c4",
+        "encoded": "'bg-brand-primary%20text-white',",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "421f01",
+        "hash": "95d6bff2",
+        "encoded": "'hover:bg-brand-primary/90'",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "421f01",
+        "hash": "e830a26f",
+        "encoded": "%5D.join('%20'),",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "421f01",
+        "hash": "b64d29f8",
+        "encoded": "secondary:%20%5B",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "421f01",
+        "hash": "c9cf96aa",
+        "encoded": "'bg-brand-secondary%20text-white',",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "421f01",
+        "hash": "b20d1beb",
+        "encoded": "'hover:bg-brand-secondary/90'",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "421f01",
+        "hash": "2c2d0bed",
+        "encoded": "%5D.join('%20'),",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "421f01",
+        "hash": "0681c4aa",
+        "encoded": "success:%20%5B",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "421f01",
+        "hash": "27204f68",
+        "encoded": "'bg-green-100%20text-green-800%20border%20border-green-200',",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "421f01",
+        "hash": "ce436957",
+        "encoded": "'hover:bg-green-200'",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "421f01",
+        "hash": "50aa0bec",
+        "encoded": "%5D.join('%20'),",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "421f01",
+        "hash": "931dcbdb",
+        "encoded": "warning:%20%5B",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "421f01",
+        "hash": "cda001a5",
+        "encoded": "'bg-yellow-100%20text-yellow-800%20border%20border-yellow-200',",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "421f01",
+        "hash": "ba66bea1",
+        "encoded": "'hover:bg-yellow-200'",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "421f01",
+        "hash": "c308fe43",
+        "encoded": "%5D.join('%20'),",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "421f01",
+        "hash": "69182f1e",
+        "encoded": "error:%20%5B",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "421f01",
+        "hash": "ff80abd8",
+        "encoded": "'bg-red-100%20text-red-800%20border%20border-red-200',",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "421f01",
+        "hash": "81873417",
+        "encoded": "'hover:bg-red-200'",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "421f01",
+        "hash": "aec387bf",
+        "encoded": "%5D.join('%20'),",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "421f01",
+        "hash": "30545d13",
+        "encoded": "info:%20%5B",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "421f01",
+        "hash": "dbe10904",
+        "encoded": "'bg-blue-100%20text-blue-800%20border%20border-blue-200',",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "421f01",
+        "hash": "eafb881e",
+        "encoded": "'hover:bg-blue-200'",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "421f01",
+        "hash": "bf367b71",
+        "encoded": "%5D.join('%20')",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "421f01",
+        "hash": "8e1a2c97",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "421f01",
+        "hash": "adfa542c",
+        "encoded": "//%20Size%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "421f01",
+        "hash": "4f229fbb",
+        "encoded": "const%20sizeStyles:%20Record%3CBadgeSize,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "421f01",
+        "hash": "060d4d75",
+        "encoded": "sm:%20'px-2%20py-0.5%20text-xs%20font-medium%20min-h-%5B20px%5D',",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "421f01",
+        "hash": "f6cd8cb4",
+        "encoded": "md:%20'px-2.5%20py-1%20text-xs%20font-medium%20min-h-%5B24px%5D',",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "421f01",
+        "hash": "64a4e90f",
+        "encoded": "lg:%20'px-3%20py-1.5%20text-sm%20font-medium%20min-h-%5B28px%5D'",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "421f01",
+        "hash": "04c8973c",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "421f01",
+        "hash": "3d32b087",
+        "encoded": "//%20Shape%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "421f01",
+        "hash": "de8073e9",
+        "encoded": "const%20shapeStyles:%20Record%3CBadgeShape,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "421f01",
+        "hash": "a4f2c572",
+        "encoded": "rounded:%20'rounded-md',",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "421f01",
+        "hash": "61cc1861",
+        "encoded": "pill:%20'rounded-full'",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "421f01",
+        "hash": "93e776f6",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "421f01",
+        "hash": "672b38f3",
+        "encoded": "//%20Icon%20size%20mapping%20based%20on%20badge%20size",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "421f01",
+        "hash": "5d6a03cb",
+        "encoded": "const%20iconSizes:%20Record%3CBadgeSize,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "421f01",
+        "hash": "6ad1914e",
+        "encoded": "sm:%20'w-3%20h-3',",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "421f01",
+        "hash": "1a1c2357",
+        "encoded": "md:%20'w-3.5%20h-3.5',",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "421f01",
+        "hash": "216684e2",
+        "encoded": "lg:%20'w-4%20h-4'",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "421f01",
+        "hash": "548cc23c",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "421f01",
+        "hash": "262692cc",
+        "encoded": "//%20Remove%20button%20styles",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "421f01",
+        "hash": "36f24550",
+        "encoded": "const%20removeButtonStyles%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "421f01",
+        "hash": "01a31844",
+        "encoded": "sm:%20'w-3%20h-3%20ml-1',",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "421f01",
+        "hash": "fcb34a77",
+        "encoded": "md:%20'w-3.5%20h-3.5%20ml-1.5',",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "421f01",
+        "hash": "0167ac6d",
+        "encoded": "lg:%20'w-4%20h-4%20ml-2'",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "421f01",
+        "hash": "4e8395b7",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "421f01",
+        "hash": "62871cd9",
+        "encoded": "//%20Remove%20icon%20component",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "421f01",
+        "hash": "cfd41ec8",
+        "encoded": "const%20RemoveIcon:%20React.FC%3C%7B%20size:%20BadgeSize%20%7D%3E%20=%20(%7B%20size%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "421f01",
+        "hash": "6f301c9f",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "421f01",
+        "hash": "2f504f66",
+        "encoded": "%3Csvg",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "421f01",
+        "hash": "586c7f1d",
+        "encoded": "className=%7Bcn('stroke-current',%20iconSizes%5Bsize%5D)%7D",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "421f01",
+        "hash": "27a5d6c0",
+        "encoded": "xmlns=%22http://www.w3.org/2000/svg%22",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "421f01",
+        "hash": "e1dbf607",
+        "encoded": "viewBox=%220%200%2020%2020%22",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "421f01",
+        "hash": "0ce55dbb",
+        "encoded": "fill=%22none%22",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "421f01",
+        "hash": "07d504bb",
+        "encoded": "strokeWidth=%222%22",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "421f01",
+        "hash": "594b8179",
+        "encoded": "strokeLinecap=%22round%22",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "421f01",
+        "hash": "1a1eb1d1",
+        "encoded": "strokeLinejoin=%22round%22",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "421f01",
+        "hash": "3b52155e",
+        "encoded": "aria-hidden=%22true%22",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "421f01",
+        "hash": "810b0cc5",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "421f01",
+        "hash": "dc01f7f6",
+        "encoded": "%3Cpath%20d=%22M6%206l8%208M6%2014l8-8%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "421f01",
+        "hash": "4c7988cf",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "421f01",
+        "hash": "40a0c560",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "421f01",
+        "hash": "2c9a3740",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "421f01",
+        "hash": "818e54cf",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "421f01",
+        "hash": "5f1e6114",
+        "encoded": "*%20Badge%20component%20-%20A%20flexible%20badge/tag%20component%20for%20labeling%20and%20categorization",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "421f01",
+        "hash": "6ed4fd88",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "421f01",
+        "hash": "2f4bc8e1",
+        "encoded": "*%20Features:",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "421f01",
+        "hash": "aa71ab1f",
+        "encoded": "*%20-%20Multiple%20variants%20with%20semantic%20colors%20(default,%20primary,%20secondary,%20success,%20warning,%20error,%20info)",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "421f01",
+        "hash": "977a5336",
+        "encoded": "*%20-%20Configurable%20sizes%20(sm,%20md,%20lg)",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "421f01",
+        "hash": "9b23e047",
+        "encoded": "*%20-%20Shape%20options%20(rounded,%20pill)",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "421f01",
+        "hash": "04a932ad",
+        "encoded": "*%20-%20Icon%20support%20with%20flexible%20positioning",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "421f01",
+        "hash": "5e1b3844",
+        "encoded": "*%20-%20Removable%20functionality%20with%20close%20button",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "421f01",
+        "hash": "518595ef",
+        "encoded": "*%20-%20Full%20accessibility%20support%20with%20proper%20ARIA%20attributes",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "421f01",
+        "hash": "b26a4ad6",
+        "encoded": "*%20-%20Keyboard%20navigation%20for%20removable%20badges",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "421f01",
+        "hash": "96e3155f",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "421f01",
+        "hash": "0a51f17d",
+        "encoded": "*%20@example",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "421f01",
+        "hash": "00fa30d5",
+        "encoded": "*%20%60%60%60tsx",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "421f01",
+        "hash": "81735486",
+        "encoded": "*%20%3CBadge%20variant=%22primary%22%20size=%22md%22%3E",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "421f01",
+        "hash": "439e719b",
+        "encoded": "*%20%20%20New",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "421f01",
+        "hash": "ea3baa1e",
+        "encoded": "*%20%3C/Badge%3E",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "421f01",
+        "hash": "5ef2d49d",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "421f01",
+        "hash": "1354969f",
+        "encoded": "*%20%3CBadge%20variant=%22success%22%20icon=%7B%3CIcon%20name=%22check%22%20/%3E%7D%20iconPosition=%22leading%22%3E",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "421f01",
+        "hash": "72fa8b24",
+        "encoded": "*%20%20%20Completed",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "421f01",
+        "hash": "3f69b2a9",
+        "encoded": "*%20%3C/Badge%3E",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "421f01",
+        "hash": "14929f49",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "421f01",
+        "hash": "a43cb297",
+        "encoded": "*%20%3CBadge%20variant=%22warning%22%20removable%20onRemove=%7BhandleRemove%7D%3E",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "421f01",
+        "hash": "8b15ace4",
+        "encoded": "*%20%20%20Removable%20Tag",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "421f01",
+        "hash": "0387ade5",
+        "encoded": "*%20%3C/Badge%3E",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "421f01",
+        "hash": "f1420da7",
+        "encoded": "*%20%60%60%60",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "421f01",
+        "hash": "8cda4f69",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "421f01",
+        "hash": "ffbf4223",
+        "encoded": "export%20const%20Badge%20=%20forwardRef%3CHTMLSpanElement,%20BadgeProps%3E((",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "421f01",
+        "hash": "15a0ec37",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "421f01",
+        "hash": "f320bdc0",
+        "encoded": "variant%20=%20'default',",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "421f01",
+        "hash": "817b90e0",
+        "encoded": "size%20=%20'md',",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "421f01",
+        "hash": "26a2d25e",
+        "encoded": "shape%20=%20'rounded',",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "421f01",
+        "hash": "a8a9292c",
+        "encoded": "removable%20=%20false,",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "421f01",
+        "hash": "4ab69ae4",
+        "encoded": "icon,",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "421f01",
+        "hash": "e27289db",
+        "encoded": "iconPosition%20=%20'leading',",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "421f01",
+        "hash": "31794da7",
+        "encoded": "className,",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "421f01",
+        "hash": "969dc0ac",
+        "encoded": "children,",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "421f01",
+        "hash": "c76604c2",
+        "encoded": "onRemove,",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "421f01",
+        "hash": "d82b9c58",
+        "encoded": "'aria-label':%20ariaLabel,",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "421f01",
+        "hash": "0d211452",
+        "encoded": "...props",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "421f01",
+        "hash": "6c52cdbc",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "421f01",
+        "hash": "c1b287c6",
+        "encoded": "ref",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "421f01",
+        "hash": "d4890e5f",
+        "encoded": ")%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "421f01",
+        "hash": "1c791c05",
+        "encoded": "//%20Handle%20remove%20button%20click",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "421f01",
+        "hash": "44e67c5a",
+        "encoded": "const%20handleRemoveClick%20=%20(event:%20React.MouseEvent%3CHTMLButtonElement%3E)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "421f01",
+        "hash": "de789b6b",
+        "encoded": "event.stopPropagation();",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "421f01",
+        "hash": "e692a5d5",
+        "encoded": "onRemove?.(event);",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "421f01",
+        "hash": "48cb4ce9",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "421f01",
+        "hash": "4d7a646b",
+        "encoded": "//%20Handle%20remove%20button%20keyboard%20events",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "421f01",
+        "hash": "bbd69eaf",
+        "encoded": "const%20handleRemoveKeyDown%20=%20(event:%20React.KeyboardEvent%3CHTMLButtonElement%3E)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "421f01",
+        "hash": "3ab4c94d",
+        "encoded": "if%20(event.key%20===%20'Enter'%20%7C%7C%20event.key%20===%20'%20')%20%7B",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "421f01",
+        "hash": "07e6ba6b",
+        "encoded": "event.preventDefault();",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "421f01",
+        "hash": "f9e2aadc",
+        "encoded": "event.stopPropagation();",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "421f01",
+        "hash": "1238182d",
+        "encoded": "onRemove?.(event%20as%20any);",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "421f01",
+        "hash": "2ec69243",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "421f01",
+        "hash": "10254b7d",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "421f01",
+        "hash": "569b0056",
+        "encoded": "//%20Combine%20all%20styles",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "421f01",
+        "hash": "b08a476c",
+        "encoded": "const%20badgeClasses%20=%20cn(",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "421f01",
+        "hash": "c14db279",
+        "encoded": "//%20Base%20styles",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "421f01",
+        "hash": "6b9f669b",
+        "encoded": "'inline-flex%20items-center%20justify-center%20gap-1%20font-medium%20transition-colors%20duration-200',",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "421f01",
+        "hash": "b08bce8f",
+        "encoded": "'focus-within:outline-none%20focus-within:ring-2%20focus-within:ring-brand-primary/50%20focus-within:ring-offset-2%20focus-within:ring-offset-background',",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "421f01",
+        "hash": "90d7ffe7",
+        "encoded": "//%20Variant%20styles",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "421f01",
+        "hash": "f814597d",
+        "encoded": "variantStyles%5Bvariant%5D,",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "421f01",
+        "hash": "1a4929bb",
+        "encoded": "//%20Size%20styles",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "421f01",
+        "hash": "3a624280",
+        "encoded": "sizeStyles%5Bsize%5D,",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "421f01",
+        "hash": "6bac365e",
+        "encoded": "//%20Shape%20styles",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "421f01",
+        "hash": "bdcd5349",
+        "encoded": "shapeStyles%5Bshape%5D,",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "421f01",
+        "hash": "956fd995",
+        "encoded": "//%20Custom%20className",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "421f01",
+        "hash": "883b1e45",
+        "encoded": "className",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "421f01",
+        "hash": "4bbde715",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "421f01",
+        "hash": "e2206ccc",
+        "encoded": "//%20Render%20icon%20with%20appropriate%20styling",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "421f01",
+        "hash": "5baba868",
+        "encoded": "const%20renderIcon%20=%20(iconElement:%20React.ReactNode,%20position:%20'leading'%20%7C%20'trailing')%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "421f01",
+        "hash": "5fa111dd",
+        "encoded": "if%20(!iconElement)%20return%20null;",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "421f01",
+        "hash": "b01f820f",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "421f01",
+        "hash": "4957554f",
+        "encoded": "%3Cspan",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "421f01",
+        "hash": "84bdca2e",
+        "encoded": "className=%7Bcn(",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "421f01",
+        "hash": "5a174dfe",
+        "encoded": "'flex%20items-center%20justify-center',",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "421f01",
+        "hash": "3ff29574",
+        "encoded": "iconSizes%5Bsize%5D",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "421f01",
+        "hash": "66c99ffe",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "421f01",
+        "hash": "86f94775",
+        "encoded": "aria-hidden=%22true%22",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "421f01",
+        "hash": "90929ff9",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "421f01",
+        "hash": "44e58806",
+        "encoded": "%7BiconElement%7D",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "421f01",
+        "hash": "7493a337",
+        "encoded": "%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "421f01",
+        "hash": "d6379833",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "421f01",
+        "hash": "5e1ad716",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "421f01",
+        "hash": "cec1beaa",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "421f01",
+        "hash": "1bcd4e99",
+        "encoded": "%3Cspan",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "421f01",
+        "hash": "21d45bf0",
+        "encoded": "ref=%7Bref%7D",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "421f01",
+        "hash": "a96cb0c6",
+        "encoded": "className=%7BbadgeClasses%7D",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "421f01",
+        "hash": "fc2b1455",
+        "encoded": "aria-label=%7BariaLabel%7D",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "421f01",
+        "hash": "0265e017",
+        "encoded": "%7B...props%7D",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "421f01",
+        "hash": "e57b4326",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "421f01",
+        "hash": "d8009aa5",
+        "encoded": "%7B/*%20Leading%20icon%20*/%7D",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "421f01",
+        "hash": "b84cd911",
+        "encoded": "%7Bicon%20&&%20iconPosition%20===%20'leading'%20&&%20renderIcon(icon,%20'leading')%7D",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "421f01",
+        "hash": "eaa6cbc5",
+        "encoded": "%7B/*%20Badge%20text%20*/%7D",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "421f01",
+        "hash": "13314c2e",
+        "encoded": "%7Bchildren%20&&%20(",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "421f01",
+        "hash": "286593d2",
+        "encoded": "%3Cspan%20className=%22truncate%22%3E",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "421f01",
+        "hash": "055cea9b",
+        "encoded": "%7Bchildren%7D",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "421f01",
+        "hash": "6ae36965",
+        "encoded": "%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "421f01",
+        "hash": "36efd780",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "421f01",
+        "hash": "0aecb899",
+        "encoded": "%7B/*%20Trailing%20icon%20*/%7D",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "421f01",
+        "hash": "3017bce7",
+        "encoded": "%7Bicon%20&&%20iconPosition%20===%20'trailing'%20&&%20renderIcon(icon,%20'trailing')%7D",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "421f01",
+        "hash": "64280d61",
+        "encoded": "%7B/*%20Remove%20button%20*/%7D",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "421f01",
+        "hash": "f05ef676",
+        "encoded": "%7Bremovable%20&&%20(",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "421f01",
+        "hash": "b84c63fc",
+        "encoded": "%3Cbutton",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "421f01",
+        "hash": "1bd4a4e3",
+        "encoded": "type=%22button%22",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "421f01",
+        "hash": "f05b195a",
+        "encoded": "className=%7Bcn(",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "421f01",
+        "hash": "9fad8f91",
+        "encoded": "'inline-flex%20items-center%20justify-center%20rounded-full',",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "421f01",
+        "hash": "b14ea4e9",
+        "encoded": "'hover:bg-black/10%20focus:bg-black/10%20focus:outline-none',",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "421f01",
+        "hash": "440b82bc",
+        "encoded": "'transition-colors%20duration-200',",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "421f01",
+        "hash": "39ee4e3c",
+        "encoded": "removeButtonStyles%5Bsize%5D",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "421f01",
+        "hash": "9152d63f",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "421f01",
+        "hash": "ad6bf7de",
+        "encoded": "onClick=%7BhandleRemoveClick%7D",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "421f01",
+        "hash": "292f4386",
+        "encoded": "onKeyDown=%7BhandleRemoveKeyDown%7D",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "421f01",
+        "hash": "ddab1f7c",
+        "encoded": "aria-label=%7B%60Remove%20$%7Bchildren%20%7C%7C%20'badge'%7D%60%7D",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "421f01",
+        "hash": "08635f4f",
+        "encoded": "tabIndex=%7B0%7D",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "421f01",
+        "hash": "9a8fd642",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "421f01",
+        "hash": "b5089230",
+        "encoded": "%3CRemoveIcon%20size=%7Bsize%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "421f01",
+        "hash": "4713c707",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "421f01",
+        "hash": "e86a7ec0",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "421f01",
+        "hash": "73f9f5d1",
+        "encoded": "%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "421f01",
+        "hash": "39be02db",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "421f01",
+        "hash": "75c383ed",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "421f01",
+        "hash": "99e60ebc",
+        "encoded": "Badge.displayName%20=%20'Badge';",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "7949d7",
+        "hash": "23f53df1",
+        "encoded": "//%20Types%20are%20already%20exported%20above",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "421f01",
+        "hash": "369b89e5",
+        "encoded": "export%20type%20%7B%20BadgeProps,%20BadgeVariant,%20BadgeSize,%20BadgeShape%20%7D;",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

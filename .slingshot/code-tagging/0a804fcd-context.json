@@ -1,0 +1,49 @@
+{
+  "filename": "Typography.tsx",
+  "path": "src/components/atoms/Typography.tsx",
+  "version": "1.1",
+  "files": {
+    "faead0d4": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "Badge.test.tsx",
+          "relativeFilePath": "src/components/atoms/Badge.test.tsx",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            554
+          ]
+        }
+      ]
+    },
+    "0587bb37": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "error.tsx",
+          "relativeFilePath": "src/app/error.tsx",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            29
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "cf3f6fe2": {
+      "value": "remove all the test cases already written I don't need them now"
+    },
+    "9cc6ed1b": {
+      "value": "I can still see some runtime errors can you please fix them"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

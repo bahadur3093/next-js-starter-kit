@@ -1,0 +1,2028 @@
+{
+  "src/components/atoms/Icon.tsx": {
+    "filename": "Icon.tsx",
+    "path": "src/components/atoms/Icon.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "3e2528": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606226,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "6dd7680a",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "fb651b": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778607130,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "9cc6ed1b",
+          "files": "0587bb37"
+        },
+        "hash": "6cd825de",
+        "messageId": "system_77ebec70-4e26-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "3e2528",
+        "hash": "5006fbca",
+        "encoded": "import%20React,%20%7B%20forwardRef%20%7D%20from%20'react';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "3e2528",
+        "hash": "643bc624",
+        "encoded": "import%20%7B%20cn%20%7D%20from%20'@/utils/classNames';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "3e2528",
+        "hash": "e86a0193",
+        "encoded": "//%20Icon%20size%20types",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "3e2528",
+        "hash": "1a475a18",
+        "encoded": "export%20type%20IconSize%20=%20'xs'%20%7C%20'sm'%20%7C%20'md'%20%7C%20'lg'%20%7C%20'xl'%20%7C%20'2xl';",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "3e2528",
+        "hash": "6a5a9e04",
+        "encoded": "export%20type%20IconColor%20=%20'current'%20%7C%20'primary'%20%7C%20'secondary'%20%7C%20'accent'%20%7C%20'muted'%20%7C%20'white'%20%7C%20'success'%20%7C%20'warning'%20%7C%20'error';",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "3e2528",
+        "hash": "c7f71fbc",
+        "encoded": "//%20Icon%20component%20props%20interface",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "3e2528",
+        "hash": "4d62a5da",
+        "encoded": "export%20interface%20IconProps%20extends%20Omit%3CReact.SVGAttributes%3CSVGSVGElement%3E,%20'size'%20%7C%20'color'%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "3e2528",
+        "hash": "33083c6c",
+        "encoded": "/**%20Icon%20name%20from%20the%20icon%20registry%20*/",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "3e2528",
+        "hash": "faaefa24",
+        "encoded": "name:%20string;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "3e2528",
+        "hash": "ca5d5d8c",
+        "encoded": "/**%20Icon%20size%20*/",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "3e2528",
+        "hash": "32368b35",
+        "encoded": "size?:%20IconSize;",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "3e2528",
+        "hash": "8278f0c6",
+        "encoded": "/**%20Icon%20color%20*/",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "3e2528",
+        "hash": "aad03505",
+        "encoded": "color?:%20IconColor;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "3e2528",
+        "hash": "a314d73f",
+        "encoded": "/**%20Custom%20className%20for%20additional%20styling%20*/",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "3e2528",
+        "hash": "69c14abf",
+        "encoded": "className?:%20string;",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "3e2528",
+        "hash": "ec2c5d8f",
+        "encoded": "/**%20ARIA%20label%20for%20accessibility%20*/",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "3e2528",
+        "hash": "86960a35",
+        "encoded": "'aria-label'?:%20string;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "3e2528",
+        "hash": "72148f7e",
+        "encoded": "/**%20Whether%20the%20icon%20is%20decorative%20(hidden%20from%20screen%20readers)%20*/",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "3e2528",
+        "hash": "1cccee12",
+        "encoded": "decorative?:%20boolean;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "3e2528",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "3e2528",
+        "hash": "f2ff785a",
+        "encoded": "//%20Icon%20registry%20interface",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "3e2528",
+        "hash": "d85686b8",
+        "encoded": "export%20interface%20IconDefinition%20%7B",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "3e2528",
+        "hash": "c2e94052",
+        "encoded": "/**%20SVG%20path%20or%20content%20*/",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "3e2528",
+        "hash": "d99f5d08",
+        "encoded": "path:%20string%20%7C%20React.ReactNode;",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "3e2528",
+        "hash": "636cc9dd",
+        "encoded": "/**%20ViewBox%20for%20the%20SVG%20*/",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "3e2528",
+        "hash": "803e81a4",
+        "encoded": "viewBox?:%20string;",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "3e2528",
+        "hash": "d908c8ef",
+        "encoded": "/**%20Default%20size%20if%20different%20from%20standard%20*/",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "3e2528",
+        "hash": "e8a2a0ce",
+        "encoded": "defaultSize?:%20IconSize;",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "3e2528",
+        "hash": "c1b53fb9",
+        "encoded": "/**%20Whether%20this%20icon%20has%20fill%20or%20stroke%20styling%20*/",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "3e2528",
+        "hash": "ae04d457",
+        "encoded": "type?:%20'fill'%20%7C%20'stroke';",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "3e2528",
+        "hash": "0e2c0edc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "3e2528",
+        "hash": "cce8b9f8",
+        "encoded": "//%20Size%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "3e2528",
+        "hash": "5b67ec55",
+        "encoded": "const%20sizeStyles:%20Record%3CIconSize,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "3e2528",
+        "hash": "2cb2d7ac",
+        "encoded": "xs:%20'w-3%20h-3',",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "3e2528",
+        "hash": "531c4e70",
+        "encoded": "sm:%20'w-4%20h-4',",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "3e2528",
+        "hash": "880a3173",
+        "encoded": "md:%20'w-5%20h-5',",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "3e2528",
+        "hash": "b91687cf",
+        "encoded": "lg:%20'w-6%20h-6',",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "3e2528",
+        "hash": "3172bfea",
+        "encoded": "xl:%20'w-8%20h-8',",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "3e2528",
+        "hash": "9736a62b",
+        "encoded": "'2xl':%20'w-10%20h-10'",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "3e2528",
+        "hash": "ebf5e4a4",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "3e2528",
+        "hash": "01635aa5",
+        "encoded": "//%20Color%20styles%20mapping",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "3e2528",
+        "hash": "8c757e0e",
+        "encoded": "const%20colorStyles:%20Record%3CIconColor,%20string%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "3e2528",
+        "hash": "6d3d893c",
+        "encoded": "current:%20'text-current',",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "3e2528",
+        "hash": "457c3f1c",
+        "encoded": "primary:%20'text-brand-primary',",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "3e2528",
+        "hash": "7eb7cb1a",
+        "encoded": "secondary:%20'text-brand-secondary',",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "3e2528",
+        "hash": "86793347",
+        "encoded": "accent:%20'text-brand-accent',",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "3e2528",
+        "hash": "0870c73e",
+        "encoded": "muted:%20'text-text-muted',",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "3e2528",
+        "hash": "25ff7d14",
+        "encoded": "white:%20'text-white',",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "3e2528",
+        "hash": "9f200fa6",
+        "encoded": "success:%20'text-green-500',",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "3e2528",
+        "hash": "718dfa76",
+        "encoded": "warning:%20'text-yellow-500',",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "3e2528",
+        "hash": "dcb077e1",
+        "encoded": "error:%20'text-red-500'",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "3e2528",
+        "hash": "3ec42eee",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "3e2528",
+        "hash": "b7610adb",
+        "encoded": "//%20Default%20icon%20registry%20with%20common%20icons",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "3e2528",
+        "hash": "9049b137",
+        "encoded": "const%20defaultIconRegistry:%20Record%3Cstring,%20IconDefinition%3E%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "3e2528",
+        "hash": "133f0bf1",
+        "encoded": "//%20Navigation%20icons",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "3e2528",
+        "hash": "6e4b1af6",
+        "encoded": "'arrow-left':%20%7B",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "3e2528",
+        "hash": "39be9985",
+        "encoded": "path:%20'M15.75%2019.5L8.25%2012l7.5-7.5',",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "3e2528",
+        "hash": "e3f3c7df",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "3e2528",
+        "hash": "3668736d",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "3e2528",
+        "hash": "d6ec847b",
+        "encoded": "'arrow-right':%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "3e2528",
+        "hash": "bde06180",
+        "encoded": "path:%20'M8.25%204.5l7.5%207.5-7.5%207.5',",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "3e2528",
+        "hash": "d47c3064",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "3e2528",
+        "hash": "8dec3385",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "3e2528",
+        "hash": "29ca211c",
+        "encoded": "'arrow-up':%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "3e2528",
+        "hash": "cb6d81e7",
+        "encoded": "path:%20'M4.5%2015.75l7.5-7.5%207.5%207.5',",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "3e2528",
+        "hash": "05882051",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "3e2528",
+        "hash": "3c632b8b",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "3e2528",
+        "hash": "9bd33806",
+        "encoded": "'arrow-down':%20%7B",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "3e2528",
+        "hash": "c6119a8b",
+        "encoded": "path:%20'M19.5%208.25l-7.5%207.5-7.5-7.5',",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "3e2528",
+        "hash": "c89371b4",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "3e2528",
+        "hash": "11fc4278",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "3e2528",
+        "hash": "5e106e6d",
+        "encoded": "'chevron-left':%20%7B",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "3e2528",
+        "hash": "3f61151d",
+        "encoded": "path:%20'M15.75%2019.5L8.25%2012l7.5-7.5',",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "3e2528",
+        "hash": "d6859d5a",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "3e2528",
+        "hash": "ffe98c3c",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "3e2528",
+        "hash": "3fec2d2f",
+        "encoded": "'chevron-right':%20%7B",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "3e2528",
+        "hash": "6bda7e4b",
+        "encoded": "path:%20'M8.25%204.5l7.5%207.5-7.5%207.5',",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "3e2528",
+        "hash": "c1d4eb52",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "3e2528",
+        "hash": "f5451944",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "3e2528",
+        "hash": "f5bdbb3e",
+        "encoded": "'chevron-up':%20%7B",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "3e2528",
+        "hash": "7fb948f9",
+        "encoded": "path:%20'M4.5%2015.75l7.5-7.5%207.5%207.5',",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "3e2528",
+        "hash": "d97cfa6e",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "3e2528",
+        "hash": "560e3653",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "3e2528",
+        "hash": "3bd349bc",
+        "encoded": "'chevron-down':%20%7B",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "3e2528",
+        "hash": "2e0afc33",
+        "encoded": "path:%20'M19.5%208.25l-7.5%207.5-7.5-7.5',",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "3e2528",
+        "hash": "aeafd856",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "3e2528",
+        "hash": "d2bc5f67",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "3e2528",
+        "hash": "f056256d",
+        "encoded": "//%20Action%20icons",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "3e2528",
+        "hash": "af1bdc68",
+        "encoded": "'plus':%20%7B",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "3e2528",
+        "hash": "7bcaa234",
+        "encoded": "path:%20'M12%204.5v15m7.5-7.5h-15',",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "3e2528",
+        "hash": "c1ae0bc8",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "3e2528",
+        "hash": "4886e925",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "3e2528",
+        "hash": "b9848c76",
+        "encoded": "'minus':%20%7B",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "3e2528",
+        "hash": "687b65e0",
+        "encoded": "path:%20'M19.5%2012h-15',",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "3e2528",
+        "hash": "045a133e",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "3e2528",
+        "hash": "5421b540",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "3e2528",
+        "hash": "a258c2fd",
+        "encoded": "'x':%20%7B",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "3e2528",
+        "hash": "aecedb6c",
+        "encoded": "path:%20'M6%2018L18%206M6%206l12%2012',",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "3e2528",
+        "hash": "dd55866f",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "3e2528",
+        "hash": "55424850",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "3e2528",
+        "hash": "7dbe7ae8",
+        "encoded": "'check':%20%7B",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "3e2528",
+        "hash": "8583946c",
+        "encoded": "path:%20'M4.5%2012.75l6%206%209-13.5',",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "3e2528",
+        "hash": "938e38e6",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "3e2528",
+        "hash": "90f09ac1",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "3e2528",
+        "hash": "9b932060",
+        "encoded": "'edit':%20%7B",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "3e2528",
+        "hash": "96d0cdbb",
+        "encoded": "path:%20'M16.862%204.487l1.687-1.688a1.875%201.875%200%20112.652%202.652L10.582%2016.07a4.5%204.5%200%2001-1.897%201.13L6%2018l.8-2.685a4.5%204.5%200%20011.13-1.897l8.932-8.931zm0%200L19.5%207.125M18%2014v4.75A2.25%202.25%200%200115.75%2021H5.25A2.25%202.25%200%20013%2018.75V8.25A2.25%202.25%200%20015.25%206H10',",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "3e2528",
+        "hash": "adcec29e",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "3e2528",
+        "hash": "69ea8659",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "3e2528",
+        "hash": "25b85cfe",
+        "encoded": "'trash':%20%7B",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "3e2528",
+        "hash": "a2aa252d",
+        "encoded": "path:%20'M14.74%209l-.346%209m-4.788%200L9.26%209m9.968-3.21c.342.052.682.107%201.022.166m-1.022-.165L18.16%2019.673a2.25%202.25%200%2001-2.244%202.077H8.084a2.25%202.25%200%2001-2.244-2.077L4.772%205.79m14.456%200a48.108%2048.108%200%2000-3.478-.397m-12%20.562c.34-.059.68-.114%201.022-.165m0%200a48.11%2048.11%200%20013.478-.397m7.5%200v-.916c0-1.18-.91-2.164-2.09-2.201a51.964%2051.964%200%2000-3.32%200c-1.18.037-2.09%201.022-2.09%202.201v.916m7.5%200a48.667%2048.667%200%2000-7.5%200',",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "3e2528",
+        "hash": "1b82d4bf",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "3e2528",
+        "hash": "b6280b86",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "3e2528",
+        "hash": "971821af",
+        "encoded": "'copy':%20%7B",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "3e2528",
+        "hash": "448f6f90",
+        "encoded": "path:%20'M15.75%2017.25v3.375c0%20.621-.504%201.125-1.125%201.125h-9.75a1.125%201.125%200%2001-1.125-1.125V7.875c0-.621.504-1.125%201.125-1.125H6.75a9.06%209.06%200%20011.5.124m7.5%2010.376h3.375c.621%200%201.125-.504%201.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06%209.06%200%2000-1.5-.124H9.375c-.621%200-1.125.504-1.125%201.125v3.5m7.5%2010.375H9.375a1.125%201.125%200%2001-1.125-1.125v-9.25m12%206.625v-1.875a3.375%203.375%200%2000-3.375-3.375h-1.5a1.125%201.125%200%2001-1.125-1.125v-1.5a3.375%203.375%200%2000-3.375-3.375H9.75',",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "3e2528",
+        "hash": "6588c44a",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "3e2528",
+        "hash": "243de320",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "3e2528",
+        "hash": "76f01699",
+        "encoded": "//%20Interface%20icons",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "3e2528",
+        "hash": "b7fa64ec",
+        "encoded": "'search':%20%7B",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "3e2528",
+        "hash": "38a8d41a",
+        "encoded": "path:%20'M21%2021l-5.197-5.197m0%200A7.5%207.5%200%20105.196%205.196a7.5%207.5%200%200010.607%2010.607z',",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "3e2528",
+        "hash": "d4054f9c",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "3e2528",
+        "hash": "12558dc5",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "3e2528",
+        "hash": "f57a721d",
+        "encoded": "'filter':%20%7B",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "3e2528",
+        "hash": "5c061126",
+        "encoded": "path:%20'M12%203c2.755%200%205.455.232%208.083.678.533.09.917.556.917%201.096v1.044a2.25%202.25%200%2001-.659%201.591l-5.432%205.432a2.25%202.25%200%2000-.659%201.591v2.927a2.25%202.25%200%2001-1.244%202.013L9.75%2021v-6.568a2.25%202.25%200%2000-.659-1.591L3.659%207.409A2.25%202.25%200%20013%205.818V4.774c0-.54.384-1.006.917-1.096A48.32%2048.32%200%200112%203z',",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "3e2528",
+        "hash": "ab5272c0",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "3e2528",
+        "hash": "f0008310",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "3e2528",
+        "hash": "c5323316",
+        "encoded": "'sort':%20%7B",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "3e2528",
+        "hash": "1cadb2f0",
+        "encoded": "path:%20'M3%207.5L7.5%203m0%200L12%207.5M7.5%203v13.5m13.5%200L16.5%2021m0%200L12%2016.5m4.5%204.5V7.5',",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "3e2528",
+        "hash": "dcf0858f",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "3e2528",
+        "hash": "89469418",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "3e2528",
+        "hash": "f4f3b969",
+        "encoded": "'menu':%20%7B",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "3e2528",
+        "hash": "b4203257",
+        "encoded": "path:%20'M3.75%206.75h16.5M3.75%2012h16.5m-16.5%205.25h16.5',",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "3e2528",
+        "hash": "3ea500ec",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "3e2528",
+        "hash": "5523af03",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "3e2528",
+        "hash": "335969f9",
+        "encoded": "'dots-vertical':%20%7B",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "3e2528",
+        "hash": "6b6ab534",
+        "encoded": "path:%20'M12%206.75a.75.75%200%20110-1.5.75.75%200%20010%201.5zM12%2012.75a.75.75%200%20110-1.5.75.75%200%20010%201.5zM12%2018.75a.75.75%200%20110-1.5.75.75%200%20010%201.5z',",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "3e2528",
+        "hash": "685b44c2",
+        "encoded": "type:%20'fill'",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "3e2528",
+        "hash": "74c6d0ff",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "3e2528",
+        "hash": "70559718",
+        "encoded": "'dots-horizontal':%20%7B",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "3e2528",
+        "hash": "da78fb1d",
+        "encoded": "path:%20'M6.75%2012a.75.75%200%2011-1.5%200%20.75.75%200%20011.5%200zM12.75%2012a.75.75%200%2011-1.5%200%20.75.75%200%20011.5%200zM18.75%2012a.75.75%200%2011-1.5%200%20.75.75%200%20011.5%200z',",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "3e2528",
+        "hash": "d30920ba",
+        "encoded": "type:%20'fill'",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "3e2528",
+        "hash": "c798d0c8",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "3e2528",
+        "hash": "71b8b958",
+        "encoded": "//%20Status%20icons",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "3e2528",
+        "hash": "60acf8cf",
+        "encoded": "'info':%20%7B",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "3e2528",
+        "hash": "a249dc03",
+        "encoded": "path:%20'M11.25%2011.25l.041-.02a.75.75%200%20011.063.852l-.708%202.836a.75.75%200%20001.063.853l.041-.021M21%2012a9%209%200%2011-18%200%209%209%200%200118%200zm-9-3.75h.008v.008H12V8.25z',",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "3e2528",
+        "hash": "c5294830",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "3e2528",
+        "hash": "6057e178",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "3e2528",
+        "hash": "f6a2cfb7",
+        "encoded": "'warning':%20%7B",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "3e2528",
+        "hash": "4d2ac73a",
+        "encoded": "path:%20'M12%209v3.75m-9.303%203.376c-.866%201.5.217%203.374%201.948%203.374h14.71c1.73%200%202.813-1.874%201.948-3.374L13.949%203.378c-.866-1.5-3.032-1.5-3.898%200L2.697%2016.126zM12%2015.75h.007v.008H12v-.008z',",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "3e2528",
+        "hash": "c104535f",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "3e2528",
+        "hash": "214b62a5",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "3e2528",
+        "hash": "460f0401",
+        "encoded": "'error':%20%7B",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "3e2528",
+        "hash": "538897f2",
+        "encoded": "path:%20'M9.75%209.75l4.5%204.5m0-4.5l-4.5%204.5M21%2012a9%209%200%2011-18%200%209%209%200%200118%200z',",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "3e2528",
+        "hash": "dc9a385f",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "3e2528",
+        "hash": "04d7501f",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "3e2528",
+        "hash": "02b023db",
+        "encoded": "'success':%20%7B",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "3e2528",
+        "hash": "83b184d7",
+        "encoded": "path:%20'M9%2012.75L11.25%2015%2015%209.75M21%2012a9%209%200%2011-18%200%209%209%200%200118%200z',",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "3e2528",
+        "hash": "a78bf089",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "3e2528",
+        "hash": "3447ff34",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "3e2528",
+        "hash": "c30fb12b",
+        "encoded": "//%20Common%20UI%20icons",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "3e2528",
+        "hash": "5df0b99d",
+        "encoded": "'home':%20%7B",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "3e2528",
+        "hash": "f33b17d6",
+        "encoded": "path:%20'M2.25%2012l8.954-8.955c.44-.439%201.152-.439%201.591%200L21.75%2012M4.5%209.75v10.125c0%20.621.504%201.125%201.125%201.125H9.75v-4.875c0-.621.504-1.125%201.125-1.125h2.25c.621%200%201.125.504%201.125%201.125V21h4.125c.621%200%201.125-.504%201.125-1.125V9.75M8.25%2021h8.25',",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "3e2528",
+        "hash": "7bba0b23",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "3e2528",
+        "hash": "d9ac3497",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "3e2528",
+        "hash": "a633f616",
+        "encoded": "'user':%20%7B",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "3e2528",
+        "hash": "22d73cec",
+        "encoded": "path:%20'M15.75%206a3.75%203.75%200%2011-7.5%200%203.75%203.75%200%20017.5%200zM4.501%2020.118a7.5%207.5%200%200114.998%200A17.933%2017.933%200%200112%2021.75c-2.676%200-5.216-.584-7.499-1.632z',",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "3e2528",
+        "hash": "ecd66397",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "3e2528",
+        "hash": "7bfe1e0b",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "3e2528",
+        "hash": "6f562808",
+        "encoded": "'settings':%20%7B",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "3e2528",
+        "hash": "4aab90c3",
+        "encoded": "path:%20'M9.594%203.94c.09-.542.56-.94%201.11-.94h2.593c.55%200%201.02.398%201.11.94l.213%201.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257%201.075.124l1.217-.456a1.125%201.125%200%20011.37.49l1.296%202.247a1.125%201.125%200%2001-.26%201.431l-1.003.827c-.293.24-.438.613-.431.992a6.759%206.759%200%20010%20.255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26%201.43l-1.298%202.247a1.125%201.125%200%2001-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57%206.57%200%2001-.22.128c-.331.183-.581.495-.644.869l-.213%201.28c-.09.543-.56.941-1.11.941h-2.594c-.55%200-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52%206.52%200%2001-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125%201.125%200%2001-1.369-.49l-1.297-2.247a1.125%201.125%200%2001.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932%206.932%200%20010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125%201.125%200%2001-.26-1.43l1.297-2.247a1.125%201.125%200%20011.37-.491l1.216.456c.356.133.751.072%201.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z%20M15%2012a3%203%200%2011-6%200%203%203%200%20016%200z',",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "3e2528",
+        "hash": "58ea28b6",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "3e2528",
+        "hash": "0ea3b305",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "3e2528",
+        "hash": "995e25c7",
+        "encoded": "'heart':%20%7B",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "3e2528",
+        "hash": "5eb18bcb",
+        "encoded": "path:%20'M21%208.25c0-2.485-2.099-4.5-4.688-4.5-1.935%200-3.597%201.126-4.312%202.733-.715-1.607-2.377-2.733-4.313-2.733C5.1%203.75%203%205.765%203%208.25c0%207.22%209%2012%209%2012s9-4.78%209-12z',",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "3e2528",
+        "hash": "65d857b6",
+        "encoded": "type:%20'stroke'",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "3e2528",
+        "hash": "c04dc69a",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "3e2528",
+        "hash": "5a230f1b",
+        "encoded": "'star':%20%7B",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "3e2528",
+        "hash": "f7f8f035",
+        "encoded": "path:%20'M11.049%202.927c.3-.921%201.603-.921%201.902%200l1.519%204.674a1%201%200%2000.95.69h4.915c.969%200%201.371%201.24.588%201.81l-3.976%202.888a1%201%200%2000-.363%201.118l1.518%204.674c.3.922-.755%201.688-1.538%201.118l-3.976-2.888a1%201%200%2000-1.176%200l-3.976%202.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1%201%200%2000-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1%201%200%2000.951-.69l1.519-4.674z',",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "3e2528",
+        "hash": "5444b2b0",
+        "encoded": "type:%20'fill'",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "3e2528",
+        "hash": "acd7fbb9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "3e2528",
+        "hash": "d9c75496",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "3e2528",
+        "hash": "b654ea61",
+        "encoded": "//%20Icon%20registry%20for%20managing%20custom%20icons",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "3e2528",
+        "hash": "cce7a326",
+        "encoded": "class%20IconRegistry%20%7B",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "3e2528",
+        "hash": "141ad5ed",
+        "encoded": "private%20static%20instance:%20IconRegistry;",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "3e2528",
+        "hash": "ffab00f1",
+        "encoded": "private%20registry:%20Record%3Cstring,%20IconDefinition%3E%20=%20%7B%20...defaultIconRegistry%20%7D;",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "3e2528",
+        "hash": "dbbfdcf4",
+        "encoded": "static%20getInstance():%20IconRegistry%20%7B",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "3e2528",
+        "hash": "5dd7ac86",
+        "encoded": "if%20(!IconRegistry.instance)%20%7B",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "3e2528",
+        "hash": "1910976f",
+        "encoded": "IconRegistry.instance%20=%20new%20IconRegistry();",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "3e2528",
+        "hash": "62b6bc21",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "3e2528",
+        "hash": "7b600b4e",
+        "encoded": "return%20IconRegistry.instance;",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "3e2528",
+        "hash": "521bae97",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "3e2528",
+        "hash": "2d18192f",
+        "encoded": "register(name:%20string,%20definition:%20IconDefinition):%20void%20%7B",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "3e2528",
+        "hash": "16f14b4f",
+        "encoded": "this.registry%5Bname%5D%20=%20definition;",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "3e2528",
+        "hash": "699b62c2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "3e2528",
+        "hash": "06c51074",
+        "encoded": "registerBatch(icons:%20Record%3Cstring,%20IconDefinition%3E):%20void%20%7B",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "3e2528",
+        "hash": "d5e79ef2",
+        "encoded": "Object.entries(icons).forEach((%5Bname,%20definition%5D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "3e2528",
+        "hash": "49cc63f6",
+        "encoded": "this.register(name,%20definition);",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "3e2528",
+        "hash": "67ae8097",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "3e2528",
+        "hash": "ae0130b5",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "3e2528",
+        "hash": "f1c86b32",
+        "encoded": "get(name:%20string):%20IconDefinition%20%7C%20undefined%20%7B",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "3e2528",
+        "hash": "392add35",
+        "encoded": "return%20this.registry%5Bname%5D;",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "3e2528",
+        "hash": "8da2b88b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "3e2528",
+        "hash": "b6d4cbe6",
+        "encoded": "has(name:%20string):%20boolean%20%7B",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "3e2528",
+        "hash": "f48fad6a",
+        "encoded": "return%20name%20in%20this.registry;",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "3e2528",
+        "hash": "7b57fe24",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "3e2528",
+        "hash": "4a8a4e96",
+        "encoded": "list():%20string%5B%5D%20%7B",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "3e2528",
+        "hash": "8f855b83",
+        "encoded": "return%20Object.keys(this.registry);",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "3e2528",
+        "hash": "75bbcadd",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "3e2528",
+        "hash": "d8e420ff",
+        "encoded": "remove(name:%20string):%20boolean%20%7B",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "3e2528",
+        "hash": "c4aa4e2a",
+        "encoded": "if%20(this.has(name))%20%7B",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "3e2528",
+        "hash": "b0696021",
+        "encoded": "delete%20this.registry%5Bname%5D;",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "3e2528",
+        "hash": "b533e609",
+        "encoded": "return%20true;",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "3e2528",
+        "hash": "85a5304b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "3e2528",
+        "hash": "9f469643",
+        "encoded": "return%20false;",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "3e2528",
+        "hash": "9d1eb832",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "3e2528",
+        "hash": "156d2c96",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "3e2528",
+        "hash": "339e895f",
+        "encoded": "//%20Get%20the%20singleton%20instance",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "3e2528",
+        "hash": "901aac7e",
+        "encoded": "const%20iconRegistry%20=%20IconRegistry.getInstance();",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "3e2528",
+        "hash": "67ff70f0",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "3e2528",
+        "hash": "632a372e",
+        "encoded": "*%20Icon%20component%20-%20A%20flexible%20SVG%20icon%20system%20with%20registry%20support",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "3e2528",
+        "hash": "939a4e59",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "3e2528",
+        "hash": "3d2612c4",
+        "encoded": "*%20Features:",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "3e2528",
+        "hash": "5452e1a3",
+        "encoded": "*%20-%20Comprehensive%20icon%20registry%20with%20common%20icons",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "3e2528",
+        "hash": "5623fec1",
+        "encoded": "*%20-%20Multiple%20sizes%20(xs,%20sm,%20md,%20lg,%20xl,%202xl)",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "3e2528",
+        "hash": "9cdefa71",
+        "encoded": "*%20-%20Color%20variants%20aligned%20with%20design%20tokens",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "3e2528",
+        "hash": "d06ca827",
+        "encoded": "*%20-%20Accessibility%20support%20with%20proper%20ARIA%20attributes",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "3e2528",
+        "hash": "de37d7b0",
+        "encoded": "*%20-%20Support%20for%20both%20fill%20and%20stroke%20icon%20types",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "3e2528",
+        "hash": "275f0eb7",
+        "encoded": "*%20-%20Extensible%20registry%20for%20custom%20icons",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "3e2528",
+        "hash": "a742293f",
+        "encoded": "*%20-%20TypeScript%20support%20with%20icon%20name%20validation",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "3e2528",
+        "hash": "2454555f",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "3e2528",
+        "hash": "50d1cedf",
+        "encoded": "*%20@example",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "3e2528",
+        "hash": "b950c2e9",
+        "encoded": "*%20%60%60%60tsx",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "3e2528",
+        "hash": "ceb6b0f7",
+        "encoded": "*%20%3CIcon%20name=%22search%22%20size=%22md%22%20color=%22primary%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "3e2528",
+        "hash": "dbbbde42",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "3e2528",
+        "hash": "a9c4fb85",
+        "encoded": "*%20%3CIcon%20name=%22user%22%20size=%22lg%22%20aria-label=%22User%20profile%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "3e2528",
+        "hash": "6c251281",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "3e2528",
+        "hash": "4a854cf8",
+        "encoded": "*%20%3CIcon%20name=%22heart%22%20color=%22error%22%20decorative%20/%3E",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "3e2528",
+        "hash": "1fde3999",
+        "encoded": "*%20%60%60%60",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "3e2528",
+        "hash": "0bcda2f2",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "3e2528",
+        "hash": "0553b61b",
+        "encoded": "export%20const%20Icon%20=%20forwardRef%3CSVGSVGElement,%20IconProps%3E((",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "3e2528",
+        "hash": "781fba56",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "3e2528",
+        "hash": "b6466758",
+        "encoded": "name,",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "3e2528",
+        "hash": "c64548d7",
+        "encoded": "size%20=%20'md',",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "3e2528",
+        "hash": "39187bc1",
+        "encoded": "color%20=%20'current',",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "3e2528",
+        "hash": "5120f5f0",
+        "encoded": "className,",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "3e2528",
+        "hash": "df911546",
+        "encoded": "'aria-label':%20ariaLabel,",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "3e2528",
+        "hash": "7dbddbeb",
+        "encoded": "decorative%20=%20false,",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "3e2528",
+        "hash": "9868407d",
+        "encoded": "...props",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "3e2528",
+        "hash": "57bee9bb",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "3e2528",
+        "hash": "40476bba",
+        "encoded": "ref",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "3e2528",
+        "hash": "30fe7289",
+        "encoded": ")%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "3e2528",
+        "hash": "8199f1e7",
+        "encoded": "const%20iconDefinition%20=%20iconRegistry.get(name);",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "3e2528",
+        "hash": "8320d1ab",
+        "encoded": "if%20(!iconDefinition)%20%7B",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "3e2528",
+        "hash": "833e61bb",
+        "encoded": "//%20Development%20warning%20for%20missing%20icons",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "3e2528",
+        "hash": "27a81319",
+        "encoded": "if%20(process.env.NODE_ENV%20===%20'development')%20%7B",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "3e2528",
+        "hash": "1ad9b7a4",
+        "encoded": "console.warn(%60Icon%20%22$%7Bname%7D%22%20not%20found%20in%20registry.%20Available%20icons:%20$%7BiconRegistry.list().join(',%20')%7D%60);",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "3e2528",
+        "hash": "a225615e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "3e2528",
+        "hash": "07fbf9f9",
+        "encoded": "//%20Return%20a%20placeholder%20icon%20for%20missing%20icons",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "3e2528",
+        "hash": "43564929",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "3e2528",
+        "hash": "d22acf36",
+        "encoded": "%3Csvg",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "3e2528",
+        "hash": "045ba5f4",
+        "encoded": "ref=%7Bref%7D",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "3e2528",
+        "hash": "f12784b9",
+        "encoded": "className=%7Bcn(",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "3e2528",
+        "hash": "cc9a73e4",
+        "encoded": "sizeStyles%5Bsize%5D,",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "3e2528",
+        "hash": "3a97a408",
+        "encoded": "colorStyles%5Bcolor%5D,",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "3e2528",
+        "hash": "c1c1ee86",
+        "encoded": "className",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "3e2528",
+        "hash": "66275d39",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "3e2528",
+        "hash": "50e9528f",
+        "encoded": "viewBox=%220%200%2024%2024%22",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "3e2528",
+        "hash": "69e84110",
+        "encoded": "fill=%22none%22",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "3e2528",
+        "hash": "c6fda0bb",
+        "encoded": "stroke=%22currentColor%22",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "3e2528",
+        "hash": "4ce34ead",
+        "encoded": "strokeWidth=%222%22",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "3e2528",
+        "hash": "551c2ff3",
+        "encoded": "strokeLinecap=%22round%22",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "3e2528",
+        "hash": "04b335b9",
+        "encoded": "strokeLinejoin=%22round%22",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "3e2528",
+        "hash": "2807db9c",
+        "encoded": "aria-label=%7BariaLabel%20%7C%7C%20(decorative%20?%20undefined%20:%20%60Missing%20icon:%20$%7Bname%7D%60)%7D",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "3e2528",
+        "hash": "ffafd22c",
+        "encoded": "aria-hidden=%7Bdecorative%7D",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "3e2528",
+        "hash": "5de0baf9",
+        "encoded": "role=%7Bdecorative%20?%20'presentation'%20:%20'img'%7D",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "3e2528",
+        "hash": "0ff398fc",
+        "encoded": "%7B...props%7D",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "3e2528",
+        "hash": "e29a10f9",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "3e2528",
+        "hash": "1212aa8a",
+        "encoded": "%3Ccircle%20cx=%2212%22%20cy=%2212%22%20r=%2210%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "3e2528",
+        "hash": "4a7f745a",
+        "encoded": "%3Cpath%20d=%22M9.09%209a3%203%200%200%201%205.83%201c0%202-3%203-3%203%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "3e2528",
+        "hash": "ea89c895",
+        "encoded": "%3Cpath%20d=%22M12%2017h.01%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "3e2528",
+        "hash": "3b851e16",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "3e2528",
+        "hash": "cf987bc0",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "3e2528",
+        "hash": "ca7d8d23",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "3e2528",
+        "hash": "28b9b44a",
+        "encoded": "const%20%7B%20path,%20viewBox%20=%20'0%200%2024%2024',%20type%20=%20'stroke'%20%7D%20=%20iconDefinition;",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "3e2528",
+        "hash": "48ffa745",
+        "encoded": "//%20Combine%20all%20styles",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "3e2528",
+        "hash": "e057c959",
+        "encoded": "const%20iconClasses%20=%20cn(",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "3e2528",
+        "hash": "aaf7330a",
+        "encoded": "sizeStyles%5Bsize%5D,",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "3e2528",
+        "hash": "800ecba9",
+        "encoded": "colorStyles%5Bcolor%5D,",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "3e2528",
+        "hash": "7319a3c7",
+        "encoded": "className",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "3e2528",
+        "hash": "537e0b98",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "3e2528",
+        "hash": "477da375",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "3e2528",
+        "hash": "8ce5b82c",
+        "encoded": "%3Csvg",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "3e2528",
+        "hash": "4058a56f",
+        "encoded": "ref=%7Bref%7D",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "3e2528",
+        "hash": "24368273",
+        "encoded": "className=%7BiconClasses%7D",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "3e2528",
+        "hash": "1010b1b3",
+        "encoded": "viewBox=%7BviewBox%7D",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "3e2528",
+        "hash": "00a174ad",
+        "encoded": "fill=%7Btype%20===%20'fill'%20?%20'currentColor'%20:%20'none'%7D",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "3e2528",
+        "hash": "25904e0f",
+        "encoded": "stroke=%7Btype%20===%20'stroke'%20?%20'currentColor'%20:%20'none'%7D",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "3e2528",
+        "hash": "aa7de73c",
+        "encoded": "strokeWidth=%7Btype%20===%20'stroke'%20?%20'1.5'%20:%20undefined%7D",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "3e2528",
+        "hash": "7b959c2e",
+        "encoded": "strokeLinecap=%7Btype%20===%20'stroke'%20?%20'round'%20:%20undefined%7D",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "3e2528",
+        "hash": "9208bdd0",
+        "encoded": "strokeLinejoin=%7Btype%20===%20'stroke'%20?%20'round'%20:%20undefined%7D",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "3e2528",
+        "hash": "ae5e615b",
+        "encoded": "aria-label=%7BariaLabel%20%7C%7C%20(decorative%20?%20undefined%20:%20name)%7D",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "3e2528",
+        "hash": "b0821e92",
+        "encoded": "aria-hidden=%7Bdecorative%7D",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "3e2528",
+        "hash": "9a54c2ac",
+        "encoded": "role=%7Bdecorative%20?%20'presentation'%20:%20'img'%7D",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "3e2528",
+        "hash": "c96449e3",
+        "encoded": "%7B...props%7D",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "3e2528",
+        "hash": "15a2631f",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "3e2528",
+        "hash": "8d5053b6",
+        "encoded": "%7Btypeof%20path%20===%20'string'%20?%20(",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "3e2528",
+        "hash": "313b3fc6",
+        "encoded": "%3Cpath%20d=%7Bpath%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "3e2528",
+        "hash": "5dc8ff38",
+        "encoded": ")%20:%20(",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "3e2528",
+        "hash": "0b96a088",
+        "encoded": "path",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "3e2528",
+        "hash": "e1a05639",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "3e2528",
+        "hash": "0633e959",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "3e2528",
+        "hash": "c348efd3",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "3e2528",
+        "hash": "d6f2b4e3",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "3e2528",
+        "hash": "07f2c2d7",
+        "encoded": "Icon.displayName%20=%20'Icon';",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "3e2528",
+        "hash": "8283826d",
+        "encoded": "//%20Export%20the%20registry%20for%20external%20use",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "3e2528",
+        "hash": "9094edc3",
+        "encoded": "export%20%7B%20iconRegistry%20%7D;",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "fb651b",
+        "hash": "c2d40130",
+        "encoded": "//%20Types%20are%20already%20exported%20above",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "3e2528",
+        "hash": "46dfce6d",
+        "encoded": "export%20type%20%7B%20IconProps,%20IconDefinition,%20IconSize,%20IconColor%20%7D;",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "3e2528",
+        "hash": "5a0dde34",
+        "encoded": "//%20Utility%20functions%20for%20icon%20management",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "3e2528",
+        "hash": "36890724",
+        "encoded": "export%20const%20registerIcon%20=%20(name:%20string,%20definition:%20IconDefinition)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "3e2528",
+        "hash": "6172f5b5",
+        "encoded": "iconRegistry.register(name,%20definition);",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "3e2528",
+        "hash": "3776d64f",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "3e2528",
+        "hash": "60eed1df",
+        "encoded": "export%20const%20registerIcons%20=%20(icons:%20Record%3Cstring,%20IconDefinition%3E)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "3e2528",
+        "hash": "ca23d236",
+        "encoded": "iconRegistry.registerBatch(icons);",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "3e2528",
+        "hash": "a21b44a5",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "3e2528",
+        "hash": "1a0e08ef",
+        "encoded": "export%20const%20getAvailableIcons%20=%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "3e2528",
+        "hash": "40f46b9c",
+        "encoded": "return%20iconRegistry.list();",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "3e2528",
+        "hash": "fe75d2b3",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "3e2528",
+        "hash": "dfe967d6",
+        "encoded": "export%20const%20hasIcon%20=%20(name:%20string)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "3e2528",
+        "hash": "96707602",
+        "encoded": "return%20iconRegistry.has(name);",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "3e2528",
+        "hash": "9cc070df",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

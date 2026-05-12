@@ -1,0 +1,3366 @@
+{
+  "src/components/atoms/Typography.test.tsx": {
+    "filename": "Typography.test.tsx",
+    "path": "src/components/atoms/Typography.test.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "67ce16": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606227,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "96364b4c",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "67ce16",
+        "hash": "98ac06df",
+        "encoded": "import%20React%20from%20'react';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "67ce16",
+        "hash": "19d4d65c",
+        "encoded": "import%20%7B%20render,%20screen%20%7D%20from%20'@testing-library/react';",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "67ce16",
+        "hash": "f4d18cb6",
+        "encoded": "import%20%7B%20axe,%20toHaveNoViolations%20%7D%20from%20'jest-axe';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "67ce16",
+        "hash": "a26bb7c1",
+        "encoded": "import%20%7B%20Typography,%20Heading,%20Text,%20Label,%20Code%20%7D%20from%20'./Typography';",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "67ce16",
+        "hash": "164a6980",
+        "encoded": "import%20type%20%7B%20TypographyProps%20%7D%20from%20'./Typography';",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "67ce16",
+        "hash": "938bf6b2",
+        "encoded": "//%20Extend%20Jest%20matchers",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "67ce16",
+        "hash": "28d0a833",
+        "encoded": "expect.extend(toHaveNoViolations);",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "67ce16",
+        "hash": "899ff220",
+        "encoded": "describe('Typography%20Component',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "67ce16",
+        "hash": "fdf5c157",
+        "encoded": "//%20Test%201:%20Component%20Rendering%20-%20Default%20props",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "67ce16",
+        "hash": "1477c00c",
+        "encoded": "describe('Component%20Rendering',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "67ce16",
+        "hash": "06067327",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "67ce16",
+        "hash": "a8b920d5",
+        "encoded": "*%20Test%20that%20Typography%20renders%20correctly%20with%20default%20props",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "67ce16",
+        "hash": "92ada923",
+        "encoded": "*%20Scenario:%20Typography%20with%20minimal%20props",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "67ce16",
+        "hash": "d400ebf7",
+        "encoded": "*%20Expected:%20Typography%20renders%20with%20default%20variant,%20weight,%20and%20alignment",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "67ce16",
+        "hash": "7ca1406f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "67ce16",
+        "hash": "c8d40f7e",
+        "encoded": "test('should%20render%20with%20default%20props',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "67ce16",
+        "hash": "759b6893",
+        "encoded": "render(%3CTypography%3EDefault%20text%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "67ce16",
+        "hash": "c3008243",
+        "encoded": "const%20element%20=%20screen.getByText('Default%20text');",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "67ce16",
+        "hash": "236e91f6",
+        "encoded": "expect(element).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "67ce16",
+        "hash": "14ca6e1b",
+        "encoded": "expect(element.tagName).toBe('P');%20//%20body%20variant%20default",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "67ce16",
+        "hash": "a4356f5b",
+        "encoded": "expect(element).toHaveClass('text-base');%20//%20body%20variant",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "67ce16",
+        "hash": "2122f498",
+        "encoded": "expect(element).toHaveClass('text-text-main');%20//%20default%20color",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "67ce16",
+        "hash": "d6166422",
+        "encoded": "expect(element).toHaveClass('text-left');%20//%20left%20alignment",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "67ce16",
+        "hash": "1ca2ca1b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "67ce16",
+        "hash": "86e1a908",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "67ce16",
+        "hash": "35c0625d",
+        "encoded": "*%20Test%20that%20Typography%20renders%20with%20complex%20content",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "67ce16",
+        "hash": "d1c976c5",
+        "encoded": "*%20Scenario:%20Typography%20with%20multiple%20child%20elements",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "67ce16",
+        "hash": "d960bc18",
+        "encoded": "*%20Expected:%20Typography%20renders%20all%20children%20correctly",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "67ce16",
+        "hash": "6040d704",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "67ce16",
+        "hash": "dc2d4676",
+        "encoded": "test('should%20render%20with%20complex%20content',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "67ce16",
+        "hash": "80611a3d",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "67ce16",
+        "hash": "8860a034",
+        "encoded": "%3CTypography%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "67ce16",
+        "hash": "ec550117",
+        "encoded": "%3Cspan%3EComplex%3C/span%3E%20content%20with%20%3Cstrong%3Eformatting%3C/strong%3E",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "67ce16",
+        "hash": "8623d5ac",
+        "encoded": "%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "67ce16",
+        "hash": "883f8be2",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "67ce16",
+        "hash": "6386c1d1",
+        "encoded": "expect(screen.getByText('Complex')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "67ce16",
+        "hash": "122d1680",
+        "encoded": "expect(screen.getByText('formatting')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "67ce16",
+        "hash": "47cbc1ba",
+        "encoded": "expect(screen.getByText('content%20with')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "67ce16",
+        "hash": "9ebe5e1b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "67ce16",
+        "hash": "39fe36a7",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "67ce16",
+        "hash": "4dc255c2",
+        "encoded": "//%20Test%202:%20Typography%20Variants%20-%20All%20heading%20levels,%20body,%20small,%20etc.",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "67ce16",
+        "hash": "687624e7",
+        "encoded": "describe('Typography%20Variants',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "67ce16",
+        "hash": "eb0289d4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "67ce16",
+        "hash": "cbd8e9be",
+        "encoded": "*%20Test%20all%20typography%20variants%20render%20with%20correct%20elements%20and%20styles",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "67ce16",
+        "hash": "d53b3bf2",
+        "encoded": "*%20Scenario:%20Typography%20with%20different%20variant%20props",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "67ce16",
+        "hash": "1298c5be",
+        "encoded": "*%20Expected:%20Each%20variant%20uses%20correct%20HTML%20element%20and%20CSS%20classes",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "67ce16",
+        "hash": "d89601c8",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "67ce16",
+        "hash": "053464fb",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "67ce16",
+        "hash": "143f167f",
+        "encoded": "%5B'h1',%20'H1',%20'text-4xl%20lg:text-5xl%20font-bold'%5D,",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "67ce16",
+        "hash": "50d12dce",
+        "encoded": "%5B'h2',%20'H2',%20'text-3xl%20lg:text-4xl%20font-bold'%5D,",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "67ce16",
+        "hash": "6b7b3038",
+        "encoded": "%5B'h3',%20'H3',%20'text-2xl%20lg:text-3xl%20font-semibold'%5D,",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "67ce16",
+        "hash": "d9d4f0e9",
+        "encoded": "%5B'h4',%20'H4',%20'text-xl%20lg:text-2xl%20font-semibold'%5D,",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "67ce16",
+        "hash": "fdee5550",
+        "encoded": "%5B'h5',%20'H5',%20'text-lg%20lg:text-xl%20font-semibold'%5D,",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "67ce16",
+        "hash": "d359dd54",
+        "encoded": "%5B'h6',%20'H6',%20'text-base%20lg:text-lg%20font-semibold'%5D,",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "67ce16",
+        "hash": "bb522a6c",
+        "encoded": "%5B'body',%20'P',%20'text-base'%5D,",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "67ce16",
+        "hash": "ae5125c6",
+        "encoded": "%5B'small',%20'SMALL',%20'text-sm'%5D,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "67ce16",
+        "hash": "602c0e60",
+        "encoded": "%5B'caption',%20'SPAN',%20'text-xs'%5D,",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "67ce16",
+        "hash": "1df914ee",
+        "encoded": "%5B'label',%20'LABEL',%20'text-sm%20font-medium'%5D,",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "67ce16",
+        "hash": "f94f025e",
+        "encoded": "%5B'code',%20'CODE',%20'text-sm%20font-mono%20bg-surface'%5D",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "67ce16",
+        "hash": "bfb39882",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20variant%20correctly',%20(variant,%20expectedTag,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "67ce16",
+        "hash": "b9541bae",
+        "encoded": "render(%3CTypography%20variant=%7Bvariant%7D%3ETest%20content%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "67ce16",
+        "hash": "67d66f0e",
+        "encoded": "const%20element%20=%20screen.getByText('Test%20content');",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "67ce16",
+        "hash": "51b92d34",
+        "encoded": "expect(element.tagName).toBe(expectedTag);",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "67ce16",
+        "hash": "a3bcd56c",
+        "encoded": "expectedClass.split('%20').forEach(className%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "67ce16",
+        "hash": "3ae9b2aa",
+        "encoded": "expect(element).toHaveClass(className);",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "67ce16",
+        "hash": "0815083b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "67ce16",
+        "hash": "294f5374",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "67ce16",
+        "hash": "3646e3b7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "67ce16",
+        "hash": "ada910c5",
+        "encoded": "*%20Test%20heading%20hierarchy%20and%20semantics",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "67ce16",
+        "hash": "31264c88",
+        "encoded": "*%20Scenario:%20Multiple%20heading%20levels%20in%20document",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "67ce16",
+        "hash": "8ed447f5",
+        "encoded": "*%20Expected:%20Proper%20heading%20hierarchy%20is%20maintained",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "67ce16",
+        "hash": "99a186d4",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "67ce16",
+        "hash": "5690b483",
+        "encoded": "test('should%20maintain%20proper%20heading%20hierarchy',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "67ce16",
+        "hash": "c06d1624",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "67ce16",
+        "hash": "22709fd8",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "67ce16",
+        "hash": "c825c536",
+        "encoded": "%3CTypography%20variant=%22h1%22%3EMain%20Title%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "67ce16",
+        "hash": "f1a3e6c9",
+        "encoded": "%3CTypography%20variant=%22h2%22%3ESection%20Title%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "67ce16",
+        "hash": "f3a6dbce",
+        "encoded": "%3CTypography%20variant=%22h3%22%3ESubsection%20Title%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "67ce16",
+        "hash": "afca43d1",
+        "encoded": "%3CTypography%20variant=%22body%22%3EBody%20text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "67ce16",
+        "hash": "290e4883",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "67ce16",
+        "hash": "fd7f7fe7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "67ce16",
+        "hash": "bdad06fa",
+        "encoded": "const%20h1%20=%20screen.getByRole('heading',%20%7B%20level:%201%20%7D);",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "67ce16",
+        "hash": "72c5ed8a",
+        "encoded": "const%20h2%20=%20screen.getByRole('heading',%20%7B%20level:%202%20%7D);",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "67ce16",
+        "hash": "6a0b38bc",
+        "encoded": "const%20h3%20=%20screen.getByRole('heading',%20%7B%20level:%203%20%7D);",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "67ce16",
+        "hash": "62cabfda",
+        "encoded": "expect(h1).toHaveTextContent('Main%20Title');",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "67ce16",
+        "hash": "756e5651",
+        "encoded": "expect(h2).toHaveTextContent('Section%20Title');",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "67ce16",
+        "hash": "321dd6ed",
+        "encoded": "expect(h3).toHaveTextContent('Subsection%20Title');",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "67ce16",
+        "hash": "e3b88b3c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "67ce16",
+        "hash": "d7827573",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "67ce16",
+        "hash": "e82d01e6",
+        "encoded": "*%20Test%20code%20variant%20special%20styling",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "67ce16",
+        "hash": "1411dec2",
+        "encoded": "*%20Scenario:%20Typography%20with%20code%20variant",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "67ce16",
+        "hash": "3ed03893",
+        "encoded": "*%20Expected:%20Code%20styling%20with%20background%20and%20monospace%20font",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "67ce16",
+        "hash": "4157e7e6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "67ce16",
+        "hash": "a06308a9",
+        "encoded": "test('should%20render%20code%20variant%20with%20special%20styling',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "67ce16",
+        "hash": "e2c7147c",
+        "encoded": "render(%3CTypography%20variant=%22code%22%3Econst%20example%20=%20'code';%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "67ce16",
+        "hash": "3c239433",
+        "encoded": "const%20codeElement%20=%20screen.getByText(%22const%20example%20=%20'code';%22);",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "67ce16",
+        "hash": "67249056",
+        "encoded": "expect(codeElement.tagName).toBe('CODE');",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "67ce16",
+        "hash": "74a5be0d",
+        "encoded": "expect(codeElement).toHaveClass('font-mono',%20'bg-surface',%20'px-1.5',%20'py-0.5',%20'rounded',%20'border');",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "67ce16",
+        "hash": "3cff1aec",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "67ce16",
+        "hash": "d9f18600",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "67ce16",
+        "hash": "2588efab",
+        "encoded": "//%20Test%203:%20Typography%20Properties%20-%20Weight,%20align,%20color,%20truncate",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "67ce16",
+        "hash": "a8de0824",
+        "encoded": "describe('Typography%20Properties',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "67ce16",
+        "hash": "818e54cf",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "67ce16",
+        "hash": "0814c754",
+        "encoded": "*%20Test%20all%20font%20weights%20render%20with%20correct%20styles",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "67ce16",
+        "hash": "50789c71",
+        "encoded": "*%20Scenario:%20Typography%20with%20different%20weight%20props",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "67ce16",
+        "hash": "6c89c2e5",
+        "encoded": "*%20Expected:%20Each%20weight%20applies%20correct%20font-weight%20classes",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "67ce16",
+        "hash": "53b2d08b",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "67ce16",
+        "hash": "a861c305",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "67ce16",
+        "hash": "89ed7081",
+        "encoded": "%5B'normal',%20'font-normal'%5D,",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "67ce16",
+        "hash": "1fcb1b05",
+        "encoded": "%5B'medium',%20'font-medium'%5D,",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "67ce16",
+        "hash": "fd2a0862",
+        "encoded": "%5B'semibold',%20'font-semibold'%5D,",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "67ce16",
+        "hash": "8680dfe6",
+        "encoded": "%5B'bold',%20'font-bold'%5D",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "67ce16",
+        "hash": "c184d296",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20weight%20correctly',%20(weight,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "67ce16",
+        "hash": "a7cf0949",
+        "encoded": "render(%3CTypography%20weight=%7Bweight%7D%3ETest%20content%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "67ce16",
+        "hash": "08fc88a3",
+        "encoded": "const%20element%20=%20screen.getByText('Test%20content');",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "67ce16",
+        "hash": "14656072",
+        "encoded": "expect(element).toHaveClass(expectedClass);",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "67ce16",
+        "hash": "f9d6f133",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "67ce16",
+        "hash": "3d359f71",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "67ce16",
+        "hash": "b2596029",
+        "encoded": "*%20Test%20all%20text%20alignments%20render%20with%20correct%20styles",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "67ce16",
+        "hash": "8c71dac5",
+        "encoded": "*%20Scenario:%20Typography%20with%20different%20align%20props",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "67ce16",
+        "hash": "c18c9769",
+        "encoded": "*%20Expected:%20Each%20alignment%20applies%20correct%20text-align%20classes",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "67ce16",
+        "hash": "2371ee93",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "67ce16",
+        "hash": "f8d7463e",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "67ce16",
+        "hash": "fdfee229",
+        "encoded": "%5B'left',%20'text-left'%5D,",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "67ce16",
+        "hash": "f3fc6ad4",
+        "encoded": "%5B'center',%20'text-center'%5D,",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "67ce16",
+        "hash": "56e47439",
+        "encoded": "%5B'right',%20'text-right'%5D,",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "67ce16",
+        "hash": "fc0d335d",
+        "encoded": "%5B'justify',%20'text-justify'%5D",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "67ce16",
+        "hash": "4ee6a966",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20alignment%20correctly',%20(align,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "67ce16",
+        "hash": "76d69343",
+        "encoded": "render(%3CTypography%20align=%7Balign%7D%3ETest%20content%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "67ce16",
+        "hash": "0ca2638f",
+        "encoded": "const%20element%20=%20screen.getByText('Test%20content');",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "67ce16",
+        "hash": "ca3cd591",
+        "encoded": "expect(element).toHaveClass(expectedClass);",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "67ce16",
+        "hash": "23c6cd2d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "67ce16",
+        "hash": "1883bf05",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "67ce16",
+        "hash": "756aeb05",
+        "encoded": "*%20Test%20all%20text%20colors%20render%20with%20correct%20styles",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "67ce16",
+        "hash": "a501e022",
+        "encoded": "*%20Scenario:%20Typography%20with%20different%20color%20props",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "67ce16",
+        "hash": "ba439991",
+        "encoded": "*%20Expected:%20Each%20color%20applies%20correct%20text%20color%20classes",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "67ce16",
+        "hash": "5330f242",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "67ce16",
+        "hash": "fad2eaee",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "67ce16",
+        "hash": "986986e1",
+        "encoded": "%5B'default',%20'text-text-main'%5D,",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "67ce16",
+        "hash": "e8244243",
+        "encoded": "%5B'muted',%20'text-text-muted'%5D,",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "67ce16",
+        "hash": "0e9fd7c0",
+        "encoded": "%5B'primary',%20'text-brand-primary'%5D,",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "67ce16",
+        "hash": "cafc89eb",
+        "encoded": "%5B'secondary',%20'text-brand-secondary'%5D,",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "67ce16",
+        "hash": "9542c3e9",
+        "encoded": "%5B'accent',%20'text-brand-accent'%5D,",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "67ce16",
+        "hash": "658c2021",
+        "encoded": "%5B'success',%20'text-green-500'%5D,",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "67ce16",
+        "hash": "49af678a",
+        "encoded": "%5B'warning',%20'text-yellow-500'%5D,",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "67ce16",
+        "hash": "19e3890b",
+        "encoded": "%5B'error',%20'text-red-500'%5D,",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "67ce16",
+        "hash": "d5de70c8",
+        "encoded": "%5B'white',%20'text-white'%5D",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "67ce16",
+        "hash": "dc3ed97f",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20color%20correctly',%20(color,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "67ce16",
+        "hash": "562a1c40",
+        "encoded": "render(%3CTypography%20color=%7Bcolor%7D%3ETest%20content%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "67ce16",
+        "hash": "d08e7821",
+        "encoded": "const%20element%20=%20screen.getByText('Test%20content');",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "67ce16",
+        "hash": "ea6faff3",
+        "encoded": "expect(element).toHaveClass(expectedClass);",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "67ce16",
+        "hash": "eb02cbf1",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "67ce16",
+        "hash": "8740a67d",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "67ce16",
+        "hash": "51ee24e7",
+        "encoded": "*%20Test%20text%20truncation",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "67ce16",
+        "hash": "f32b5a13",
+        "encoded": "*%20Scenario:%20Typography%20with%20truncate%20prop",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "67ce16",
+        "hash": "0b369598",
+        "encoded": "*%20Expected:%20Truncation%20classes%20are%20applied",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "67ce16",
+        "hash": "a74704b1",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "67ce16",
+        "hash": "c895b46b",
+        "encoded": "test('should%20apply%20truncation%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "67ce16",
+        "hash": "89a0c776",
+        "encoded": "render(%3CTypography%20truncate%3EThis%20is%20a%20very%20long%20text%20that%20should%20be%20truncated%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "67ce16",
+        "hash": "da70f895",
+        "encoded": "const%20element%20=%20screen.getByText('This%20is%20a%20very%20long%20text%20that%20should%20be%20truncated');",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "67ce16",
+        "hash": "3a5d871c",
+        "encoded": "expect(element).toHaveClass('truncate');",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "67ce16",
+        "hash": "c9587b39",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "67ce16",
+        "hash": "ce7c33bf",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "67ce16",
+        "hash": "2c131c5a",
+        "encoded": "*%20Test%20no%20wrap%20behavior",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "67ce16",
+        "hash": "98ccee6c",
+        "encoded": "*%20Scenario:%20Typography%20with%20noWrap%20prop",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "67ce16",
+        "hash": "5312bc11",
+        "encoded": "*%20Expected:%20No%20wrap%20classes%20are%20applied",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "67ce16",
+        "hash": "475770a9",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "67ce16",
+        "hash": "5f760abe",
+        "encoded": "test('should%20apply%20no%20wrap%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "67ce16",
+        "hash": "a0a0c8ca",
+        "encoded": "render(%3CTypography%20noWrap%3EText%20that%20should%20not%20wrap%20to%20next%20line%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "67ce16",
+        "hash": "97957f82",
+        "encoded": "const%20element%20=%20screen.getByText('Text%20that%20should%20not%20wrap%20to%20next%20line');",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "67ce16",
+        "hash": "2d59bea9",
+        "encoded": "expect(element).toHaveClass('whitespace-nowrap');",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "67ce16",
+        "hash": "206c3442",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "67ce16",
+        "hash": "7e2ba995",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "67ce16",
+        "hash": "cabec57e",
+        "encoded": "*%20Test%20default%20weights%20for%20different%20variants",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "67ce16",
+        "hash": "572c5e30",
+        "encoded": "*%20Scenario:%20Typography%20variants%20without%20explicit%20weight",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "67ce16",
+        "hash": "7c69918e",
+        "encoded": "*%20Expected:%20Each%20variant%20uses%20appropriate%20default%20weight",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "67ce16",
+        "hash": "090e7606",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "67ce16",
+        "hash": "24b159bd",
+        "encoded": "test('should%20apply%20default%20weights%20for%20variants',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "67ce16",
+        "hash": "d5d14a10",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "67ce16",
+        "hash": "17187975",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "67ce16",
+        "hash": "3ac344cf",
+        "encoded": "%3CTypography%20variant=%22h1%22%20data-testid=%22h1%22%3EHeading%201%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "67ce16",
+        "hash": "717cf8ff",
+        "encoded": "%3CTypography%20variant=%22h3%22%20data-testid=%22h3%22%3EHeading%203%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "67ce16",
+        "hash": "42c8f70a",
+        "encoded": "%3CTypography%20variant=%22label%22%20data-testid=%22label%22%3ELabel%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "67ce16",
+        "hash": "516896ae",
+        "encoded": "%3CTypography%20variant=%22body%22%20data-testid=%22body%22%3EBody%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "67ce16",
+        "hash": "2e07c371",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "67ce16",
+        "hash": "c32b7ab1",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "67ce16",
+        "hash": "59a5c63d",
+        "encoded": "expect(screen.getByTestId('h1')).toHaveClass('font-bold');",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "67ce16",
+        "hash": "9b7e0fb4",
+        "encoded": "expect(screen.getByTestId('h3')).toHaveClass('font-semibold');",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "67ce16",
+        "hash": "4390053d",
+        "encoded": "expect(screen.getByTestId('label')).toHaveClass('font-medium');",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "67ce16",
+        "hash": "a13bedc9",
+        "encoded": "expect(screen.getByTestId('body')).toHaveClass('font-normal');",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "67ce16",
+        "hash": "a7cd5066",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "67ce16",
+        "hash": "410012af",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "67ce16",
+        "hash": "35bd268b",
+        "encoded": "//%20Test%204:%20Custom%20Element%20Override%20-%20'as'%20prop%20functionality",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "67ce16",
+        "hash": "674e3801",
+        "encoded": "describe('Custom%20Element%20Override',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "67ce16",
+        "hash": "045d267c",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "67ce16",
+        "hash": "eda321b5",
+        "encoded": "*%20Test%20custom%20element%20rendering%20with%20'as'%20prop",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "67ce16",
+        "hash": "598168c1",
+        "encoded": "*%20Scenario:%20Typography%20with%20different%20'as'%20prop%20values",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "67ce16",
+        "hash": "bd66d92a",
+        "encoded": "*%20Expected:%20Custom%20HTML%20element%20is%20used%20instead%20of%20default",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "67ce16",
+        "hash": "b1b851d3",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "67ce16",
+        "hash": "736530ef",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "67ce16",
+        "hash": "eb1a7ee1",
+        "encoded": "%5B'h1',%20'div',%20'DIV'%5D,",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "67ce16",
+        "hash": "847d13c8",
+        "encoded": "%5B'body',%20'span',%20'SPAN'%5D,",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "67ce16",
+        "hash": "18b5c1d9",
+        "encoded": "%5B'label',%20'div',%20'DIV'%5D,",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "67ce16",
+        "hash": "226f2c38",
+        "encoded": "%5B'code',%20'pre',%20'PRE'%5D",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "67ce16",
+        "hash": "9647535d",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20variant%20as%20%25s%20element',%20(variant,%20asElement,%20expectedTag)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "67ce16",
+        "hash": "7fcf9059",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "67ce16",
+        "hash": "e9cc3c10",
+        "encoded": "%3CTypography%20variant=%7Bvariant%7D%20as=%7BasElement%7D%3E",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "67ce16",
+        "hash": "14afe149",
+        "encoded": "Custom%20element",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "67ce16",
+        "hash": "2493fb57",
+        "encoded": "%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "67ce16",
+        "hash": "fc47b0f4",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "67ce16",
+        "hash": "c7fd5074",
+        "encoded": "const%20element%20=%20screen.getByText('Custom%20element');",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "67ce16",
+        "hash": "ddb03f94",
+        "encoded": "expect(element.tagName).toBe(expectedTag);",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "67ce16",
+        "hash": "2d438b84",
+        "encoded": "//%20Should%20still%20have%20variant%20styling",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "67ce16",
+        "hash": "763822d4",
+        "encoded": "if%20(variant%20===%20'h1')%20%7B",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "67ce16",
+        "hash": "e20ab580",
+        "encoded": "expect(element).toHaveClass('text-4xl');",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "67ce16",
+        "hash": "d5bc439e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "67ce16",
+        "hash": "1d3a12c5",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "67ce16",
+        "hash": "9beb1094",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "67ce16",
+        "hash": "7a9b602a",
+        "encoded": "*%20Test%20semantic%20override%20for%20accessibility",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "67ce16",
+        "hash": "2e645c7d",
+        "encoded": "*%20Scenario:%20Visual%20heading%20that's%20not%20semantically%20a%20heading",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "67ce16",
+        "hash": "c2549150",
+        "encoded": "*%20Expected:%20Custom%20element%20with%20heading%20styles",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "67ce16",
+        "hash": "3231225e",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "67ce16",
+        "hash": "25bc8fed",
+        "encoded": "test('should%20allow%20semantic%20override%20for%20accessibility',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "67ce16",
+        "hash": "1a82e3cf",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "67ce16",
+        "hash": "54909ff6",
+        "encoded": "%3CTypography%20variant=%22h2%22%20as=%22div%22%20role=%22heading%22%20aria-level=%223%22%3E",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "67ce16",
+        "hash": "93d3ae19",
+        "encoded": "Visual%20H2%20but%20semantic%20H3",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "67ce16",
+        "hash": "276f84e7",
+        "encoded": "%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "67ce16",
+        "hash": "a01737a6",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "67ce16",
+        "hash": "809a2f89",
+        "encoded": "const%20element%20=%20screen.getByRole('heading',%20%7B%20level:%203%20%7D);",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "67ce16",
+        "hash": "22155b36",
+        "encoded": "expect(element.tagName).toBe('DIV');",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "67ce16",
+        "hash": "dc556d21",
+        "encoded": "expect(element).toHaveClass('text-3xl',%20'font-bold');",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "67ce16",
+        "hash": "4b271ca1",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "67ce16",
+        "hash": "fad2d580",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "67ce16",
+        "hash": "2addfb6a",
+        "encoded": "//%20Test%205:%20Convenience%20Components%20-%20Heading,%20Text,%20Label,%20Code",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "67ce16",
+        "hash": "29ee2ef7",
+        "encoded": "describe('Convenience%20Components',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "67ce16",
+        "hash": "722efdcc",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "67ce16",
+        "hash": "c67ce3c3",
+        "encoded": "*%20Test%20Heading%20component%20with%20level%20prop",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "67ce16",
+        "hash": "2e1500ba",
+        "encoded": "*%20Scenario:%20Heading%20component%20with%20different%20levels",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "67ce16",
+        "hash": "2fec33f0",
+        "encoded": "*%20Expected:%20Correct%20heading%20variant%20and%20element",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "67ce16",
+        "hash": "052dcd15",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "67ce16",
+        "hash": "08b31431",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "67ce16",
+        "hash": "8b4efc8f",
+        "encoded": "%5B1,%20'h1',%20'text-4xl'%5D,",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "67ce16",
+        "hash": "d9e484a6",
+        "encoded": "%5B2,%20'h2',%20'text-3xl'%5D,",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "67ce16",
+        "hash": "ac12ef9e",
+        "encoded": "%5B3,%20'h3',%20'text-2xl'%5D,",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "67ce16",
+        "hash": "57469248",
+        "encoded": "%5B4,%20'h4',%20'text-xl'%5D,",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "67ce16",
+        "hash": "c29f6f2a",
+        "encoded": "%5B5,%20'h5',%20'text-lg'%5D,",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "67ce16",
+        "hash": "16d36267",
+        "encoded": "%5B6,%20'h6',%20'text-base'%5D",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "67ce16",
+        "hash": "294f0d61",
+        "encoded": "%5D%20as%20const)('should%20render%20Heading%20level%20%25d%20correctly',%20(level,%20expectedVariant,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "67ce16",
+        "hash": "4bcc890f",
+        "encoded": "render(%3CHeading%20level=%7Blevel%7D%3EHeading%20%7Blevel%7D%3C/Heading%3E);",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "67ce16",
+        "hash": "b62f6071",
+        "encoded": "const%20heading%20=%20screen.getByRole('heading',%20%7B%20level%20%7D);",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "67ce16",
+        "hash": "a542525c",
+        "encoded": "expect(heading).toHaveTextContent(%60Heading%20$%7Blevel%7D%60);",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "67ce16",
+        "hash": "0bb84b8d",
+        "encoded": "expect(heading.tagName).toBe(expectedVariant.toUpperCase());",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "67ce16",
+        "hash": "7a06496c",
+        "encoded": "expect(heading).toHaveClass(expectedClass);",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "67ce16",
+        "hash": "de663d24",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "67ce16",
+        "hash": "1e7a4d21",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "67ce16",
+        "hash": "bfd2ee97",
+        "encoded": "*%20Test%20Text%20convenience%20component",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "67ce16",
+        "hash": "d999da3c",
+        "encoded": "*%20Scenario:%20Text%20component%20usage",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "67ce16",
+        "hash": "7e886fc4",
+        "encoded": "*%20Expected:%20Renders%20as%20paragraph%20with%20body%20styling",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "67ce16",
+        "hash": "98d1fb7b",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "67ce16",
+        "hash": "6a1b0147",
+        "encoded": "test('should%20render%20Text%20component%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "67ce16",
+        "hash": "b71f11b1",
+        "encoded": "render(%3CText%20color=%22muted%22%3EThis%20is%20body%20text%3C/Text%3E);",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "67ce16",
+        "hash": "42b48091",
+        "encoded": "const%20text%20=%20screen.getByText('This%20is%20body%20text');",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "67ce16",
+        "hash": "a7998407",
+        "encoded": "expect(text.tagName).toBe('P');",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "67ce16",
+        "hash": "8060212e",
+        "encoded": "expect(text).toHaveClass('text-base',%20'text-text-muted');",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "67ce16",
+        "hash": "72ca0ddf",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "67ce16",
+        "hash": "1b44b2f3",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "67ce16",
+        "hash": "c3b1a545",
+        "encoded": "*%20Test%20Label%20convenience%20component",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "67ce16",
+        "hash": "cb599ef5",
+        "encoded": "*%20Scenario:%20Label%20component%20usage",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "67ce16",
+        "hash": "7ab20832",
+        "encoded": "*%20Expected:%20Renders%20as%20label%20with%20label%20styling",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "67ce16",
+        "hash": "b28beefd",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "67ce16",
+        "hash": "e4772f32",
+        "encoded": "test('should%20render%20Label%20component%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "67ce16",
+        "hash": "d898c8bb",
+        "encoded": "render(%3CLabel%20htmlFor=%22input-id%22%3EForm%20Label%3C/Label%3E);",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "67ce16",
+        "hash": "54a8550b",
+        "encoded": "const%20label%20=%20screen.getByText('Form%20Label');",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "67ce16",
+        "hash": "1a42642c",
+        "encoded": "expect(label.tagName).toBe('LABEL');",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "67ce16",
+        "hash": "e0d7757e",
+        "encoded": "expect(label).toHaveClass('text-sm',%20'font-medium');",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "67ce16",
+        "hash": "53bec21b",
+        "encoded": "expect(label).toHaveAttribute('for',%20'input-id');",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "67ce16",
+        "hash": "62e07d3d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "67ce16",
+        "hash": "ff70257a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "67ce16",
+        "hash": "225bff2c",
+        "encoded": "*%20Test%20Code%20convenience%20component",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "67ce16",
+        "hash": "83adab32",
+        "encoded": "*%20Scenario:%20Code%20component%20usage",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "67ce16",
+        "hash": "6c41576e",
+        "encoded": "*%20Expected:%20Renders%20as%20code%20with%20code%20styling",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "67ce16",
+        "hash": "fe85c201",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "67ce16",
+        "hash": "6caaaa2f",
+        "encoded": "test('should%20render%20Code%20component%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "67ce16",
+        "hash": "adcae88e",
+        "encoded": "render(%3CCode%3Econst%20variable%20=%20'value';%3C/Code%3E);",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "67ce16",
+        "hash": "7024f631",
+        "encoded": "const%20code%20=%20screen.getByText(%22const%20variable%20=%20'value';%22);",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "67ce16",
+        "hash": "c3ef0df6",
+        "encoded": "expect(code.tagName).toBe('CODE');",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "67ce16",
+        "hash": "29f2494a",
+        "encoded": "expect(code).toHaveClass('font-mono',%20'bg-surface');",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "67ce16",
+        "hash": "48a65f64",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "67ce16",
+        "hash": "37164451",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "67ce16",
+        "hash": "61ccfeaf",
+        "encoded": "*%20Test%20convenience%20component%20ref%20forwarding",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "67ce16",
+        "hash": "a996b086",
+        "encoded": "*%20Scenario:%20Convenience%20components%20with%20refs",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "67ce16",
+        "hash": "bb7f3010",
+        "encoded": "*%20Expected:%20Refs%20are%20properly%20forwarded",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "67ce16",
+        "hash": "7c024c95",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "67ce16",
+        "hash": "3ad00aa3",
+        "encoded": "test('should%20forward%20refs%20for%20convenience%20components',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "67ce16",
+        "hash": "250c98e9",
+        "encoded": "const%20headingRef%20=%20React.createRef%3CHTMLHeadingElement%3E();",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "67ce16",
+        "hash": "f3f65df8",
+        "encoded": "const%20textRef%20=%20React.createRef%3CHTMLParagraphElement%3E();",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "67ce16",
+        "hash": "639eb0cf",
+        "encoded": "const%20labelRef%20=%20React.createRef%3CHTMLLabelElement%3E();",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "67ce16",
+        "hash": "7356423c",
+        "encoded": "const%20codeRef%20=%20React.createRef%3CHTMLElement%3E();",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "67ce16",
+        "hash": "d1901285",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "67ce16",
+        "hash": "59ff23e4",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "67ce16",
+        "hash": "27df4c35",
+        "encoded": "%3CHeading%20level=%7B1%7D%20ref=%7BheadingRef%7D%3EHeading%3C/Heading%3E",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "67ce16",
+        "hash": "0bcb8aaf",
+        "encoded": "%3CText%20ref=%7BtextRef%7D%3EText%3C/Text%3E",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "67ce16",
+        "hash": "71334cb4",
+        "encoded": "%3CLabel%20ref=%7BlabelRef%7D%3ELabel%3C/Label%3E",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "67ce16",
+        "hash": "239c9aa4",
+        "encoded": "%3CCode%20ref=%7BcodeRef%7D%3ECode%3C/Code%3E",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "67ce16",
+        "hash": "53550c7f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "67ce16",
+        "hash": "179aa48a",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "67ce16",
+        "hash": "c1260ff8",
+        "encoded": "expect(headingRef.current).toBeInstanceOf(HTMLHeadingElement);",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "67ce16",
+        "hash": "28fb0d8f",
+        "encoded": "expect(textRef.current).toBeInstanceOf(HTMLParagraphElement);",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "67ce16",
+        "hash": "a40e2683",
+        "encoded": "expect(labelRef.current).toBeInstanceOf(HTMLLabelElement);",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "67ce16",
+        "hash": "c1319ec5",
+        "encoded": "expect(codeRef.current).toBeInstanceOf(HTMLElement);",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "67ce16",
+        "hash": "7fa09f61",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "67ce16",
+        "hash": "ca7a180c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "67ce16",
+        "hash": "c505a157",
+        "encoded": "//%20Test%206:%20Responsive%20Design%20-%20Font%20size%20scaling",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "67ce16",
+        "hash": "16092e95",
+        "encoded": "describe('Responsive%20Design',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "67ce16",
+        "hash": "4af3f5b0",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "67ce16",
+        "hash": "7a115dc1",
+        "encoded": "*%20Test%20responsive%20font%20sizes%20for%20headings",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "67ce16",
+        "hash": "22c78ee0",
+        "encoded": "*%20Scenario:%20Heading%20variants%20with%20responsive%20classes",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "67ce16",
+        "hash": "dd11607a",
+        "encoded": "*%20Expected:%20Responsive%20font%20size%20classes%20are%20applied",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "67ce16",
+        "hash": "5f555c79",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "67ce16",
+        "hash": "cebe8e78",
+        "encoded": "test('should%20apply%20responsive%20font%20sizes%20for%20headings',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "67ce16",
+        "hash": "51fac00c",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "67ce16",
+        "hash": "1444c81f",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "67ce16",
+        "hash": "98195c98",
+        "encoded": "%3CTypography%20variant=%22h1%22%20data-testid=%22h1%22%3EH1%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "67ce16",
+        "hash": "54f0ca28",
+        "encoded": "%3CTypography%20variant=%22h2%22%20data-testid=%22h2%22%3EH2%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "67ce16",
+        "hash": "6b7364a2",
+        "encoded": "%3CTypography%20variant=%22h3%22%20data-testid=%22h3%22%3EH3%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "67ce16",
+        "hash": "1dedb01d",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "67ce16",
+        "hash": "8df152a5",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "67ce16",
+        "hash": "a1efcdb4",
+        "encoded": "expect(screen.getByTestId('h1')).toHaveClass('text-4xl',%20'lg:text-5xl');",
+        "prevChunkIds": []
+      },
+      "369": {
+        "chunkId": "67ce16",
+        "hash": "7c46c38d",
+        "encoded": "expect(screen.getByTestId('h2')).toHaveClass('text-3xl',%20'lg:text-4xl');",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "67ce16",
+        "hash": "f6f3b680",
+        "encoded": "expect(screen.getByTestId('h3')).toHaveClass('text-2xl',%20'lg:text-3xl');",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "67ce16",
+        "hash": "64846b0f",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "67ce16",
+        "hash": "11b53231",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "67ce16",
+        "hash": "7b46e075",
+        "encoded": "*%20Test%20non-responsive%20variants",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "67ce16",
+        "hash": "f5cf465a",
+        "encoded": "*%20Scenario:%20Body%20text%20and%20smaller%20variants",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "67ce16",
+        "hash": "fc990c7e",
+        "encoded": "*%20Expected:%20Fixed%20font%20sizes%20without%20responsive%20classes",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "67ce16",
+        "hash": "2316cdaa",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "67ce16",
+        "hash": "3f6c27a9",
+        "encoded": "test('should%20use%20fixed%20sizes%20for%20non-heading%20variants',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "67ce16",
+        "hash": "7d667a81",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "67ce16",
+        "hash": "21df7ef3",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "67ce16",
+        "hash": "0947cd54",
+        "encoded": "%3CTypography%20variant=%22body%22%20data-testid=%22body%22%3EBody%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "382": {
+        "chunkId": "67ce16",
+        "hash": "1e8ff044",
+        "encoded": "%3CTypography%20variant=%22small%22%20data-testid=%22small%22%3ESmall%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "67ce16",
+        "hash": "9f041fee",
+        "encoded": "%3CTypography%20variant=%22caption%22%20data-testid=%22caption%22%3ECaption%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "384": {
+        "chunkId": "67ce16",
+        "hash": "a3f2db3c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "67ce16",
+        "hash": "59af5e50",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "67ce16",
+        "hash": "5aea9a05",
+        "encoded": "expect(screen.getByTestId('body')).toHaveClass('text-base');",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "67ce16",
+        "hash": "c2702361",
+        "encoded": "expect(screen.getByTestId('small')).toHaveClass('text-sm');",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "67ce16",
+        "hash": "650ae21b",
+        "encoded": "expect(screen.getByTestId('caption')).toHaveClass('text-xs');",
+        "prevChunkIds": []
+      },
+      "390": {
+        "chunkId": "67ce16",
+        "hash": "4b9a15f0",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "67ce16",
+        "hash": "2ceacc8e",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "393": {
+        "chunkId": "67ce16",
+        "hash": "31fb331d",
+        "encoded": "//%20Test%207:%20Accessibility",
+        "prevChunkIds": []
+      },
+      "394": {
+        "chunkId": "67ce16",
+        "hash": "9b67163d",
+        "encoded": "describe('Accessibility',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "395": {
+        "chunkId": "67ce16",
+        "hash": "dfadf641",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "396": {
+        "chunkId": "67ce16",
+        "hash": "2942b20a",
+        "encoded": "*%20Test%20heading%20hierarchy%20accessibility",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "67ce16",
+        "hash": "039b3dce",
+        "encoded": "*%20Scenario:%20Proper%20heading%20structure",
+        "prevChunkIds": []
+      },
+      "398": {
+        "chunkId": "67ce16",
+        "hash": "1d2bfd81",
+        "encoded": "*%20Expected:%20Screen%20readers%20can%20navigate%20heading%20hierarchy",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "67ce16",
+        "hash": "e73fe249",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "67ce16",
+        "hash": "74080e09",
+        "encoded": "test('should%20maintain%20accessible%20heading%20hierarchy',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "67ce16",
+        "hash": "6e6b557f",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "67ce16",
+        "hash": "40adfb36",
+        "encoded": "%3Carticle%3E",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "67ce16",
+        "hash": "f7400c10",
+        "encoded": "%3CTypography%20variant=%22h1%22%3EArticle%20Title%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "67ce16",
+        "hash": "3d1282ff",
+        "encoded": "%3CTypography%20variant=%22h2%22%3ESection%201%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "67ce16",
+        "hash": "576db8dd",
+        "encoded": "%3CTypography%20variant=%22h3%22%3ESubsection%201.1%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "406": {
+        "chunkId": "67ce16",
+        "hash": "685b430d",
+        "encoded": "%3CTypography%20variant=%22h3%22%3ESubsection%201.2%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "407": {
+        "chunkId": "67ce16",
+        "hash": "d00cd61f",
+        "encoded": "%3CTypography%20variant=%22h2%22%3ESection%202%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "408": {
+        "chunkId": "67ce16",
+        "hash": "3ade2c4f",
+        "encoded": "%3C/article%3E",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "67ce16",
+        "hash": "ec309703",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "67ce16",
+        "hash": "a688a79d",
+        "encoded": "const%20headings%20=%20screen.getAllByRole('heading');",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "67ce16",
+        "hash": "613592fb",
+        "encoded": "expect(headings).toHaveLength(5);",
+        "prevChunkIds": []
+      },
+      "414": {
+        "chunkId": "67ce16",
+        "hash": "a36ec575",
+        "encoded": "expect(screen.getByRole('heading',%20%7B%20level:%201%20%7D)).toHaveTextContent('Article%20Title');",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "67ce16",
+        "hash": "13e8238f",
+        "encoded": "expect(screen.getAllByRole('heading',%20%7B%20level:%202%20%7D)).toHaveLength(2);",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "67ce16",
+        "hash": "5ea12b1b",
+        "encoded": "expect(screen.getAllByRole('heading',%20%7B%20level:%203%20%7D)).toHaveLength(2);",
+        "prevChunkIds": []
+      },
+      "417": {
+        "chunkId": "67ce16",
+        "hash": "be3f8e6f",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "419": {
+        "chunkId": "67ce16",
+        "hash": "239beaeb",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "420": {
+        "chunkId": "67ce16",
+        "hash": "74fb2041",
+        "encoded": "*%20Test%20label%20accessibility",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "67ce16",
+        "hash": "8f8c9b54",
+        "encoded": "*%20Scenario:%20Labels%20associated%20with%20form%20controls",
+        "prevChunkIds": []
+      },
+      "422": {
+        "chunkId": "67ce16",
+        "hash": "6ef6788c",
+        "encoded": "*%20Expected:%20Proper%20label-input%20associations",
+        "prevChunkIds": []
+      },
+      "423": {
+        "chunkId": "67ce16",
+        "hash": "c51ada05",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "424": {
+        "chunkId": "67ce16",
+        "hash": "b132ec08",
+        "encoded": "test('should%20support%20form%20label%20accessibility',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "67ce16",
+        "hash": "5c6910c8",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "426": {
+        "chunkId": "67ce16",
+        "hash": "ddc219e3",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "427": {
+        "chunkId": "67ce16",
+        "hash": "0b27a921",
+        "encoded": "%3CTypography%20variant=%22label%22%20as=%22label%22%20htmlFor=%22test-input%22%3E",
+        "prevChunkIds": []
+      },
+      "428": {
+        "chunkId": "67ce16",
+        "hash": "58e66337",
+        "encoded": "Test%20Label",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "67ce16",
+        "hash": "9ac09512",
+        "encoded": "%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "430": {
+        "chunkId": "67ce16",
+        "hash": "f9241700",
+        "encoded": "%3Cinput%20id=%22test-input%22%20type=%22text%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "431": {
+        "chunkId": "67ce16",
+        "hash": "8dc0096f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "432": {
+        "chunkId": "67ce16",
+        "hash": "e05d2f80",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "67ce16",
+        "hash": "df1b4508",
+        "encoded": "const%20label%20=%20screen.getByText('Test%20Label');",
+        "prevChunkIds": []
+      },
+      "435": {
+        "chunkId": "67ce16",
+        "hash": "59bf5c2f",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "67ce16",
+        "hash": "cc30595a",
+        "encoded": "expect(label).toHaveAttribute('for',%20'test-input');",
+        "prevChunkIds": []
+      },
+      "438": {
+        "chunkId": "67ce16",
+        "hash": "f95b866b",
+        "encoded": "expect(input).toHaveAttribute('id',%20'test-input');",
+        "prevChunkIds": []
+      },
+      "439": {
+        "chunkId": "67ce16",
+        "hash": "3ba34775",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "441": {
+        "chunkId": "67ce16",
+        "hash": "a909fad8",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "442": {
+        "chunkId": "67ce16",
+        "hash": "f60fd6fc",
+        "encoded": "*%20Test%20color%20contrast%20considerations",
+        "prevChunkIds": []
+      },
+      "443": {
+        "chunkId": "67ce16",
+        "hash": "e64283ed",
+        "encoded": "*%20Scenario:%20Different%20color%20variants",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "67ce16",
+        "hash": "10db873b",
+        "encoded": "*%20Expected:%20Appropriate%20color%20classes%20for%20contrast",
+        "prevChunkIds": []
+      },
+      "445": {
+        "chunkId": "67ce16",
+        "hash": "c5a95da5",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "446": {
+        "chunkId": "67ce16",
+        "hash": "7f4b8e0d",
+        "encoded": "test('should%20apply%20appropriate%20color%20classes',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "447": {
+        "chunkId": "67ce16",
+        "hash": "63ed780a",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "67ce16",
+        "hash": "29a9eecf",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "449": {
+        "chunkId": "67ce16",
+        "hash": "c997b810",
+        "encoded": "%3CTypography%20color=%22muted%22%20data-testid=%22muted%22%3EMuted%20text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "67ce16",
+        "hash": "cb31c606",
+        "encoded": "%3CTypography%20color=%22error%22%20data-testid=%22error%22%3EError%20text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "451": {
+        "chunkId": "67ce16",
+        "hash": "3e1d6373",
+        "encoded": "%3CTypography%20color=%22success%22%20data-testid=%22success%22%3ESuccess%20text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "452": {
+        "chunkId": "67ce16",
+        "hash": "7971b03a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "453": {
+        "chunkId": "67ce16",
+        "hash": "c026e55b",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "455": {
+        "chunkId": "67ce16",
+        "hash": "8403ad2a",
+        "encoded": "expect(screen.getByTestId('muted')).toHaveClass('text-text-muted');",
+        "prevChunkIds": []
+      },
+      "456": {
+        "chunkId": "67ce16",
+        "hash": "9ed9e1fb",
+        "encoded": "expect(screen.getByTestId('error')).toHaveClass('text-red-500');",
+        "prevChunkIds": []
+      },
+      "457": {
+        "chunkId": "67ce16",
+        "hash": "c040a7cb",
+        "encoded": "expect(screen.getByTestId('success')).toHaveClass('text-green-500');",
+        "prevChunkIds": []
+      },
+      "458": {
+        "chunkId": "67ce16",
+        "hash": "97cd1253",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "67ce16",
+        "hash": "0e8bc338",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "461": {
+        "chunkId": "67ce16",
+        "hash": "dd29e6cc",
+        "encoded": "*%20Test%20accessibility%20compliance%20with%20axe",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "67ce16",
+        "hash": "1307cb0b",
+        "encoded": "*%20Scenario:%20Various%20typography%20configurations",
+        "prevChunkIds": []
+      },
+      "463": {
+        "chunkId": "67ce16",
+        "hash": "06695a4b",
+        "encoded": "*%20Expected:%20No%20accessibility%20violations",
+        "prevChunkIds": []
+      },
+      "464": {
+        "chunkId": "67ce16",
+        "hash": "cd4b61de",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "465": {
+        "chunkId": "67ce16",
+        "hash": "cbce22ad",
+        "encoded": "test('should%20not%20have%20accessibility%20violations',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "466": {
+        "chunkId": "67ce16",
+        "hash": "03eb0861",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "467": {
+        "chunkId": "67ce16",
+        "hash": "7aa4ddde",
+        "encoded": "%3Carticle%3E",
+        "prevChunkIds": []
+      },
+      "468": {
+        "chunkId": "67ce16",
+        "hash": "afe45d37",
+        "encoded": "%3CTypography%20variant=%22h1%22%3EMain%20Heading%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "469": {
+        "chunkId": "67ce16",
+        "hash": "5d8ee127",
+        "encoded": "%3CTypography%20variant=%22body%22%3EBody%20paragraph%20text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "470": {
+        "chunkId": "67ce16",
+        "hash": "756c58ee",
+        "encoded": "%3CTypography%20variant=%22h2%22%3ESection%20Heading%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "471": {
+        "chunkId": "67ce16",
+        "hash": "e025db9e",
+        "encoded": "%3CTypography%20variant=%22small%22%20color=%22muted%22%3ESmall%20muted%20text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "472": {
+        "chunkId": "67ce16",
+        "hash": "c366f194",
+        "encoded": "%3CTypography%20variant=%22code%22%3ECode%20snippet%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "473": {
+        "chunkId": "67ce16",
+        "hash": "422f3fa4",
+        "encoded": "%3CTypography%20variant=%22label%22%20as=%22label%22%20htmlFor=%22input%22%3ELabel%20text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "474": {
+        "chunkId": "67ce16",
+        "hash": "759c81d4",
+        "encoded": "%3Cinput%20id=%22input%22%20type=%22text%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "475": {
+        "chunkId": "67ce16",
+        "hash": "9b79b65b",
+        "encoded": "%3C/article%3E",
+        "prevChunkIds": []
+      },
+      "476": {
+        "chunkId": "67ce16",
+        "hash": "f26eede1",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "478": {
+        "chunkId": "67ce16",
+        "hash": "b1adbcb9",
+        "encoded": "const%20results%20=%20await%20axe(container);",
+        "prevChunkIds": []
+      },
+      "479": {
+        "chunkId": "67ce16",
+        "hash": "bb1e41ee",
+        "encoded": "expect(results).toHaveNoViolations();",
+        "prevChunkIds": []
+      },
+      "480": {
+        "chunkId": "67ce16",
+        "hash": "4eedb3cf",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "481": {
+        "chunkId": "67ce16",
+        "hash": "9a8f8420",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "483": {
+        "chunkId": "67ce16",
+        "hash": "970ad709",
+        "encoded": "//%20Test%208:%20Edge%20Cases",
+        "prevChunkIds": []
+      },
+      "484": {
+        "chunkId": "67ce16",
+        "hash": "bca3a7e8",
+        "encoded": "describe('Edge%20Cases',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "485": {
+        "chunkId": "67ce16",
+        "hash": "5dd65021",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "486": {
+        "chunkId": "67ce16",
+        "hash": "bbbe1c97",
+        "encoded": "*%20Test%20typography%20with%20custom%20className",
+        "prevChunkIds": []
+      },
+      "487": {
+        "chunkId": "67ce16",
+        "hash": "4fcdf4df",
+        "encoded": "*%20Scenario:%20Typography%20with%20additional%20CSS%20classes",
+        "prevChunkIds": []
+      },
+      "488": {
+        "chunkId": "67ce16",
+        "hash": "62c16eb6",
+        "encoded": "*%20Expected:%20Custom%20classes%20are%20applied",
+        "prevChunkIds": []
+      },
+      "489": {
+        "chunkId": "67ce16",
+        "hash": "1895349d",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "490": {
+        "chunkId": "67ce16",
+        "hash": "aac5cc75",
+        "encoded": "test('should%20apply%20custom%20className',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "491": {
+        "chunkId": "67ce16",
+        "hash": "8ba3d11c",
+        "encoded": "render(%3CTypography%20className=%22custom-class%22%3EContent%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "493": {
+        "chunkId": "67ce16",
+        "hash": "84b9d8a9",
+        "encoded": "const%20element%20=%20screen.getByText('Content');",
+        "prevChunkIds": []
+      },
+      "494": {
+        "chunkId": "67ce16",
+        "hash": "500e9e2c",
+        "encoded": "expect(element).toHaveClass('custom-class');",
+        "prevChunkIds": []
+      },
+      "495": {
+        "chunkId": "67ce16",
+        "hash": "40b4fdd2",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "497": {
+        "chunkId": "67ce16",
+        "hash": "b03914ed",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "498": {
+        "chunkId": "67ce16",
+        "hash": "4c668099",
+        "encoded": "*%20Test%20typography%20ref%20forwarding",
+        "prevChunkIds": []
+      },
+      "499": {
+        "chunkId": "67ce16",
+        "hash": "6f29679c",
+        "encoded": "*%20Scenario:%20Typography%20with%20ref",
+        "prevChunkIds": []
+      },
+      "500": {
+        "chunkId": "67ce16",
+        "hash": "1625c87c",
+        "encoded": "*%20Expected:%20Ref%20is%20properly%20forwarded%20to%20HTML%20element",
+        "prevChunkIds": []
+      },
+      "501": {
+        "chunkId": "67ce16",
+        "hash": "ea1340e1",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "502": {
+        "chunkId": "67ce16",
+        "hash": "1e9a769d",
+        "encoded": "test('should%20forward%20ref%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "503": {
+        "chunkId": "67ce16",
+        "hash": "463a8abf",
+        "encoded": "const%20ref%20=%20React.createRef%3CHTMLElement%3E();",
+        "prevChunkIds": []
+      },
+      "505": {
+        "chunkId": "67ce16",
+        "hash": "158fefb2",
+        "encoded": "render(%3CTypography%20ref=%7Bref%7D%3ERef%20Test%3C/Typography%3E);",
+        "prevChunkIds": []
+      },
+      "507": {
+        "chunkId": "67ce16",
+        "hash": "84275128",
+        "encoded": "expect(ref.current).toBeInstanceOf(HTMLParagraphElement);",
+        "prevChunkIds": []
+      },
+      "508": {
+        "chunkId": "67ce16",
+        "hash": "e8b2ae3c",
+        "encoded": "expect(ref.current).toBe(screen.getByText('Ref%20Test'));",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "67ce16",
+        "hash": "18537bd8",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "511": {
+        "chunkId": "67ce16",
+        "hash": "d2762ce3",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "512": {
+        "chunkId": "67ce16",
+        "hash": "06a0d190",
+        "encoded": "*%20Test%20typography%20with%20empty%20content",
+        "prevChunkIds": []
+      },
+      "513": {
+        "chunkId": "67ce16",
+        "hash": "f74925e9",
+        "encoded": "*%20Scenario:%20Typography%20without%20children",
+        "prevChunkIds": []
+      },
+      "514": {
+        "chunkId": "67ce16",
+        "hash": "26aeca0d",
+        "encoded": "*%20Expected:%20Element%20renders%20without%20errors",
+        "prevChunkIds": []
+      },
+      "515": {
+        "chunkId": "67ce16",
+        "hash": "c64ad4f5",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "516": {
+        "chunkId": "67ce16",
+        "hash": "ba6023c3",
+        "encoded": "test('should%20handle%20empty%20content',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "517": {
+        "chunkId": "67ce16",
+        "hash": "6bc87811",
+        "encoded": "render(%3CTypography%20data-testid=%22empty%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "519": {
+        "chunkId": "67ce16",
+        "hash": "09988dfb",
+        "encoded": "const%20element%20=%20screen.getByTestId('empty');",
+        "prevChunkIds": []
+      },
+      "520": {
+        "chunkId": "67ce16",
+        "hash": "7e366e7b",
+        "encoded": "expect(element).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "521": {
+        "chunkId": "67ce16",
+        "hash": "2096a657",
+        "encoded": "expect(element.textContent).toBe('');",
+        "prevChunkIds": []
+      },
+      "522": {
+        "chunkId": "67ce16",
+        "hash": "97736949",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "524": {
+        "chunkId": "67ce16",
+        "hash": "c2131129",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "525": {
+        "chunkId": "67ce16",
+        "hash": "2f30d2d4",
+        "encoded": "*%20Test%20weight%20override%20for%20variants%20with%20default%20weights",
+        "prevChunkIds": []
+      },
+      "526": {
+        "chunkId": "67ce16",
+        "hash": "a3c7df19",
+        "encoded": "*%20Scenario:%20Heading%20with%20explicit%20weight%20different%20from%20default",
+        "prevChunkIds": []
+      },
+      "527": {
+        "chunkId": "67ce16",
+        "hash": "c5af70ca",
+        "encoded": "*%20Expected:%20Explicit%20weight%20overrides%20default",
+        "prevChunkIds": []
+      },
+      "528": {
+        "chunkId": "67ce16",
+        "hash": "43045238",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "529": {
+        "chunkId": "67ce16",
+        "hash": "dc088da7",
+        "encoded": "test('should%20override%20default%20variant%20weights',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "530": {
+        "chunkId": "67ce16",
+        "hash": "f599c215",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "531": {
+        "chunkId": "67ce16",
+        "hash": "3c8136cc",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "532": {
+        "chunkId": "67ce16",
+        "hash": "2034178e",
+        "encoded": "%3CTypography%20variant=%22h1%22%20weight=%22normal%22%20data-testid=%22h1-normal%22%3ENormal%20H1%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "533": {
+        "chunkId": "67ce16",
+        "hash": "a3dcd4be",
+        "encoded": "%3CTypography%20variant=%22body%22%20weight=%22bold%22%20data-testid=%22body-bold%22%3EBold%20Body%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "534": {
+        "chunkId": "67ce16",
+        "hash": "2eff454a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "535": {
+        "chunkId": "67ce16",
+        "hash": "674e7af0",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "537": {
+        "chunkId": "67ce16",
+        "hash": "dbeffa59",
+        "encoded": "expect(screen.getByTestId('h1-normal')).toHaveClass('font-normal');",
+        "prevChunkIds": []
+      },
+      "538": {
+        "chunkId": "67ce16",
+        "hash": "9a2d4c67",
+        "encoded": "expect(screen.getByTestId('body-bold')).toHaveClass('font-bold');",
+        "prevChunkIds": []
+      },
+      "539": {
+        "chunkId": "67ce16",
+        "hash": "7c8ff886",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "541": {
+        "chunkId": "67ce16",
+        "hash": "25fc07ad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "542": {
+        "chunkId": "67ce16",
+        "hash": "9abbd621",
+        "encoded": "*%20Test%20combined%20text%20modifiers",
+        "prevChunkIds": []
+      },
+      "543": {
+        "chunkId": "67ce16",
+        "hash": "24107e07",
+        "encoded": "*%20Scenario:%20Typography%20with%20multiple%20text%20modifiers",
+        "prevChunkIds": []
+      },
+      "544": {
+        "chunkId": "67ce16",
+        "hash": "ffb06fe1",
+        "encoded": "*%20Expected:%20All%20modifiers%20are%20applied%20correctly",
+        "prevChunkIds": []
+      },
+      "545": {
+        "chunkId": "67ce16",
+        "hash": "6e1e0fad",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "546": {
+        "chunkId": "67ce16",
+        "hash": "33bd691a",
+        "encoded": "test('should%20handle%20combined%20text%20modifiers',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "547": {
+        "chunkId": "67ce16",
+        "hash": "5ff78b1d",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "548": {
+        "chunkId": "67ce16",
+        "hash": "08146b85",
+        "encoded": "%3CTypography",
+        "prevChunkIds": []
+      },
+      "549": {
+        "chunkId": "67ce16",
+        "hash": "354092e5",
+        "encoded": "variant=%22body%22",
+        "prevChunkIds": []
+      },
+      "550": {
+        "chunkId": "67ce16",
+        "hash": "f0adfbc8",
+        "encoded": "weight=%22semibold%22",
+        "prevChunkIds": []
+      },
+      "551": {
+        "chunkId": "67ce16",
+        "hash": "30fdc596",
+        "encoded": "align=%22center%22",
+        "prevChunkIds": []
+      },
+      "552": {
+        "chunkId": "67ce16",
+        "hash": "0b1336d0",
+        "encoded": "color=%22primary%22",
+        "prevChunkIds": []
+      },
+      "553": {
+        "chunkId": "67ce16",
+        "hash": "6c717162",
+        "encoded": "truncate",
+        "prevChunkIds": []
+      },
+      "554": {
+        "chunkId": "67ce16",
+        "hash": "78a7c8b9",
+        "encoded": "noWrap",
+        "prevChunkIds": []
+      },
+      "555": {
+        "chunkId": "67ce16",
+        "hash": "9da0eb52",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "556": {
+        "chunkId": "67ce16",
+        "hash": "cc19a846",
+        "encoded": "Combined%20modifiers",
+        "prevChunkIds": []
+      },
+      "557": {
+        "chunkId": "67ce16",
+        "hash": "614d6879",
+        "encoded": "%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "558": {
+        "chunkId": "67ce16",
+        "hash": "ac8df090",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "560": {
+        "chunkId": "67ce16",
+        "hash": "7e4d5f5e",
+        "encoded": "const%20element%20=%20screen.getByText('Combined%20modifiers');",
+        "prevChunkIds": []
+      },
+      "561": {
+        "chunkId": "67ce16",
+        "hash": "bd93a113",
+        "encoded": "expect(element).toHaveClass(",
+        "prevChunkIds": []
+      },
+      "562": {
+        "chunkId": "67ce16",
+        "hash": "5f7f0235",
+        "encoded": "'text-base',%20//%20variant",
+        "prevChunkIds": []
+      },
+      "563": {
+        "chunkId": "67ce16",
+        "hash": "b9896fab",
+        "encoded": "'font-semibold',%20//%20weight",
+        "prevChunkIds": []
+      },
+      "564": {
+        "chunkId": "67ce16",
+        "hash": "b26a7670",
+        "encoded": "'text-center',%20//%20align",
+        "prevChunkIds": []
+      },
+      "565": {
+        "chunkId": "67ce16",
+        "hash": "00a7e160",
+        "encoded": "'text-brand-primary',%20//%20color",
+        "prevChunkIds": []
+      },
+      "566": {
+        "chunkId": "67ce16",
+        "hash": "9e6fb2cd",
+        "encoded": "'truncate',%20//%20truncate",
+        "prevChunkIds": []
+      },
+      "567": {
+        "chunkId": "67ce16",
+        "hash": "39389cb1",
+        "encoded": "'whitespace-nowrap'%20//%20noWrap",
+        "prevChunkIds": []
+      },
+      "568": {
+        "chunkId": "67ce16",
+        "hash": "8f0a4ba6",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "569": {
+        "chunkId": "67ce16",
+        "hash": "913a46dd",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "570": {
+        "chunkId": "67ce16",
+        "hash": "1291291e",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "572": {
+        "chunkId": "67ce16",
+        "hash": "062358cf",
+        "encoded": "//%20Test%209:%20Snapshot%20Testing",
+        "prevChunkIds": []
+      },
+      "573": {
+        "chunkId": "67ce16",
+        "hash": "501f639a",
+        "encoded": "describe('Snapshot%20Testing',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "574": {
+        "chunkId": "67ce16",
+        "hash": "f531c4be",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "575": {
+        "chunkId": "67ce16",
+        "hash": "bb028780",
+        "encoded": "*%20Test%20visual%20regression%20with%20snapshots",
+        "prevChunkIds": []
+      },
+      "576": {
+        "chunkId": "67ce16",
+        "hash": "5c5939c9",
+        "encoded": "*%20Scenario:%20Different%20typography%20configurations",
+        "prevChunkIds": []
+      },
+      "577": {
+        "chunkId": "67ce16",
+        "hash": "9bf89541",
+        "encoded": "*%20Expected:%20Consistent%20rendering%20across%20changes",
+        "prevChunkIds": []
+      },
+      "578": {
+        "chunkId": "67ce16",
+        "hash": "7ce30353",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "579": {
+        "chunkId": "67ce16",
+        "hash": "9df2b9d4",
+        "encoded": "test('should%20match%20snapshot%20for%20all%20variants',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "580": {
+        "chunkId": "67ce16",
+        "hash": "79e57ec6",
+        "encoded": "const%20variants:%20TypographyProps%5B'variant'%5D%5B%5D%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "581": {
+        "chunkId": "67ce16",
+        "hash": "c5ed89af",
+        "encoded": "'h1',%20'h2',%20'h3',%20'h4',%20'h5',%20'h6',",
+        "prevChunkIds": []
+      },
+      "582": {
+        "chunkId": "67ce16",
+        "hash": "2eb6239b",
+        "encoded": "'body',%20'small',%20'caption',%20'label',%20'code'",
+        "prevChunkIds": []
+      },
+      "583": {
+        "chunkId": "67ce16",
+        "hash": "61f4aef8",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "585": {
+        "chunkId": "67ce16",
+        "hash": "a8618d6d",
+        "encoded": "variants.forEach(variant%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "586": {
+        "chunkId": "67ce16",
+        "hash": "43304ee0",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "587": {
+        "chunkId": "67ce16",
+        "hash": "232481a3",
+        "encoded": "%3CTypography%20variant=%7Bvariant%7D%3ETest%20Content%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "588": {
+        "chunkId": "67ce16",
+        "hash": "f26a3555",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "589": {
+        "chunkId": "67ce16",
+        "hash": "ad46a112",
+        "encoded": "expect(container.firstChild).toMatchSnapshot(%60typography-$%7Bvariant%7D%60);",
+        "prevChunkIds": []
+      },
+      "590": {
+        "chunkId": "67ce16",
+        "hash": "b9b7c1a8",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "591": {
+        "chunkId": "67ce16",
+        "hash": "b7fe2f6d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "593": {
+        "chunkId": "67ce16",
+        "hash": "ad41e06c",
+        "encoded": "test('should%20match%20snapshot%20for%20convenience%20components',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "594": {
+        "chunkId": "67ce16",
+        "hash": "c07684e5",
+        "encoded": "const%20%7B%20container:%20headingContainer%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "595": {
+        "chunkId": "67ce16",
+        "hash": "1dbefe2a",
+        "encoded": "%3CHeading%20level=%7B2%7D%3EHeading%20Component%3C/Heading%3E",
+        "prevChunkIds": []
+      },
+      "596": {
+        "chunkId": "67ce16",
+        "hash": "5b336c86",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "597": {
+        "chunkId": "67ce16",
+        "hash": "88889224",
+        "encoded": "expect(headingContainer.firstChild).toMatchSnapshot('heading-component');",
+        "prevChunkIds": []
+      },
+      "599": {
+        "chunkId": "67ce16",
+        "hash": "7b58cba5",
+        "encoded": "const%20%7B%20container:%20textContainer%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "600": {
+        "chunkId": "67ce16",
+        "hash": "fbbf2496",
+        "encoded": "%3CText%3EText%20Component%3C/Text%3E",
+        "prevChunkIds": []
+      },
+      "601": {
+        "chunkId": "67ce16",
+        "hash": "83ef0e8d",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "602": {
+        "chunkId": "67ce16",
+        "hash": "ab0c063a",
+        "encoded": "expect(textContainer.firstChild).toMatchSnapshot('text-component');",
+        "prevChunkIds": []
+      },
+      "604": {
+        "chunkId": "67ce16",
+        "hash": "2f5ad545",
+        "encoded": "const%20%7B%20container:%20labelContainer%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "605": {
+        "chunkId": "67ce16",
+        "hash": "a88fff8c",
+        "encoded": "%3CLabel%3ELabel%20Component%3C/Label%3E",
+        "prevChunkIds": []
+      },
+      "606": {
+        "chunkId": "67ce16",
+        "hash": "9d41d8cd",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "607": {
+        "chunkId": "67ce16",
+        "hash": "0062cc7a",
+        "encoded": "expect(labelContainer.firstChild).toMatchSnapshot('label-component');",
+        "prevChunkIds": []
+      },
+      "609": {
+        "chunkId": "67ce16",
+        "hash": "81250856",
+        "encoded": "const%20%7B%20container:%20codeContainer%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "610": {
+        "chunkId": "67ce16",
+        "hash": "9ce6469f",
+        "encoded": "%3CCode%3ECode%20Component%3C/Code%3E",
+        "prevChunkIds": []
+      },
+      "611": {
+        "chunkId": "67ce16",
+        "hash": "ce01b31e",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "612": {
+        "chunkId": "67ce16",
+        "hash": "219a99f6",
+        "encoded": "expect(codeContainer.firstChild).toMatchSnapshot('code-component');",
+        "prevChunkIds": []
+      },
+      "613": {
+        "chunkId": "67ce16",
+        "hash": "2d89663f",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "615": {
+        "chunkId": "67ce16",
+        "hash": "3239473b",
+        "encoded": "test('should%20match%20snapshot%20for%20different%20properties',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "616": {
+        "chunkId": "67ce16",
+        "hash": "a67baebe",
+        "encoded": "const%20%7B%20container:%20weightContainer%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "617": {
+        "chunkId": "67ce16",
+        "hash": "1ed2c942",
+        "encoded": "%3CTypography%20weight=%22bold%22%20color=%22primary%22%3EBold%20Primary%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "618": {
+        "chunkId": "67ce16",
+        "hash": "21d301e5",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "619": {
+        "chunkId": "67ce16",
+        "hash": "75cd917d",
+        "encoded": "expect(weightContainer.firstChild).toMatchSnapshot('typography-bold-primary');",
+        "prevChunkIds": []
+      },
+      "621": {
+        "chunkId": "67ce16",
+        "hash": "27c81bbf",
+        "encoded": "const%20%7B%20container:%20truncateContainer%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "622": {
+        "chunkId": "67ce16",
+        "hash": "5635c76a",
+        "encoded": "%3CTypography%20truncate%20noWrap%3ETruncated%20Text%3C/Typography%3E",
+        "prevChunkIds": []
+      },
+      "623": {
+        "chunkId": "67ce16",
+        "hash": "b2da755c",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "624": {
+        "chunkId": "67ce16",
+        "hash": "faa092ca",
+        "encoded": "expect(truncateContainer.firstChild).toMatchSnapshot('typography-truncated');",
+        "prevChunkIds": []
+      },
+      "625": {
+        "chunkId": "67ce16",
+        "hash": "637940df",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "626": {
+        "chunkId": "67ce16",
+        "hash": "fddbc5e6",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "627": {
+        "chunkId": "67ce16",
+        "hash": "3187a82c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

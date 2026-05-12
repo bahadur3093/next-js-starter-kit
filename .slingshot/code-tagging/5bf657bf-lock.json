@@ -1,0 +1,4098 @@
+{
+  "src/components/atoms/Input.test.tsx": {
+    "filename": "Input.test.tsx",
+    "path": "src/components/atoms/Input.test.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "0ab5a2": {
+        "user": "Bahadur Singh",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1778606227,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cf3f6fe2",
+          "files": "faead0d4"
+        },
+        "hash": "1a9d66f8",
+        "messageId": "system_957efd00-4e25-11f1-a974-9d691bb0f4e5",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "0ab5a2",
+        "hash": "98ac06df",
+        "encoded": "import%20React%20from%20'react';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "0ab5a2",
+        "hash": "4f2a951b",
+        "encoded": "import%20%7B%20render,%20screen,%20fireEvent,%20waitFor%20%7D%20from%20'@testing-library/react';",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "0ab5a2",
+        "hash": "c9114392",
+        "encoded": "import%20userEvent%20from%20'@testing-library/user-event';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "0ab5a2",
+        "hash": "3a9f20b6",
+        "encoded": "import%20%7B%20axe,%20toHaveNoViolations%20%7D%20from%20'jest-axe';",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "0ab5a2",
+        "hash": "4993d92e",
+        "encoded": "import%20%7B%20Input,%20Textarea%20%7D%20from%20'./Input';",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "0ab5a2",
+        "hash": "8e5d9843",
+        "encoded": "import%20type%20%7B%20InputProps,%20TextareaProps%20%7D%20from%20'./Input';",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "0ab5a2",
+        "hash": "d50747c4",
+        "encoded": "//%20Extend%20Jest%20matchers",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "0ab5a2",
+        "hash": "df88c78f",
+        "encoded": "expect.extend(toHaveNoViolations);",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "0ab5a2",
+        "hash": "8d62b58c",
+        "encoded": "//%20Mock%20icon%20component%20for%20testing",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "0ab5a2",
+        "hash": "f0b0b2db",
+        "encoded": "const%20MockIcon%20=%20(%7B%20name%20%7D:%20%7B%20name:%20string%20%7D)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "0ab5a2",
+        "hash": "7026f716",
+        "encoded": "%3Cspan%20data-testid=%7B%60icon-$%7Bname%7D%60%7D%3E%7Bname%7D%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "0ab5a2",
+        "hash": "15d9ead7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "0ab5a2",
+        "hash": "3f312d60",
+        "encoded": "describe('Input%20Component',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "0ab5a2",
+        "hash": "9eb95f4e",
+        "encoded": "//%20Test%201:%20Component%20Rendering%20-%20Default%20props",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "0ab5a2",
+        "hash": "a8e672cc",
+        "encoded": "describe('Component%20Rendering',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "0ab5a2",
+        "hash": "9a54798e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "0ab5a2",
+        "hash": "4104a337",
+        "encoded": "*%20Test%20that%20Input%20renders%20correctly%20with%20default%20props",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "0ab5a2",
+        "hash": "eaf3bd8b",
+        "encoded": "*%20Scenario:%20Input%20with%20minimal%20props",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "0ab5a2",
+        "hash": "42921b6b",
+        "encoded": "*%20Expected:%20Input%20renders%20with%20default%20variant,%20size,%20and%20state",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "0ab5a2",
+        "hash": "d3c91f81",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "0ab5a2",
+        "hash": "800f8b0c",
+        "encoded": "test('should%20render%20with%20default%20props',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "0ab5a2",
+        "hash": "9ef1a078",
+        "encoded": "render(%3CInput%20placeholder=%22Enter%20text%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "0ab5a2",
+        "hash": "7a2e144f",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "0ab5a2",
+        "hash": "096c63af",
+        "encoded": "expect(input).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "0ab5a2",
+        "hash": "d60e837e",
+        "encoded": "expect(input).toHaveClass('bg-transparent');%20//%20outlined%20variant",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "0ab5a2",
+        "hash": "4a305858",
+        "encoded": "expect(input).toHaveClass('px-3',%20'py-2');%20//%20md%20size",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "0ab5a2",
+        "hash": "a5789c0c",
+        "encoded": "expect(input).toHaveAttribute('placeholder',%20'Enter%20text');",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "0ab5a2",
+        "hash": "0322bb6d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "0ab5a2",
+        "hash": "a2d434cb",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "0ab5a2",
+        "hash": "fd00e53b",
+        "encoded": "*%20Test%20that%20Input%20renders%20with%20label%20and%20helper%20text",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "0ab5a2",
+        "hash": "4710d834",
+        "encoded": "*%20Scenario:%20Input%20with%20associated%20text%20elements",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "0ab5a2",
+        "hash": "4a368bbb",
+        "encoded": "*%20Expected:%20Proper%20text%20elements%20are%20rendered%20and%20associated",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "0ab5a2",
+        "hash": "cfda9889",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "0ab5a2",
+        "hash": "2e0e1a05",
+        "encoded": "test('should%20render%20with%20helper%20text',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "0ab5a2",
+        "hash": "13de86b8",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "0ab5a2",
+        "hash": "7e223b38",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "0ab5a2",
+        "hash": "69fc94b1",
+        "encoded": "placeholder=%22Email%22",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "0ab5a2",
+        "hash": "e633225e",
+        "encoded": "helperText=%22Enter%20your%20email%20address%22",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "0ab5a2",
+        "hash": "2d64bf8c",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "0ab5a2",
+        "hash": "15b81b0c",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "0ab5a2",
+        "hash": "f86ede76",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "0ab5a2",
+        "hash": "3fb6c235",
+        "encoded": "const%20helperText%20=%20screen.getByText('Enter%20your%20email%20address');",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "0ab5a2",
+        "hash": "1f8ce85b",
+        "encoded": "expect(helperText).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "0ab5a2",
+        "hash": "cbe78e51",
+        "encoded": "expect(helperText).toHaveClass('text-text-muted');",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "0ab5a2",
+        "hash": "6e1979ef",
+        "encoded": "expect(input).toHaveAttribute('aria-describedby',%20expect.stringContaining('helper'));",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "0ab5a2",
+        "hash": "cd261499",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "0ab5a2",
+        "hash": "3287ea85",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "0ab5a2",
+        "hash": "c9923181",
+        "encoded": "//%20Test%202:%20Props%20Validation%20-%20All%20variants,%20sizes,%20states",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "0ab5a2",
+        "hash": "6ede5ced",
+        "encoded": "describe('Props%20Validation',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "0ab5a2",
+        "hash": "5987bfad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "0ab5a2",
+        "hash": "50962ad7",
+        "encoded": "*%20Test%20all%20input%20variants%20render%20with%20correct%20styles",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "0ab5a2",
+        "hash": "d8da42ae",
+        "encoded": "*%20Scenario:%20Input%20with%20different%20variant%20props",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "0ab5a2",
+        "hash": "29defd1a",
+        "encoded": "*%20Expected:%20Each%20variant%20applies%20correct%20CSS%20classes",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "0ab5a2",
+        "hash": "b3751ff8",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "0ab5a2",
+        "hash": "81dfcaa6",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "0ab5a2",
+        "hash": "6e717a0e",
+        "encoded": "%5B'outlined',%20'bg-transparent%20border%20border-border'%5D,",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "0ab5a2",
+        "hash": "655bc53f",
+        "encoded": "%5B'filled',%20'bg-surface%20border%20border-transparent'%5D",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "0ab5a2",
+        "hash": "aece2bd3",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20variant%20correctly',%20(variant,%20expectedClasses)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "0ab5a2",
+        "hash": "0029bddd",
+        "encoded": "render(%3CInput%20variant=%7Bvariant%7D%20placeholder=%22Test%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "0ab5a2",
+        "hash": "c736fdc2",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "0ab5a2",
+        "hash": "ea9016e5",
+        "encoded": "expectedClasses.split('%20').forEach(className%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "0ab5a2",
+        "hash": "0ecda8af",
+        "encoded": "expect(input).toHaveClass(className);",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "0ab5a2",
+        "hash": "80aa1e64",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "0ab5a2",
+        "hash": "0815083b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "0ab5a2",
+        "hash": "ab853a99",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "0ab5a2",
+        "hash": "6ca7307f",
+        "encoded": "*%20Test%20all%20input%20sizes%20render%20with%20correct%20styles",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "0ab5a2",
+        "hash": "2d27de50",
+        "encoded": "*%20Scenario:%20Input%20with%20different%20size%20props",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "0ab5a2",
+        "hash": "207264e5",
+        "encoded": "*%20Expected:%20Each%20size%20applies%20correct%20padding%20and%20height%20classes",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "0ab5a2",
+        "hash": "9de63012",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "0ab5a2",
+        "hash": "cbbb1f0a",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "0ab5a2",
+        "hash": "e95ab0fc",
+        "encoded": "%5B'sm',%20'px-3',%20'py-1.5',%20'min-h-%5B32px%5D'%5D,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "0ab5a2",
+        "hash": "188fa042",
+        "encoded": "%5B'md',%20'px-3',%20'py-2',%20'min-h-%5B40px%5D'%5D,",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "0ab5a2",
+        "hash": "413db478",
+        "encoded": "%5B'lg',%20'px-4',%20'py-2.5',%20'min-h-%5B48px%5D'%5D",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "0ab5a2",
+        "hash": "e40b52a7",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20size%20correctly',%20(size,%20px,%20py,%20minHeight)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "0ab5a2",
+        "hash": "830a849c",
+        "encoded": "render(%3CInput%20size=%7Bsize%7D%20placeholder=%22Test%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "0ab5a2",
+        "hash": "d055e692",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "0ab5a2",
+        "hash": "47eda872",
+        "encoded": "expect(input).toHaveClass(px,%20py,%20minHeight);",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "0ab5a2",
+        "hash": "fea98643",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "0ab5a2",
+        "hash": "3efab6d4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "0ab5a2",
+        "hash": "e21b8173",
+        "encoded": "*%20Test%20input%20validation%20states",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "0ab5a2",
+        "hash": "1cc774d0",
+        "encoded": "*%20Scenario:%20Input%20with%20different%20state%20props",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "0ab5a2",
+        "hash": "b1645783",
+        "encoded": "*%20Expected:%20Each%20state%20applies%20correct%20styling",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "0ab5a2",
+        "hash": "8c21c5f4",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "0ab5a2",
+        "hash": "ee946265",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "0ab5a2",
+        "hash": "5d732eca",
+        "encoded": "%5B'default',%20''%5D,",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "0ab5a2",
+        "hash": "6e9e6044",
+        "encoded": "%5B'error',%20'border-red-500'%5D,",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "0ab5a2",
+        "hash": "44218410",
+        "encoded": "%5B'success',%20'border-green-500'%5D",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "0ab5a2",
+        "hash": "c0069d6a",
+        "encoded": "%5D%20as%20const)('should%20render%20%25s%20state%20correctly',%20(state,%20expectedClass)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "0ab5a2",
+        "hash": "d0874947",
+        "encoded": "render(%3CInput%20state=%7Bstate%7D%20placeholder=%22Test%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "0ab5a2",
+        "hash": "d520cb5c",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "0ab5a2",
+        "hash": "e3d63400",
+        "encoded": "if%20(expectedClass)%20%7B",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "0ab5a2",
+        "hash": "b8e965d4",
+        "encoded": "expect(input).toHaveClass(expectedClass);",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "0ab5a2",
+        "hash": "c251d1dd",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "0ab5a2",
+        "hash": "0bd6fda6",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "0ab5a2",
+        "hash": "fb5deb25",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "0ab5a2",
+        "hash": "7504b4c5",
+        "encoded": "*%20Test%20input%20error%20state%20with%20boolean%20prop",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "0ab5a2",
+        "hash": "cb51078f",
+        "encoded": "*%20Scenario:%20Input%20with%20error%20prop",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "0ab5a2",
+        "hash": "33a2725e",
+        "encoded": "*%20Expected:%20Error%20styling%20is%20applied",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "0ab5a2",
+        "hash": "93cd7883",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "0ab5a2",
+        "hash": "7b0b3393",
+        "encoded": "test('should%20render%20error%20state%20with%20error%20prop',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "0ab5a2",
+        "hash": "9860837a",
+        "encoded": "render(%3CInput%20error%20errorMessage=%22This%20field%20is%20required%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "0ab5a2",
+        "hash": "18e7fba6",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "0ab5a2",
+        "hash": "0c13dc2b",
+        "encoded": "const%20errorMessage%20=%20screen.getByText('This%20field%20is%20required');",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "0ab5a2",
+        "hash": "88be87a5",
+        "encoded": "expect(input).toHaveClass('border-red-500');",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "0ab5a2",
+        "hash": "b342bf4b",
+        "encoded": "expect(input).toHaveAttribute('aria-invalid',%20'true');",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "0ab5a2",
+        "hash": "e238cf0c",
+        "encoded": "expect(errorMessage).toHaveClass('text-red-500');",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "0ab5a2",
+        "hash": "67470cbd",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "0ab5a2",
+        "hash": "d62799de",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "0ab5a2",
+        "hash": "a8b72387",
+        "encoded": "*%20Test%20input%20success%20state",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "0ab5a2",
+        "hash": "97882075",
+        "encoded": "*%20Scenario:%20Input%20with%20success%20prop",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "0ab5a2",
+        "hash": "e6f1fc32",
+        "encoded": "*%20Expected:%20Success%20styling%20is%20applied",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "0ab5a2",
+        "hash": "5b8799a3",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "0ab5a2",
+        "hash": "f95c25ad",
+        "encoded": "test('should%20render%20success%20state%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "0ab5a2",
+        "hash": "c60fd1d0",
+        "encoded": "render(%3CInput%20success%20successMessage=%22Valid%20input%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "0ab5a2",
+        "hash": "c9a8cf74",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "0ab5a2",
+        "hash": "2962afa6",
+        "encoded": "const%20successMessage%20=%20screen.getByText('Valid%20input');",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "0ab5a2",
+        "hash": "e2b43b4d",
+        "encoded": "expect(input).toHaveClass('border-green-500');",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "0ab5a2",
+        "hash": "a6085609",
+        "encoded": "expect(successMessage).toHaveClass('text-green-500');",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "0ab5a2",
+        "hash": "be209b17",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "0ab5a2",
+        "hash": "a638dedc",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "0ab5a2",
+        "hash": "0f39517f",
+        "encoded": "*%20Test%20input%20disabled%20state",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "0ab5a2",
+        "hash": "87377e48",
+        "encoded": "*%20Scenario:%20Input%20with%20disabled%20prop",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "0ab5a2",
+        "hash": "afa5c2e2",
+        "encoded": "*%20Expected:%20Input%20is%20disabled%20with%20appropriate%20styling",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "0ab5a2",
+        "hash": "e81b2a8f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "0ab5a2",
+        "hash": "beb57302",
+        "encoded": "test('should%20render%20disabled%20state%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "0ab5a2",
+        "hash": "eb18c188",
+        "encoded": "render(%3CInput%20disabled%20placeholder=%22Disabled%20input%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "0ab5a2",
+        "hash": "01f3e88e",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "0ab5a2",
+        "hash": "84fe349a",
+        "encoded": "expect(input).toBeDisabled();",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "0ab5a2",
+        "hash": "a15cd5a2",
+        "encoded": "expect(input).toHaveClass('disabled:opacity-50',%20'disabled:cursor-not-allowed');",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "0ab5a2",
+        "hash": "f6490669",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "0ab5a2",
+        "hash": "e7e1c8d1",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "0ab5a2",
+        "hash": "a3c532f0",
+        "encoded": "//%20Test%203:%20Icon%20Support",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "0ab5a2",
+        "hash": "51c1a6a5",
+        "encoded": "describe('Icon%20Support',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "0ab5a2",
+        "hash": "aed0816d",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "0ab5a2",
+        "hash": "7d8b6038",
+        "encoded": "*%20Test%20input%20with%20start%20icon",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "0ab5a2",
+        "hash": "56dffde8",
+        "encoded": "*%20Scenario:%20Input%20with%20startIcon%20prop",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "0ab5a2",
+        "hash": "f9623a36",
+        "encoded": "*%20Expected:%20Icon%20appears%20at%20the%20start%20with%20correct%20positioning",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "0ab5a2",
+        "hash": "9b7abe03",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "0ab5a2",
+        "hash": "ff07dc11",
+        "encoded": "test('should%20render%20with%20start%20icon',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "0ab5a2",
+        "hash": "d3669c2f",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "0ab5a2",
+        "hash": "7cea1bf2",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "0ab5a2",
+        "hash": "cfa143fc",
+        "encoded": "startIcon=%7B%3CMockIcon%20name=%22search%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "0ab5a2",
+        "hash": "c0c6feec",
+        "encoded": "placeholder=%22Search%22",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "0ab5a2",
+        "hash": "1d702922",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "0ab5a2",
+        "hash": "02ab76b6",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "0ab5a2",
+        "hash": "e045b3d1",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "0ab5a2",
+        "hash": "8d9fd1f2",
+        "encoded": "const%20icon%20=%20screen.getByTestId('icon-search');",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "0ab5a2",
+        "hash": "c4528f18",
+        "encoded": "expect(icon).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "0ab5a2",
+        "hash": "1a2893a8",
+        "encoded": "expect(input).toHaveClass('pl-10');%20//%20md%20size%20with%20start%20icon",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "0ab5a2",
+        "hash": "ff007662",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "0ab5a2",
+        "hash": "d69cec1a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "0ab5a2",
+        "hash": "be61b2ad",
+        "encoded": "*%20Test%20input%20with%20end%20icon",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "0ab5a2",
+        "hash": "17268d8a",
+        "encoded": "*%20Scenario:%20Input%20with%20endIcon%20prop",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "0ab5a2",
+        "hash": "6fa7c135",
+        "encoded": "*%20Expected:%20Icon%20appears%20at%20the%20end%20with%20correct%20positioning",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "0ab5a2",
+        "hash": "c7de4cc1",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "0ab5a2",
+        "hash": "ac355f24",
+        "encoded": "test('should%20render%20with%20end%20icon',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "0ab5a2",
+        "hash": "9b54d2a2",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "0ab5a2",
+        "hash": "96e0c8d1",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "0ab5a2",
+        "hash": "a6bc0fd0",
+        "encoded": "endIcon=%7B%3CMockIcon%20name=%22clear%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "0ab5a2",
+        "hash": "71e7b474",
+        "encoded": "placeholder=%22Clearable%22",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "0ab5a2",
+        "hash": "5019172b",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "0ab5a2",
+        "hash": "5ade0f40",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "0ab5a2",
+        "hash": "2e88a260",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "0ab5a2",
+        "hash": "0f2b8bef",
+        "encoded": "const%20icon%20=%20screen.getByTestId('icon-clear');",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "0ab5a2",
+        "hash": "89c30647",
+        "encoded": "expect(icon).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "0ab5a2",
+        "hash": "9932d161",
+        "encoded": "expect(input).toHaveClass('pr-10');%20//%20md%20size%20with%20end%20icon",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "0ab5a2",
+        "hash": "206c3442",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "0ab5a2",
+        "hash": "7e2ba995",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "0ab5a2",
+        "hash": "bd5f7fb5",
+        "encoded": "*%20Test%20input%20with%20both%20start%20and%20end%20icons",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "0ab5a2",
+        "hash": "764231a6",
+        "encoded": "*%20Scenario:%20Input%20with%20both%20startIcon%20and%20endIcon%20props",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "0ab5a2",
+        "hash": "e3e5a802",
+        "encoded": "*%20Expected:%20Both%20icons%20are%20positioned%20correctly",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "0ab5a2",
+        "hash": "090e7606",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "0ab5a2",
+        "hash": "0c9f9144",
+        "encoded": "test('should%20render%20with%20both%20start%20and%20end%20icons',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "0ab5a2",
+        "hash": "d5d14a10",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "0ab5a2",
+        "hash": "1e6a7f02",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "0ab5a2",
+        "hash": "33e7461f",
+        "encoded": "startIcon=%7B%3CMockIcon%20name=%22user%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "0ab5a2",
+        "hash": "4ea5b67e",
+        "encoded": "endIcon=%7B%3CMockIcon%20name=%22check%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "0ab5a2",
+        "hash": "32cbd6e4",
+        "encoded": "placeholder=%22Username%22",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "0ab5a2",
+        "hash": "94d78ac3",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "0ab5a2",
+        "hash": "1a446989",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "0ab5a2",
+        "hash": "21e0fc5a",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "0ab5a2",
+        "hash": "f7b66350",
+        "encoded": "const%20startIcon%20=%20screen.getByTestId('icon-user');",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "0ab5a2",
+        "hash": "34529681",
+        "encoded": "const%20endIcon%20=%20screen.getByTestId('icon-check');",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "0ab5a2",
+        "hash": "9a02fdca",
+        "encoded": "expect(startIcon).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "0ab5a2",
+        "hash": "d0a51d8a",
+        "encoded": "expect(endIcon).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "0ab5a2",
+        "hash": "73e5a3c3",
+        "encoded": "expect(input).toHaveClass('pl-10',%20'pr-10');",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "0ab5a2",
+        "hash": "8d94952d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "0ab5a2",
+        "hash": "813edef1",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "0ab5a2",
+        "hash": "c04e760c",
+        "encoded": "*%20Test%20icon%20positioning%20for%20different%20sizes",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "0ab5a2",
+        "hash": "b7a7b4c7",
+        "encoded": "*%20Scenario:%20Icons%20in%20different%20sized%20inputs",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "0ab5a2",
+        "hash": "026be9af",
+        "encoded": "*%20Expected:%20Icon%20positioning%20adjusts%20based%20on%20input%20size",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "0ab5a2",
+        "hash": "69d3e05d",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "0ab5a2",
+        "hash": "1fe137d6",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "0ab5a2",
+        "hash": "198f14cb",
+        "encoded": "%5B'sm',%20'pl-9',%20'pr-9'%5D,",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "0ab5a2",
+        "hash": "e6af7c81",
+        "encoded": "%5B'md',%20'pl-10',%20'pr-10'%5D,",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "0ab5a2",
+        "hash": "a2d17d85",
+        "encoded": "%5B'lg',%20'pl-11',%20'pr-11'%5D",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "0ab5a2",
+        "hash": "1e10d64d",
+        "encoded": "%5D%20as%20const)('should%20position%20icons%20correctly%20for%20%25s%20size',%20(size,%20startPadding,%20endPadding)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "0ab5a2",
+        "hash": "443f453f",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "0ab5a2",
+        "hash": "099aea75",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "0ab5a2",
+        "hash": "bfc5a5a9",
+        "encoded": "size=%7Bsize%7D",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "0ab5a2",
+        "hash": "50b10505",
+        "encoded": "startIcon=%7B%3CMockIcon%20name=%22start%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "0ab5a2",
+        "hash": "fb04f8dc",
+        "encoded": "endIcon=%7B%3CMockIcon%20name=%22end%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "0ab5a2",
+        "hash": "0f9448b5",
+        "encoded": "placeholder=%22Test%22",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "0ab5a2",
+        "hash": "51919882",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "0ab5a2",
+        "hash": "5a84ae10",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "0ab5a2",
+        "hash": "02cdf1b7",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "0ab5a2",
+        "hash": "6a8534ec",
+        "encoded": "expect(input).toHaveClass(startPadding,%20endPadding);",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "0ab5a2",
+        "hash": "b99912e0",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "0ab5a2",
+        "hash": "3abfadf4",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "0ab5a2",
+        "hash": "8896cc73",
+        "encoded": "//%20Test%204:%20Form%20Validation%20-%20Validation%20states%20and%20error%20messaging",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "0ab5a2",
+        "hash": "4795e6eb",
+        "encoded": "describe('Form%20Validation',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "0ab5a2",
+        "hash": "9beb1094",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "0ab5a2",
+        "hash": "e1cc725f",
+        "encoded": "*%20Test%20validation%20message%20priority",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "0ab5a2",
+        "hash": "b7d3a1fb",
+        "encoded": "*%20Scenario:%20Input%20with%20multiple%20message%20types",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "0ab5a2",
+        "hash": "8ccbca14",
+        "encoded": "*%20Expected:%20Error%20message%20takes%20priority%20over%20others",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "0ab5a2",
+        "hash": "3231225e",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "0ab5a2",
+        "hash": "687015d6",
+        "encoded": "test('should%20prioritize%20error%20message%20over%20other%20messages',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "0ab5a2",
+        "hash": "1a82e3cf",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "0ab5a2",
+        "hash": "ccb82576",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "0ab5a2",
+        "hash": "2ef443df",
+        "encoded": "error",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "0ab5a2",
+        "hash": "474ae625",
+        "encoded": "errorMessage=%22Error%20message%22",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "0ab5a2",
+        "hash": "83e983d3",
+        "encoded": "successMessage=%22Success%20message%22",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "0ab5a2",
+        "hash": "bb3e34f5",
+        "encoded": "helperText=%22Helper%20text%22",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "0ab5a2",
+        "hash": "e251a0d2",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "0ab5a2",
+        "hash": "794af312",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "0ab5a2",
+        "hash": "19c02693",
+        "encoded": "expect(screen.getByText('Error%20message')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "0ab5a2",
+        "hash": "6bc0dad7",
+        "encoded": "expect(screen.queryByText('Success%20message')).not.toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "0ab5a2",
+        "hash": "8f96431c",
+        "encoded": "expect(screen.queryByText('Helper%20text')).not.toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "0ab5a2",
+        "hash": "99b7fee2",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "0ab5a2",
+        "hash": "722efdcc",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "0ab5a2",
+        "hash": "0792da64",
+        "encoded": "*%20Test%20success%20message%20display",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "0ab5a2",
+        "hash": "0313c58b",
+        "encoded": "*%20Scenario:%20Input%20with%20success%20state%20and%20message",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "0ab5a2",
+        "hash": "ec000004",
+        "encoded": "*%20Expected:%20Success%20message%20is%20displayed%20when%20no%20error",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "0ab5a2",
+        "hash": "052dcd15",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "0ab5a2",
+        "hash": "1ed67c5f",
+        "encoded": "test('should%20show%20success%20message%20when%20no%20error',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "0ab5a2",
+        "hash": "3329dcf6",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "0ab5a2",
+        "hash": "9de4a383",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "0ab5a2",
+        "hash": "2f4560d6",
+        "encoded": "success",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "0ab5a2",
+        "hash": "58c6147f",
+        "encoded": "successMessage=%22Success%20message%22",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "0ab5a2",
+        "hash": "da869fea",
+        "encoded": "helperText=%22Helper%20text%22",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "0ab5a2",
+        "hash": "93c76dbd",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "0ab5a2",
+        "hash": "145d89ec",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "0ab5a2",
+        "hash": "7209f00f",
+        "encoded": "expect(screen.getByText('Success%20message')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "0ab5a2",
+        "hash": "ff44c20b",
+        "encoded": "expect(screen.queryByText('Helper%20text')).not.toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "0ab5a2",
+        "hash": "3d104f42",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "0ab5a2",
+        "hash": "b707ad6a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "0ab5a2",
+        "hash": "ea394e0f",
+        "encoded": "*%20Test%20helper%20text%20display",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "0ab5a2",
+        "hash": "e11e81cc",
+        "encoded": "*%20Scenario:%20Input%20with%20only%20helper%20text",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "0ab5a2",
+        "hash": "7ceb70bc",
+        "encoded": "*%20Expected:%20Helper%20text%20is%20displayed%20when%20no%20validation%20messages",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "0ab5a2",
+        "hash": "25cca91a",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "0ab5a2",
+        "hash": "98dbb01d",
+        "encoded": "test('should%20show%20helper%20text%20when%20no%20validation%20messages',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "0ab5a2",
+        "hash": "198238d7",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "0ab5a2",
+        "hash": "dd19aa17",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "0ab5a2",
+        "hash": "7f751d25",
+        "encoded": "helperText=%22Helper%20text%22",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "0ab5a2",
+        "hash": "f781074c",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "0ab5a2",
+        "hash": "606856e7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "0ab5a2",
+        "hash": "aa8233ab",
+        "encoded": "expect(screen.getByText('Helper%20text')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "0ab5a2",
+        "hash": "bf8a0482",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "0ab5a2",
+        "hash": "1bf39f0b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "0ab5a2",
+        "hash": "bc1d42dc",
+        "encoded": "*%20Test%20ARIA%20describedby%20for%20validation",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "0ab5a2",
+        "hash": "bab70fb1",
+        "encoded": "*%20Scenario:%20Input%20with%20validation%20messages",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "0ab5a2",
+        "hash": "e658e728",
+        "encoded": "*%20Expected:%20aria-describedby%20references%20the%20correct%20message",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "0ab5a2",
+        "hash": "5ffb6675",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "0ab5a2",
+        "hash": "124f7522",
+        "encoded": "test('should%20set%20aria-describedby%20for%20validation%20messages',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "0ab5a2",
+        "hash": "dd9d9a91",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "0ab5a2",
+        "hash": "fad48f1a",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "0ab5a2",
+        "hash": "6b0a9999",
+        "encoded": "error",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "0ab5a2",
+        "hash": "9fb0fc69",
+        "encoded": "errorMessage=%22Required%20field%22",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "0ab5a2",
+        "hash": "28d77988",
+        "encoded": "aria-describedby=%22custom-description%22",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "0ab5a2",
+        "hash": "f71d4aa5",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "0ab5a2",
+        "hash": "d1972bb7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "0ab5a2",
+        "hash": "fe12b5f7",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "0ab5a2",
+        "hash": "c939b08f",
+        "encoded": "const%20describedBy%20=%20input.getAttribute('aria-describedby');",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "0ab5a2",
+        "hash": "82a4c070",
+        "encoded": "expect(describedBy).toContain('custom-description');",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "0ab5a2",
+        "hash": "84af18dc",
+        "encoded": "expect(describedBy).toContain('error');",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "0ab5a2",
+        "hash": "e4ffc3d6",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "0ab5a2",
+        "hash": "7c46e5c3",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "0ab5a2",
+        "hash": "b080699c",
+        "encoded": "*%20Test%20aria-invalid%20for%20error%20state",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "0ab5a2",
+        "hash": "a0f80e30",
+        "encoded": "*%20Scenario:%20Input%20in%20error%20state",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "0ab5a2",
+        "hash": "ff08ab20",
+        "encoded": "*%20Expected:%20aria-invalid%20is%20set%20to%20true",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "0ab5a2",
+        "hash": "9d1b8b9c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "0ab5a2",
+        "hash": "8d3504a3",
+        "encoded": "test('should%20set%20aria-invalid%20for%20error%20state',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "0ab5a2",
+        "hash": "c87d9de6",
+        "encoded": "render(%3CInput%20error%20/%3E);",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "0ab5a2",
+        "hash": "ce9d1eb1",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "0ab5a2",
+        "hash": "4339ab52",
+        "encoded": "expect(input).toHaveAttribute('aria-invalid',%20'true');",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "0ab5a2",
+        "hash": "055fb086",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "0ab5a2",
+        "hash": "fe68959d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "0ab5a2",
+        "hash": "95841bb1",
+        "encoded": "//%20Test%205:%20Event%20Handling%20-%20Form%20submissions,%20keyboard%20events",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "0ab5a2",
+        "hash": "f6a2983c",
+        "encoded": "describe('Event%20Handling',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "0ab5a2",
+        "hash": "ef06ee41",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "0ab5a2",
+        "hash": "e5b2319a",
+        "encoded": "*%20Test%20input%20change%20handler",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "0ab5a2",
+        "hash": "7ff8523b",
+        "encoded": "*%20Scenario:%20Input%20with%20onChange%20prop",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "0ab5a2",
+        "hash": "8cef21ea",
+        "encoded": "*%20Expected:%20onChange%20is%20called%20when%20input%20value%20changes",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "0ab5a2",
+        "hash": "b5686f75",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "0ab5a2",
+        "hash": "8cfe315f",
+        "encoded": "test('should%20handle%20change%20events',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "0ab5a2",
+        "hash": "396dd70c",
+        "encoded": "const%20handleChange%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "0ab5a2",
+        "hash": "8a1790d8",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "0ab5a2",
+        "hash": "71c66549",
+        "encoded": "render(%3CInput%20onChange=%7BhandleChange%7D%20/%3E);",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "0ab5a2",
+        "hash": "db7fa208",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "0ab5a2",
+        "hash": "5e4f0af0",
+        "encoded": "await%20user.type(input,%20'test');",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "0ab5a2",
+        "hash": "9076517d",
+        "encoded": "expect(handleChange).toHaveBeenCalledTimes(4);%20//%20One%20for%20each%20character",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "0ab5a2",
+        "hash": "55349d2c",
+        "encoded": "expect(input).toHaveValue('test');",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "0ab5a2",
+        "hash": "7fa09f61",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "0ab5a2",
+        "hash": "47ea001e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "0ab5a2",
+        "hash": "96ae309c",
+        "encoded": "*%20Test%20input%20focus%20and%20blur%20events",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "0ab5a2",
+        "hash": "ccd3276b",
+        "encoded": "*%20Scenario:%20Input%20with%20onFocus%20and%20onBlur%20handlers",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "0ab5a2",
+        "hash": "b85e5dbe",
+        "encoded": "*%20Expected:%20Events%20are%20called%20appropriately",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "0ab5a2",
+        "hash": "1884fe58",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "0ab5a2",
+        "hash": "7da20f49",
+        "encoded": "test('should%20handle%20focus%20and%20blur%20events',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "0ab5a2",
+        "hash": "de8abf97",
+        "encoded": "const%20handleFocus%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "0ab5a2",
+        "hash": "b5052099",
+        "encoded": "const%20handleBlur%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "0ab5a2",
+        "hash": "1bff770c",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "0ab5a2",
+        "hash": "f769d78a",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "0ab5a2",
+        "hash": "e7dcfa6b",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "0ab5a2",
+        "hash": "7783b9c4",
+        "encoded": "onFocus=%7BhandleFocus%7D",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "0ab5a2",
+        "hash": "b8b3223d",
+        "encoded": "onBlur=%7BhandleBlur%7D",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "0ab5a2",
+        "hash": "a7849606",
+        "encoded": "placeholder=%22Focus%20test%22",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "0ab5a2",
+        "hash": "67c4027e",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "0ab5a2",
+        "hash": "230e072b",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "369": {
+        "chunkId": "0ab5a2",
+        "hash": "58df5827",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "0ab5a2",
+        "hash": "13f7537b",
+        "encoded": "await%20user.click(input);",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "0ab5a2",
+        "hash": "60270159",
+        "encoded": "expect(handleFocus).toHaveBeenCalledTimes(1);",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "0ab5a2",
+        "hash": "c7175a62",
+        "encoded": "await%20user.tab();",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "0ab5a2",
+        "hash": "b5627725",
+        "encoded": "expect(handleBlur).toHaveBeenCalledTimes(1);",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "0ab5a2",
+        "hash": "161d5e07",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "0ab5a2",
+        "hash": "70564799",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "0ab5a2",
+        "hash": "3f62b9e2",
+        "encoded": "*%20Test%20keyboard%20events",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "0ab5a2",
+        "hash": "ea4dd285",
+        "encoded": "*%20Scenario:%20Input%20with%20onKeyDown%20handler",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "0ab5a2",
+        "hash": "367f4728",
+        "encoded": "*%20Expected:%20Keyboard%20events%20are%20handled%20correctly",
+        "prevChunkIds": []
+      },
+      "382": {
+        "chunkId": "0ab5a2",
+        "hash": "d671a10c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "0ab5a2",
+        "hash": "7caa3945",
+        "encoded": "test('should%20handle%20keyboard%20events',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "384": {
+        "chunkId": "0ab5a2",
+        "hash": "53e4663d",
+        "encoded": "const%20handleKeyDown%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "0ab5a2",
+        "hash": "35e060c6",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "0ab5a2",
+        "hash": "89d5a0b4",
+        "encoded": "render(%3CInput%20onKeyDown=%7BhandleKeyDown%7D%20/%3E);",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "0ab5a2",
+        "hash": "a30f74dd",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "390": {
+        "chunkId": "0ab5a2",
+        "hash": "4ff48f83",
+        "encoded": "await%20user.click(input);",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "0ab5a2",
+        "hash": "b3c783f5",
+        "encoded": "await%20user.keyboard('%7BEnter%7D');",
+        "prevChunkIds": []
+      },
+      "393": {
+        "chunkId": "0ab5a2",
+        "hash": "e8d52d26",
+        "encoded": "expect(handleKeyDown).toHaveBeenCalledWith(",
+        "prevChunkIds": []
+      },
+      "394": {
+        "chunkId": "0ab5a2",
+        "hash": "de700926",
+        "encoded": "expect.objectContaining(%7B%20key:%20'Enter'%20%7D)",
+        "prevChunkIds": []
+      },
+      "395": {
+        "chunkId": "0ab5a2",
+        "hash": "e483b0da",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "396": {
+        "chunkId": "0ab5a2",
+        "hash": "35c1a298",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "398": {
+        "chunkId": "0ab5a2",
+        "hash": "b0d7f654",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "0ab5a2",
+        "hash": "ac68d1ef",
+        "encoded": "*%20Test%20disabled%20input%20does%20not%20trigger%20events",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "0ab5a2",
+        "hash": "e23dd010",
+        "encoded": "*%20Scenario:%20Disabled%20input%20with%20event%20handlers",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "0ab5a2",
+        "hash": "799a95e7",
+        "encoded": "*%20Expected:%20Events%20are%20not%20triggered",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "0ab5a2",
+        "hash": "2b9ed739",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "0ab5a2",
+        "hash": "ea15e1e8",
+        "encoded": "test('should%20not%20trigger%20events%20when%20disabled',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "0ab5a2",
+        "hash": "8f307990",
+        "encoded": "const%20handleChange%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "0ab5a2",
+        "hash": "c696ad0b",
+        "encoded": "const%20handleFocus%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "406": {
+        "chunkId": "0ab5a2",
+        "hash": "21556f69",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "408": {
+        "chunkId": "0ab5a2",
+        "hash": "7bdccf6e",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "0ab5a2",
+        "hash": "3846a2ca",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "410": {
+        "chunkId": "0ab5a2",
+        "hash": "de98f0cd",
+        "encoded": "disabled",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "0ab5a2",
+        "hash": "5b8872a8",
+        "encoded": "onChange=%7BhandleChange%7D",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "0ab5a2",
+        "hash": "67dc117b",
+        "encoded": "onFocus=%7BhandleFocus%7D",
+        "prevChunkIds": []
+      },
+      "413": {
+        "chunkId": "0ab5a2",
+        "hash": "1d07d4d2",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "414": {
+        "chunkId": "0ab5a2",
+        "hash": "adf376d0",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "0ab5a2",
+        "hash": "ef4f7ceb",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "0ab5a2",
+        "hash": "2e5bd00d",
+        "encoded": "await%20user.click(input);",
+        "prevChunkIds": []
+      },
+      "419": {
+        "chunkId": "0ab5a2",
+        "hash": "b5bd783d",
+        "encoded": "expect(handleFocus).not.toHaveBeenCalled();",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "0ab5a2",
+        "hash": "d759a856",
+        "encoded": "//%20Try%20to%20type%20(should%20not%20work)",
+        "prevChunkIds": []
+      },
+      "422": {
+        "chunkId": "0ab5a2",
+        "hash": "6d050aa2",
+        "encoded": "await%20user.type(input,%20'test');",
+        "prevChunkIds": []
+      },
+      "423": {
+        "chunkId": "0ab5a2",
+        "hash": "6d1c2fce",
+        "encoded": "expect(handleChange).not.toHaveBeenCalled();",
+        "prevChunkIds": []
+      },
+      "424": {
+        "chunkId": "0ab5a2",
+        "hash": "fc2569eb",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "0ab5a2",
+        "hash": "1eef9ce5",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "427": {
+        "chunkId": "0ab5a2",
+        "hash": "6a048ee9",
+        "encoded": "//%20Test%206:%20Accessibility",
+        "prevChunkIds": []
+      },
+      "428": {
+        "chunkId": "0ab5a2",
+        "hash": "ebc424ee",
+        "encoded": "describe('Accessibility',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "0ab5a2",
+        "hash": "72411ac2",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "430": {
+        "chunkId": "0ab5a2",
+        "hash": "a41d8a3c",
+        "encoded": "*%20Test%20input%20labeling",
+        "prevChunkIds": []
+      },
+      "431": {
+        "chunkId": "0ab5a2",
+        "hash": "913a437a",
+        "encoded": "*%20Scenario:%20Input%20with%20associated%20label",
+        "prevChunkIds": []
+      },
+      "432": {
+        "chunkId": "0ab5a2",
+        "hash": "1bf87296",
+        "encoded": "*%20Expected:%20Proper%20label%20association",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "0ab5a2",
+        "hash": "91ae8248",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "0ab5a2",
+        "hash": "6fe61807",
+        "encoded": "test('should%20support%20proper%20labeling',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "435": {
+        "chunkId": "0ab5a2",
+        "hash": "cbfd5c05",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "436": {
+        "chunkId": "0ab5a2",
+        "hash": "489ab174",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "0ab5a2",
+        "hash": "2234db08",
+        "encoded": "%3Clabel%20htmlFor=%22test-input%22%3EEmail%20Address%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "438": {
+        "chunkId": "0ab5a2",
+        "hash": "7cbb4518",
+        "encoded": "%3CInput%20id=%22test-input%22%20type=%22email%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "439": {
+        "chunkId": "0ab5a2",
+        "hash": "6bb66afc",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "440": {
+        "chunkId": "0ab5a2",
+        "hash": "2915dc26",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "442": {
+        "chunkId": "0ab5a2",
+        "hash": "5a577139",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox',%20%7B%20name:%20/email%20address/i%20%7D);",
+        "prevChunkIds": []
+      },
+      "443": {
+        "chunkId": "0ab5a2",
+        "hash": "cee5a47f",
+        "encoded": "expect(input).toHaveAttribute('id',%20'test-input');",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "0ab5a2",
+        "hash": "ed270166",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "446": {
+        "chunkId": "0ab5a2",
+        "hash": "421e7d8f",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "447": {
+        "chunkId": "0ab5a2",
+        "hash": "e8683f92",
+        "encoded": "*%20Test%20required%20field%20indication",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "0ab5a2",
+        "hash": "72d1c153",
+        "encoded": "*%20Scenario:%20Required%20input%20field",
+        "prevChunkIds": []
+      },
+      "449": {
+        "chunkId": "0ab5a2",
+        "hash": "9288caf3",
+        "encoded": "*%20Expected:%20Proper%20required%20attribute%20and%20indication",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "0ab5a2",
+        "hash": "68f816ea",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "451": {
+        "chunkId": "0ab5a2",
+        "hash": "09c9793b",
+        "encoded": "test('should%20indicate%20required%20fields',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "452": {
+        "chunkId": "0ab5a2",
+        "hash": "53fe713d",
+        "encoded": "render(%3CInput%20required%20aria-label=%22Required%20field%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "454": {
+        "chunkId": "0ab5a2",
+        "hash": "f69ffda8",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox',%20%7B%20name:%20/required%20field/i%20%7D);",
+        "prevChunkIds": []
+      },
+      "455": {
+        "chunkId": "0ab5a2",
+        "hash": "f04d53d3",
+        "encoded": "expect(input).toBeRequired();",
+        "prevChunkIds": []
+      },
+      "456": {
+        "chunkId": "0ab5a2",
+        "hash": "0c5bc610",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "458": {
+        "chunkId": "0ab5a2",
+        "hash": "833550c0",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "459": {
+        "chunkId": "0ab5a2",
+        "hash": "bcbcf04b",
+        "encoded": "*%20Test%20input%20type%20support",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "0ab5a2",
+        "hash": "90b684c1",
+        "encoded": "*%20Scenario:%20Different%20input%20types",
+        "prevChunkIds": []
+      },
+      "461": {
+        "chunkId": "0ab5a2",
+        "hash": "634cfd77",
+        "encoded": "*%20Expected:%20Correct%20input%20type%20attributes",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "0ab5a2",
+        "hash": "bd234189",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "463": {
+        "chunkId": "0ab5a2",
+        "hash": "3631b364",
+        "encoded": "test.each(%5B",
+        "prevChunkIds": []
+      },
+      "464": {
+        "chunkId": "0ab5a2",
+        "hash": "d83b6f51",
+        "encoded": "%5B'email',%20'email'%5D,",
+        "prevChunkIds": []
+      },
+      "465": {
+        "chunkId": "0ab5a2",
+        "hash": "e2e92420",
+        "encoded": "%5B'password',%20'password'%5D,",
+        "prevChunkIds": []
+      },
+      "466": {
+        "chunkId": "0ab5a2",
+        "hash": "032661a3",
+        "encoded": "%5B'tel',%20'tel'%5D,",
+        "prevChunkIds": []
+      },
+      "467": {
+        "chunkId": "0ab5a2",
+        "hash": "14e8ff54",
+        "encoded": "%5B'url',%20'url'%5D,",
+        "prevChunkIds": []
+      },
+      "468": {
+        "chunkId": "0ab5a2",
+        "hash": "71406909",
+        "encoded": "%5B'number',%20'spinbutton'%5D",
+        "prevChunkIds": []
+      },
+      "469": {
+        "chunkId": "0ab5a2",
+        "hash": "541fdf9c",
+        "encoded": "%5D)('should%20support%20%25s%20input%20type',%20(type,%20expectedRole)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "470": {
+        "chunkId": "0ab5a2",
+        "hash": "df341706",
+        "encoded": "render(%3CInput%20type=%7Btype%7D%20/%3E);",
+        "prevChunkIds": []
+      },
+      "472": {
+        "chunkId": "0ab5a2",
+        "hash": "a168523b",
+        "encoded": "const%20input%20=%20screen.getByRole(expectedRole);",
+        "prevChunkIds": []
+      },
+      "473": {
+        "chunkId": "0ab5a2",
+        "hash": "554b984c",
+        "encoded": "expect(input).toHaveAttribute('type',%20type);",
+        "prevChunkIds": []
+      },
+      "474": {
+        "chunkId": "0ab5a2",
+        "hash": "6989e009",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "476": {
+        "chunkId": "0ab5a2",
+        "hash": "01ca35a1",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "477": {
+        "chunkId": "0ab5a2",
+        "hash": "080ff0a1",
+        "encoded": "*%20Test%20accessibility%20compliance%20with%20axe",
+        "prevChunkIds": []
+      },
+      "478": {
+        "chunkId": "0ab5a2",
+        "hash": "6b5e98c6",
+        "encoded": "*%20Scenario:%20Various%20input%20configurations",
+        "prevChunkIds": []
+      },
+      "479": {
+        "chunkId": "0ab5a2",
+        "hash": "e900acae",
+        "encoded": "*%20Expected:%20No%20accessibility%20violations",
+        "prevChunkIds": []
+      },
+      "480": {
+        "chunkId": "0ab5a2",
+        "hash": "ed20f085",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "481": {
+        "chunkId": "0ab5a2",
+        "hash": "bbdfe1f1",
+        "encoded": "test('should%20not%20have%20accessibility%20violations',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "482": {
+        "chunkId": "0ab5a2",
+        "hash": "cf576df6",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "483": {
+        "chunkId": "0ab5a2",
+        "hash": "84dde111",
+        "encoded": "%3Cform%3E",
+        "prevChunkIds": []
+      },
+      "484": {
+        "chunkId": "0ab5a2",
+        "hash": "0912cc52",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "485": {
+        "chunkId": "0ab5a2",
+        "hash": "49d13190",
+        "encoded": "%3Clabel%20htmlFor=%22email%22%3EEmail%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "486": {
+        "chunkId": "0ab5a2",
+        "hash": "925a93c6",
+        "encoded": "%3CInput%20id=%22email%22%20type=%22email%22%20required%20/%3E",
+        "prevChunkIds": []
+      },
+      "487": {
+        "chunkId": "0ab5a2",
+        "hash": "6df166ef",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "488": {
+        "chunkId": "0ab5a2",
+        "hash": "34cf8608",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "489": {
+        "chunkId": "0ab5a2",
+        "hash": "cf58cd8e",
+        "encoded": "%3Clabel%20htmlFor=%22password%22%3EPassword%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "490": {
+        "chunkId": "0ab5a2",
+        "hash": "ce143e76",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "491": {
+        "chunkId": "0ab5a2",
+        "hash": "e5c3e331",
+        "encoded": "id=%22password%22",
+        "prevChunkIds": []
+      },
+      "492": {
+        "chunkId": "0ab5a2",
+        "hash": "5e72ad1c",
+        "encoded": "type=%22password%22",
+        "prevChunkIds": []
+      },
+      "493": {
+        "chunkId": "0ab5a2",
+        "hash": "5b7dba6a",
+        "encoded": "error",
+        "prevChunkIds": []
+      },
+      "494": {
+        "chunkId": "0ab5a2",
+        "hash": "6434c850",
+        "encoded": "errorMessage=%22Password%20is%20required%22",
+        "prevChunkIds": []
+      },
+      "495": {
+        "chunkId": "0ab5a2",
+        "hash": "d4bbf030",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "496": {
+        "chunkId": "0ab5a2",
+        "hash": "9ab38b9a",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "497": {
+        "chunkId": "0ab5a2",
+        "hash": "4d36931d",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "498": {
+        "chunkId": "0ab5a2",
+        "hash": "d5b6a499",
+        "encoded": "%3Clabel%20htmlFor=%22search%22%3ESearch%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "499": {
+        "chunkId": "0ab5a2",
+        "hash": "f806b650",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "500": {
+        "chunkId": "0ab5a2",
+        "hash": "98c743f4",
+        "encoded": "id=%22search%22",
+        "prevChunkIds": []
+      },
+      "501": {
+        "chunkId": "0ab5a2",
+        "hash": "6b756875",
+        "encoded": "startIcon=%7B%3CMockIcon%20name=%22search%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "502": {
+        "chunkId": "0ab5a2",
+        "hash": "943b1db9",
+        "encoded": "helperText=%22Enter%20search%20terms%22",
+        "prevChunkIds": []
+      },
+      "503": {
+        "chunkId": "0ab5a2",
+        "hash": "85f58cdf",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "504": {
+        "chunkId": "0ab5a2",
+        "hash": "34c9c782",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "505": {
+        "chunkId": "0ab5a2",
+        "hash": "3c9a9055",
+        "encoded": "%3C/form%3E",
+        "prevChunkIds": []
+      },
+      "506": {
+        "chunkId": "0ab5a2",
+        "hash": "eda41056",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "508": {
+        "chunkId": "0ab5a2",
+        "hash": "a5676fd8",
+        "encoded": "const%20results%20=%20await%20axe(container);",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "0ab5a2",
+        "hash": "4606237a",
+        "encoded": "expect(results).toHaveNoViolations();",
+        "prevChunkIds": []
+      },
+      "510": {
+        "chunkId": "0ab5a2",
+        "hash": "b31210d2",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "511": {
+        "chunkId": "0ab5a2",
+        "hash": "e63fd1df",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "513": {
+        "chunkId": "0ab5a2",
+        "hash": "c477955c",
+        "encoded": "//%20Test%207:%20Edge%20Cases",
+        "prevChunkIds": []
+      },
+      "514": {
+        "chunkId": "0ab5a2",
+        "hash": "378f61d7",
+        "encoded": "describe('Edge%20Cases',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "515": {
+        "chunkId": "0ab5a2",
+        "hash": "f25bdf5d",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "516": {
+        "chunkId": "0ab5a2",
+        "hash": "429770de",
+        "encoded": "*%20Test%20input%20with%20custom%20className",
+        "prevChunkIds": []
+      },
+      "517": {
+        "chunkId": "0ab5a2",
+        "hash": "f20c2edd",
+        "encoded": "*%20Scenario:%20Input%20with%20additional%20CSS%20classes",
+        "prevChunkIds": []
+      },
+      "518": {
+        "chunkId": "0ab5a2",
+        "hash": "b5455b6e",
+        "encoded": "*%20Expected:%20Custom%20classes%20are%20applied",
+        "prevChunkIds": []
+      },
+      "519": {
+        "chunkId": "0ab5a2",
+        "hash": "70111890",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "520": {
+        "chunkId": "0ab5a2",
+        "hash": "eb26e914",
+        "encoded": "test('should%20apply%20custom%20className',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "521": {
+        "chunkId": "0ab5a2",
+        "hash": "5ccf3b8a",
+        "encoded": "render(%3CInput%20className=%22custom-input%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "523": {
+        "chunkId": "0ab5a2",
+        "hash": "531cd681",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "524": {
+        "chunkId": "0ab5a2",
+        "hash": "2a91d63e",
+        "encoded": "expect(input).toHaveClass('custom-input');",
+        "prevChunkIds": []
+      },
+      "525": {
+        "chunkId": "0ab5a2",
+        "hash": "4201f3a0",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "527": {
+        "chunkId": "0ab5a2",
+        "hash": "0afd1242",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "528": {
+        "chunkId": "0ab5a2",
+        "hash": "9fd24475",
+        "encoded": "*%20Test%20input%20wrapper%20className",
+        "prevChunkIds": []
+      },
+      "529": {
+        "chunkId": "0ab5a2",
+        "hash": "8239ae0b",
+        "encoded": "*%20Scenario:%20Input%20with%20wrapper%20styling",
+        "prevChunkIds": []
+      },
+      "530": {
+        "chunkId": "0ab5a2",
+        "hash": "648e0ac0",
+        "encoded": "*%20Expected:%20Wrapper%20classes%20are%20applied",
+        "prevChunkIds": []
+      },
+      "531": {
+        "chunkId": "0ab5a2",
+        "hash": "9ba4714f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "532": {
+        "chunkId": "0ab5a2",
+        "hash": "238bcf25",
+        "encoded": "test('should%20apply%20wrapper%20className',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "533": {
+        "chunkId": "0ab5a2",
+        "hash": "a6609a73",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "534": {
+        "chunkId": "0ab5a2",
+        "hash": "eab9c109",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "535": {
+        "chunkId": "0ab5a2",
+        "hash": "3bf0b890",
+        "encoded": "wrapperClassName=%22custom-wrapper%22",
+        "prevChunkIds": []
+      },
+      "536": {
+        "chunkId": "0ab5a2",
+        "hash": "744c11f8",
+        "encoded": "data-testid=%22input-wrapper%22",
+        "prevChunkIds": []
+      },
+      "537": {
+        "chunkId": "0ab5a2",
+        "hash": "9637c74a",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "538": {
+        "chunkId": "0ab5a2",
+        "hash": "aa863423",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "540": {
+        "chunkId": "0ab5a2",
+        "hash": "d9638dad",
+        "encoded": "const%20wrapper%20=%20screen.getByTestId('input-wrapper').parentElement;",
+        "prevChunkIds": []
+      },
+      "541": {
+        "chunkId": "0ab5a2",
+        "hash": "5a55489d",
+        "encoded": "expect(wrapper).toHaveClass('custom-wrapper');",
+        "prevChunkIds": []
+      },
+      "542": {
+        "chunkId": "0ab5a2",
+        "hash": "153184bb",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "544": {
+        "chunkId": "0ab5a2",
+        "hash": "86330e35",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "545": {
+        "chunkId": "0ab5a2",
+        "hash": "491fe37d",
+        "encoded": "*%20Test%20input%20ref%20forwarding",
+        "prevChunkIds": []
+      },
+      "546": {
+        "chunkId": "0ab5a2",
+        "hash": "78bf2b74",
+        "encoded": "*%20Scenario:%20Input%20with%20ref",
+        "prevChunkIds": []
+      },
+      "547": {
+        "chunkId": "0ab5a2",
+        "hash": "14b69a3b",
+        "encoded": "*%20Expected:%20Ref%20is%20properly%20forwarded%20to%20input%20element",
+        "prevChunkIds": []
+      },
+      "548": {
+        "chunkId": "0ab5a2",
+        "hash": "7384df30",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "549": {
+        "chunkId": "0ab5a2",
+        "hash": "5e4aad6b",
+        "encoded": "test('should%20forward%20ref%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "550": {
+        "chunkId": "0ab5a2",
+        "hash": "4bfe1642",
+        "encoded": "const%20ref%20=%20React.createRef%3CHTMLInputElement%3E();",
+        "prevChunkIds": []
+      },
+      "552": {
+        "chunkId": "0ab5a2",
+        "hash": "24f7d758",
+        "encoded": "render(%3CInput%20ref=%7Bref%7D%20/%3E);",
+        "prevChunkIds": []
+      },
+      "554": {
+        "chunkId": "0ab5a2",
+        "hash": "f595298f",
+        "encoded": "expect(ref.current).toBeInstanceOf(HTMLInputElement);",
+        "prevChunkIds": []
+      },
+      "555": {
+        "chunkId": "0ab5a2",
+        "hash": "a51dbe82",
+        "encoded": "expect(ref.current).toBe(screen.getByRole('textbox'));",
+        "prevChunkIds": []
+      },
+      "556": {
+        "chunkId": "0ab5a2",
+        "hash": "e9e2330e",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "558": {
+        "chunkId": "0ab5a2",
+        "hash": "6ada4a45",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "559": {
+        "chunkId": "0ab5a2",
+        "hash": "7068670d",
+        "encoded": "*%20Test%20input%20with%20all%20props",
+        "prevChunkIds": []
+      },
+      "560": {
+        "chunkId": "0ab5a2",
+        "hash": "f9fca3f6",
+        "encoded": "*%20Scenario:%20Input%20with%20maximum%20configuration",
+        "prevChunkIds": []
+      },
+      "561": {
+        "chunkId": "0ab5a2",
+        "hash": "629eae36",
+        "encoded": "*%20Expected:%20All%20props%20work%20together%20correctly",
+        "prevChunkIds": []
+      },
+      "562": {
+        "chunkId": "0ab5a2",
+        "hash": "dcefb7ba",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "563": {
+        "chunkId": "0ab5a2",
+        "hash": "a8c1818a",
+        "encoded": "test('should%20handle%20complex%20configuration',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "564": {
+        "chunkId": "0ab5a2",
+        "hash": "9be172a8",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "565": {
+        "chunkId": "0ab5a2",
+        "hash": "54962493",
+        "encoded": "%3CInput",
+        "prevChunkIds": []
+      },
+      "566": {
+        "chunkId": "0ab5a2",
+        "hash": "65e45218",
+        "encoded": "variant=%22filled%22",
+        "prevChunkIds": []
+      },
+      "567": {
+        "chunkId": "0ab5a2",
+        "hash": "9cc05d41",
+        "encoded": "size=%22lg%22",
+        "prevChunkIds": []
+      },
+      "568": {
+        "chunkId": "0ab5a2",
+        "hash": "34afc147",
+        "encoded": "error",
+        "prevChunkIds": []
+      },
+      "569": {
+        "chunkId": "0ab5a2",
+        "hash": "c34e47f6",
+        "encoded": "startIcon=%7B%3CMockIcon%20name=%22user%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "570": {
+        "chunkId": "0ab5a2",
+        "hash": "0167e8a8",
+        "encoded": "endIcon=%7B%3CMockIcon%20name=%22check%22%20/%3E%7D",
+        "prevChunkIds": []
+      },
+      "571": {
+        "chunkId": "0ab5a2",
+        "hash": "c65ecd19",
+        "encoded": "errorMessage=%22Complex%20error%22",
+        "prevChunkIds": []
+      },
+      "572": {
+        "chunkId": "0ab5a2",
+        "hash": "62dd5d32",
+        "encoded": "placeholder=%22Complex%20input%22",
+        "prevChunkIds": []
+      },
+      "573": {
+        "chunkId": "0ab5a2",
+        "hash": "cfdb1b78",
+        "encoded": "disabled",
+        "prevChunkIds": []
+      },
+      "574": {
+        "chunkId": "0ab5a2",
+        "hash": "df7955c4",
+        "encoded": "className=%22complex-input%22",
+        "prevChunkIds": []
+      },
+      "575": {
+        "chunkId": "0ab5a2",
+        "hash": "f48694d3",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "576": {
+        "chunkId": "0ab5a2",
+        "hash": "1856d9d4",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "578": {
+        "chunkId": "0ab5a2",
+        "hash": "e13b6c20",
+        "encoded": "const%20input%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "579": {
+        "chunkId": "0ab5a2",
+        "hash": "634d636d",
+        "encoded": "expect(input).toBeDisabled();",
+        "prevChunkIds": []
+      },
+      "580": {
+        "chunkId": "0ab5a2",
+        "hash": "a96df980",
+        "encoded": "expect(input).toHaveClass('bg-surface',%20'px-4',%20'py-2.5',%20'border-red-500');",
+        "prevChunkIds": []
+      },
+      "581": {
+        "chunkId": "0ab5a2",
+        "hash": "574688d3",
+        "encoded": "expect(screen.getByText('Complex%20error')).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "582": {
+        "chunkId": "0ab5a2",
+        "hash": "d4a32a3d",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "583": {
+        "chunkId": "0ab5a2",
+        "hash": "eab3dba9",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "584": {
+        "chunkId": "0ab5a2",
+        "hash": "75c76083",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "586": {
+        "chunkId": "0ab5a2",
+        "hash": "1e08ff58",
+        "encoded": "describe('Textarea%20Component',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "587": {
+        "chunkId": "0ab5a2",
+        "hash": "ea5c640c",
+        "encoded": "//%20Test%201:%20Component%20Rendering",
+        "prevChunkIds": []
+      },
+      "588": {
+        "chunkId": "0ab5a2",
+        "hash": "7348b7c5",
+        "encoded": "describe('Component%20Rendering',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "589": {
+        "chunkId": "0ab5a2",
+        "hash": "f3e9b6d1",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "590": {
+        "chunkId": "0ab5a2",
+        "hash": "70b9b702",
+        "encoded": "*%20Test%20that%20Textarea%20renders%20correctly%20with%20default%20props",
+        "prevChunkIds": []
+      },
+      "591": {
+        "chunkId": "0ab5a2",
+        "hash": "c2f07f45",
+        "encoded": "*%20Scenario:%20Textarea%20with%20minimal%20props",
+        "prevChunkIds": []
+      },
+      "592": {
+        "chunkId": "0ab5a2",
+        "hash": "d2837231",
+        "encoded": "*%20Expected:%20Textarea%20renders%20with%20default%20variant,%20size,%20and%20rows",
+        "prevChunkIds": []
+      },
+      "593": {
+        "chunkId": "0ab5a2",
+        "hash": "8ff44b6e",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "594": {
+        "chunkId": "0ab5a2",
+        "hash": "462a6e8d",
+        "encoded": "test('should%20render%20with%20default%20props',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "595": {
+        "chunkId": "0ab5a2",
+        "hash": "f4580c6b",
+        "encoded": "render(%3CTextarea%20placeholder=%22Enter%20message%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "597": {
+        "chunkId": "0ab5a2",
+        "hash": "d124f53f",
+        "encoded": "const%20textarea%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "598": {
+        "chunkId": "0ab5a2",
+        "hash": "11d4f3b1",
+        "encoded": "expect(textarea).toBeInTheDocument();",
+        "prevChunkIds": []
+      },
+      "599": {
+        "chunkId": "0ab5a2",
+        "hash": "653c4c11",
+        "encoded": "expect(textarea.tagName).toBe('TEXTAREA');",
+        "prevChunkIds": []
+      },
+      "600": {
+        "chunkId": "0ab5a2",
+        "hash": "cae885cc",
+        "encoded": "expect(textarea).toHaveClass('bg-transparent');%20//%20outlined%20variant",
+        "prevChunkIds": []
+      },
+      "601": {
+        "chunkId": "0ab5a2",
+        "hash": "9d108af7",
+        "encoded": "expect(textarea).toHaveAttribute('rows',%20'3');",
+        "prevChunkIds": []
+      },
+      "602": {
+        "chunkId": "0ab5a2",
+        "hash": "ab24449b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "604": {
+        "chunkId": "0ab5a2",
+        "hash": "0239e3bf",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "605": {
+        "chunkId": "0ab5a2",
+        "hash": "a84c7d8f",
+        "encoded": "*%20Test%20textarea%20with%20custom%20rows",
+        "prevChunkIds": []
+      },
+      "606": {
+        "chunkId": "0ab5a2",
+        "hash": "530e26d4",
+        "encoded": "*%20Scenario:%20Textarea%20with%20specified%20rows",
+        "prevChunkIds": []
+      },
+      "607": {
+        "chunkId": "0ab5a2",
+        "hash": "0ca3c30d",
+        "encoded": "*%20Expected:%20Correct%20rows%20attribute%20is%20set",
+        "prevChunkIds": []
+      },
+      "608": {
+        "chunkId": "0ab5a2",
+        "hash": "2238c6da",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "609": {
+        "chunkId": "0ab5a2",
+        "hash": "6d7cd5e2",
+        "encoded": "test('should%20render%20with%20custom%20rows',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "610": {
+        "chunkId": "0ab5a2",
+        "hash": "258ffdb1",
+        "encoded": "render(%3CTextarea%20rows=%7B5%7D%20placeholder=%22Large%20textarea%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "612": {
+        "chunkId": "0ab5a2",
+        "hash": "8d611905",
+        "encoded": "const%20textarea%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "613": {
+        "chunkId": "0ab5a2",
+        "hash": "53149e53",
+        "encoded": "expect(textarea).toHaveAttribute('rows',%20'5');",
+        "prevChunkIds": []
+      },
+      "614": {
+        "chunkId": "0ab5a2",
+        "hash": "45fec364",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "615": {
+        "chunkId": "0ab5a2",
+        "hash": "ad5d7026",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "617": {
+        "chunkId": "0ab5a2",
+        "hash": "0435742d",
+        "encoded": "//%20Test%202:%20Auto-resize%20Functionality",
+        "prevChunkIds": []
+      },
+      "618": {
+        "chunkId": "0ab5a2",
+        "hash": "2785159d",
+        "encoded": "describe('Auto-resize%20Functionality',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "619": {
+        "chunkId": "0ab5a2",
+        "hash": "1b86d812",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "620": {
+        "chunkId": "0ab5a2",
+        "hash": "08a72d9b",
+        "encoded": "*%20Test%20auto-resize%20behavior",
+        "prevChunkIds": []
+      },
+      "621": {
+        "chunkId": "0ab5a2",
+        "hash": "5409c1f9",
+        "encoded": "*%20Scenario:%20Textarea%20with%20autoResize%20prop",
+        "prevChunkIds": []
+      },
+      "622": {
+        "chunkId": "0ab5a2",
+        "hash": "36e9663e",
+        "encoded": "*%20Expected:%20Textarea%20height%20adjusts%20based%20on%20content",
+        "prevChunkIds": []
+      },
+      "623": {
+        "chunkId": "0ab5a2",
+        "hash": "11910705",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "624": {
+        "chunkId": "0ab5a2",
+        "hash": "792bd116",
+        "encoded": "test('should%20auto-resize%20when%20content%20changes',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "625": {
+        "chunkId": "0ab5a2",
+        "hash": "f4d9921c",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "627": {
+        "chunkId": "0ab5a2",
+        "hash": "2707fd49",
+        "encoded": "render(%3CTextarea%20autoResize%20placeholder=%22Auto-resize%20textarea%22%20/%3E);",
+        "prevChunkIds": []
+      },
+      "629": {
+        "chunkId": "0ab5a2",
+        "hash": "6ad59e43",
+        "encoded": "const%20textarea%20=%20screen.getByRole('textbox')%20as%20HTMLTextAreaElement;",
+        "prevChunkIds": []
+      },
+      "630": {
+        "chunkId": "0ab5a2",
+        "hash": "b9e391bc",
+        "encoded": "expect(textarea).toHaveClass('overflow-hidden');",
+        "prevChunkIds": []
+      },
+      "632": {
+        "chunkId": "0ab5a2",
+        "hash": "3e36666d",
+        "encoded": "//%20Mock%20scrollHeight%20for%20testing",
+        "prevChunkIds": []
+      },
+      "633": {
+        "chunkId": "0ab5a2",
+        "hash": "f885e26c",
+        "encoded": "Object.defineProperty(textarea,%20'scrollHeight',%20%7B",
+        "prevChunkIds": []
+      },
+      "634": {
+        "chunkId": "0ab5a2",
+        "hash": "a02e3b6c",
+        "encoded": "value:%20100,",
+        "prevChunkIds": []
+      },
+      "635": {
+        "chunkId": "0ab5a2",
+        "hash": "38573a4c",
+        "encoded": "writable:%20true",
+        "prevChunkIds": []
+      },
+      "636": {
+        "chunkId": "0ab5a2",
+        "hash": "3712ec72",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "638": {
+        "chunkId": "0ab5a2",
+        "hash": "8d9c56e7",
+        "encoded": "await%20user.type(textarea,%20'Line%201%5CnLine%202%5CnLine%203');",
+        "prevChunkIds": []
+      },
+      "640": {
+        "chunkId": "0ab5a2",
+        "hash": "89ab2291",
+        "encoded": "//%20Auto-resize%20should%20be%20triggered",
+        "prevChunkIds": []
+      },
+      "641": {
+        "chunkId": "0ab5a2",
+        "hash": "8af1814a",
+        "encoded": "expect(textarea.style.height).toBe('100px');",
+        "prevChunkIds": []
+      },
+      "642": {
+        "chunkId": "0ab5a2",
+        "hash": "169193c6",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "644": {
+        "chunkId": "0ab5a2",
+        "hash": "3a6d50a6",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "645": {
+        "chunkId": "0ab5a2",
+        "hash": "c6c8432b",
+        "encoded": "*%20Test%20auto-resize%20with%20custom%20onChange",
+        "prevChunkIds": []
+      },
+      "646": {
+        "chunkId": "0ab5a2",
+        "hash": "a1e51092",
+        "encoded": "*%20Scenario:%20Textarea%20with%20autoResize%20and%20custom%20onChange",
+        "prevChunkIds": []
+      },
+      "647": {
+        "chunkId": "0ab5a2",
+        "hash": "4d4cdb09",
+        "encoded": "*%20Expected:%20Both%20auto-resize%20and%20custom%20onChange%20work",
+        "prevChunkIds": []
+      },
+      "648": {
+        "chunkId": "0ab5a2",
+        "hash": "5da6ef36",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "649": {
+        "chunkId": "0ab5a2",
+        "hash": "57c536df",
+        "encoded": "test('should%20call%20custom%20onChange%20with%20auto-resize',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "650": {
+        "chunkId": "0ab5a2",
+        "hash": "92923629",
+        "encoded": "const%20handleChange%20=%20jest.fn();",
+        "prevChunkIds": []
+      },
+      "651": {
+        "chunkId": "0ab5a2",
+        "hash": "246a8a7e",
+        "encoded": "const%20user%20=%20userEvent.setup();",
+        "prevChunkIds": []
+      },
+      "653": {
+        "chunkId": "0ab5a2",
+        "hash": "930ef27c",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "654": {
+        "chunkId": "0ab5a2",
+        "hash": "568a9673",
+        "encoded": "%3CTextarea",
+        "prevChunkIds": []
+      },
+      "655": {
+        "chunkId": "0ab5a2",
+        "hash": "3a496e8e",
+        "encoded": "autoResize",
+        "prevChunkIds": []
+      },
+      "656": {
+        "chunkId": "0ab5a2",
+        "hash": "6d9f3d18",
+        "encoded": "onChange=%7BhandleChange%7D",
+        "prevChunkIds": []
+      },
+      "657": {
+        "chunkId": "0ab5a2",
+        "hash": "9796e3fe",
+        "encoded": "placeholder=%22Test%22",
+        "prevChunkIds": []
+      },
+      "658": {
+        "chunkId": "0ab5a2",
+        "hash": "b7c45a3b",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "659": {
+        "chunkId": "0ab5a2",
+        "hash": "353db9aa",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "661": {
+        "chunkId": "0ab5a2",
+        "hash": "24d935e1",
+        "encoded": "const%20textarea%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "662": {
+        "chunkId": "0ab5a2",
+        "hash": "09e78b52",
+        "encoded": "await%20user.type(textarea,%20'test');",
+        "prevChunkIds": []
+      },
+      "664": {
+        "chunkId": "0ab5a2",
+        "hash": "88913863",
+        "encoded": "expect(handleChange).toHaveBeenCalledTimes(4);",
+        "prevChunkIds": []
+      },
+      "665": {
+        "chunkId": "0ab5a2",
+        "hash": "bc730671",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "666": {
+        "chunkId": "0ab5a2",
+        "hash": "344dd814",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "668": {
+        "chunkId": "0ab5a2",
+        "hash": "39d5916f",
+        "encoded": "//%20Test%203:%20Validation%20States",
+        "prevChunkIds": []
+      },
+      "669": {
+        "chunkId": "0ab5a2",
+        "hash": "92f9f96a",
+        "encoded": "describe('Validation%20States',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "670": {
+        "chunkId": "0ab5a2",
+        "hash": "7d2aa603",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "671": {
+        "chunkId": "0ab5a2",
+        "hash": "786c0684",
+        "encoded": "*%20Test%20textarea%20error%20state",
+        "prevChunkIds": []
+      },
+      "672": {
+        "chunkId": "0ab5a2",
+        "hash": "6b0e7d93",
+        "encoded": "*%20Scenario:%20Textarea%20with%20error",
+        "prevChunkIds": []
+      },
+      "673": {
+        "chunkId": "0ab5a2",
+        "hash": "928a08f3",
+        "encoded": "*%20Expected:%20Error%20styling%20and%20message%20are%20displayed",
+        "prevChunkIds": []
+      },
+      "674": {
+        "chunkId": "0ab5a2",
+        "hash": "6480dcc1",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "675": {
+        "chunkId": "0ab5a2",
+        "hash": "a5dc8475",
+        "encoded": "test('should%20render%20error%20state%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "676": {
+        "chunkId": "0ab5a2",
+        "hash": "70c99af2",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "677": {
+        "chunkId": "0ab5a2",
+        "hash": "3edde3f6",
+        "encoded": "%3CTextarea",
+        "prevChunkIds": []
+      },
+      "678": {
+        "chunkId": "0ab5a2",
+        "hash": "188e382b",
+        "encoded": "error",
+        "prevChunkIds": []
+      },
+      "679": {
+        "chunkId": "0ab5a2",
+        "hash": "c28033a0",
+        "encoded": "errorMessage=%22Message%20is%20required%22",
+        "prevChunkIds": []
+      },
+      "680": {
+        "chunkId": "0ab5a2",
+        "hash": "70ad339d",
+        "encoded": "placeholder=%22Message%22",
+        "prevChunkIds": []
+      },
+      "681": {
+        "chunkId": "0ab5a2",
+        "hash": "23b10b9f",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "682": {
+        "chunkId": "0ab5a2",
+        "hash": "d947f7b7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "684": {
+        "chunkId": "0ab5a2",
+        "hash": "3a95c92d",
+        "encoded": "const%20textarea%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "685": {
+        "chunkId": "0ab5a2",
+        "hash": "9f22d536",
+        "encoded": "const%20errorMessage%20=%20screen.getByText('Message%20is%20required');",
+        "prevChunkIds": []
+      },
+      "687": {
+        "chunkId": "0ab5a2",
+        "hash": "3151d87e",
+        "encoded": "expect(textarea).toHaveClass('border-red-500');",
+        "prevChunkIds": []
+      },
+      "688": {
+        "chunkId": "0ab5a2",
+        "hash": "6c60fe62",
+        "encoded": "expect(textarea).toHaveAttribute('aria-invalid',%20'true');",
+        "prevChunkIds": []
+      },
+      "689": {
+        "chunkId": "0ab5a2",
+        "hash": "7d2314b2",
+        "encoded": "expect(errorMessage).toHaveClass('text-red-500');",
+        "prevChunkIds": []
+      },
+      "690": {
+        "chunkId": "0ab5a2",
+        "hash": "651ab8c8",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "692": {
+        "chunkId": "0ab5a2",
+        "hash": "75d2cfce",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "693": {
+        "chunkId": "0ab5a2",
+        "hash": "b3b228f3",
+        "encoded": "*%20Test%20textarea%20success%20state",
+        "prevChunkIds": []
+      },
+      "694": {
+        "chunkId": "0ab5a2",
+        "hash": "52f5b074",
+        "encoded": "*%20Scenario:%20Textarea%20with%20success",
+        "prevChunkIds": []
+      },
+      "695": {
+        "chunkId": "0ab5a2",
+        "hash": "7c86d92e",
+        "encoded": "*%20Expected:%20Success%20styling%20and%20message%20are%20displayed",
+        "prevChunkIds": []
+      },
+      "696": {
+        "chunkId": "0ab5a2",
+        "hash": "45551aa8",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "697": {
+        "chunkId": "0ab5a2",
+        "hash": "896e06e9",
+        "encoded": "test('should%20render%20success%20state%20correctly',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "698": {
+        "chunkId": "0ab5a2",
+        "hash": "adc73ca5",
+        "encoded": "render(",
+        "prevChunkIds": []
+      },
+      "699": {
+        "chunkId": "0ab5a2",
+        "hash": "17b1fd91",
+        "encoded": "%3CTextarea",
+        "prevChunkIds": []
+      },
+      "700": {
+        "chunkId": "0ab5a2",
+        "hash": "a5fa17d3",
+        "encoded": "success",
+        "prevChunkIds": []
+      },
+      "701": {
+        "chunkId": "0ab5a2",
+        "hash": "5712cb59",
+        "encoded": "successMessage=%22Message%20looks%20good%22",
+        "prevChunkIds": []
+      },
+      "702": {
+        "chunkId": "0ab5a2",
+        "hash": "b2cd1c74",
+        "encoded": "placeholder=%22Message%22",
+        "prevChunkIds": []
+      },
+      "703": {
+        "chunkId": "0ab5a2",
+        "hash": "541df273",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "704": {
+        "chunkId": "0ab5a2",
+        "hash": "b16e51a2",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "706": {
+        "chunkId": "0ab5a2",
+        "hash": "7641b7ab",
+        "encoded": "const%20textarea%20=%20screen.getByRole('textbox');",
+        "prevChunkIds": []
+      },
+      "707": {
+        "chunkId": "0ab5a2",
+        "hash": "9044b5bb",
+        "encoded": "const%20successMessage%20=%20screen.getByText('Message%20looks%20good');",
+        "prevChunkIds": []
+      },
+      "709": {
+        "chunkId": "0ab5a2",
+        "hash": "da3dd72e",
+        "encoded": "expect(textarea).toHaveClass('border-green-500');",
+        "prevChunkIds": []
+      },
+      "710": {
+        "chunkId": "0ab5a2",
+        "hash": "f9e62da7",
+        "encoded": "expect(successMessage).toHaveClass('text-green-500');",
+        "prevChunkIds": []
+      },
+      "711": {
+        "chunkId": "0ab5a2",
+        "hash": "e80253ad",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "712": {
+        "chunkId": "0ab5a2",
+        "hash": "d130481a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "714": {
+        "chunkId": "0ab5a2",
+        "hash": "81eaad38",
+        "encoded": "//%20Test%204:%20Accessibility",
+        "prevChunkIds": []
+      },
+      "715": {
+        "chunkId": "0ab5a2",
+        "hash": "d649406f",
+        "encoded": "describe('Accessibility',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "716": {
+        "chunkId": "0ab5a2",
+        "hash": "25fb0d70",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "717": {
+        "chunkId": "0ab5a2",
+        "hash": "27619764",
+        "encoded": "*%20Test%20textarea%20accessibility%20compliance",
+        "prevChunkIds": []
+      },
+      "718": {
+        "chunkId": "0ab5a2",
+        "hash": "35164576",
+        "encoded": "*%20Scenario:%20Various%20textarea%20configurations",
+        "prevChunkIds": []
+      },
+      "719": {
+        "chunkId": "0ab5a2",
+        "hash": "ea88a8e5",
+        "encoded": "*%20Expected:%20No%20accessibility%20violations",
+        "prevChunkIds": []
+      },
+      "720": {
+        "chunkId": "0ab5a2",
+        "hash": "d5ddd8d0",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "721": {
+        "chunkId": "0ab5a2",
+        "hash": "5d83dc0a",
+        "encoded": "test('should%20not%20have%20accessibility%20violations',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "722": {
+        "chunkId": "0ab5a2",
+        "hash": "d2ba362c",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "723": {
+        "chunkId": "0ab5a2",
+        "hash": "be5ab08c",
+        "encoded": "%3Cform%3E",
+        "prevChunkIds": []
+      },
+      "724": {
+        "chunkId": "0ab5a2",
+        "hash": "3d9eac4a",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "725": {
+        "chunkId": "0ab5a2",
+        "hash": "7f8c2f05",
+        "encoded": "%3Clabel%20htmlFor=%22message%22%3EMessage%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "726": {
+        "chunkId": "0ab5a2",
+        "hash": "338fd3c5",
+        "encoded": "%3CTextarea",
+        "prevChunkIds": []
+      },
+      "727": {
+        "chunkId": "0ab5a2",
+        "hash": "9808df8f",
+        "encoded": "id=%22message%22",
+        "prevChunkIds": []
+      },
+      "728": {
+        "chunkId": "0ab5a2",
+        "hash": "562a5799",
+        "encoded": "required",
+        "prevChunkIds": []
+      },
+      "729": {
+        "chunkId": "0ab5a2",
+        "hash": "83447272",
+        "encoded": "helperText=%22Enter%20your%20message%20here%22",
+        "prevChunkIds": []
+      },
+      "730": {
+        "chunkId": "0ab5a2",
+        "hash": "c71b5b76",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "731": {
+        "chunkId": "0ab5a2",
+        "hash": "30f868ca",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "732": {
+        "chunkId": "0ab5a2",
+        "hash": "7d5f97f6",
+        "encoded": "%3Cdiv%3E",
+        "prevChunkIds": []
+      },
+      "733": {
+        "chunkId": "0ab5a2",
+        "hash": "a58ebb96",
+        "encoded": "%3Clabel%20htmlFor=%22feedback%22%3EFeedback%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "734": {
+        "chunkId": "0ab5a2",
+        "hash": "423b7e94",
+        "encoded": "%3CTextarea",
+        "prevChunkIds": []
+      },
+      "735": {
+        "chunkId": "0ab5a2",
+        "hash": "011c0535",
+        "encoded": "id=%22feedback%22",
+        "prevChunkIds": []
+      },
+      "736": {
+        "chunkId": "0ab5a2",
+        "hash": "7165739a",
+        "encoded": "error",
+        "prevChunkIds": []
+      },
+      "737": {
+        "chunkId": "0ab5a2",
+        "hash": "5171bf25",
+        "encoded": "errorMessage=%22Feedback%20is%20required%22",
+        "prevChunkIds": []
+      },
+      "738": {
+        "chunkId": "0ab5a2",
+        "hash": "3d26d9c1",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "739": {
+        "chunkId": "0ab5a2",
+        "hash": "f0e469a3",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "740": {
+        "chunkId": "0ab5a2",
+        "hash": "69eb8214",
+        "encoded": "%3C/form%3E",
+        "prevChunkIds": []
+      },
+      "741": {
+        "chunkId": "0ab5a2",
+        "hash": "990025d7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "743": {
+        "chunkId": "0ab5a2",
+        "hash": "bba115f3",
+        "encoded": "const%20results%20=%20await%20axe(container);",
+        "prevChunkIds": []
+      },
+      "744": {
+        "chunkId": "0ab5a2",
+        "hash": "c6a81d86",
+        "encoded": "expect(results).toHaveNoViolations();",
+        "prevChunkIds": []
+      },
+      "745": {
+        "chunkId": "0ab5a2",
+        "hash": "660f463f",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "746": {
+        "chunkId": "0ab5a2",
+        "hash": "7b5097fa",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "748": {
+        "chunkId": "0ab5a2",
+        "hash": "d9cb6ffe",
+        "encoded": "//%20Test%205:%20Snapshot%20Testing",
+        "prevChunkIds": []
+      },
+      "749": {
+        "chunkId": "0ab5a2",
+        "hash": "f50807cb",
+        "encoded": "describe('Snapshot%20Testing',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "750": {
+        "chunkId": "0ab5a2",
+        "hash": "c144db95",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "751": {
+        "chunkId": "0ab5a2",
+        "hash": "a568670c",
+        "encoded": "*%20Test%20visual%20regression%20with%20snapshots",
+        "prevChunkIds": []
+      },
+      "752": {
+        "chunkId": "0ab5a2",
+        "hash": "8b4e035d",
+        "encoded": "*%20Scenario:%20Different%20textarea%20configurations",
+        "prevChunkIds": []
+      },
+      "753": {
+        "chunkId": "0ab5a2",
+        "hash": "b822c710",
+        "encoded": "*%20Expected:%20Consistent%20rendering%20across%20changes",
+        "prevChunkIds": []
+      },
+      "754": {
+        "chunkId": "0ab5a2",
+        "hash": "73c4870b",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "755": {
+        "chunkId": "0ab5a2",
+        "hash": "984e025d",
+        "encoded": "test('should%20match%20snapshot%20for%20basic%20textarea',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "756": {
+        "chunkId": "0ab5a2",
+        "hash": "9306df77",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "757": {
+        "chunkId": "0ab5a2",
+        "hash": "d487a766",
+        "encoded": "%3CTextarea%20placeholder=%22Basic%20textarea%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "758": {
+        "chunkId": "0ab5a2",
+        "hash": "17bd80de",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "759": {
+        "chunkId": "0ab5a2",
+        "hash": "28c91dcc",
+        "encoded": "expect(container.firstChild).toMatchSnapshot('textarea-basic');",
+        "prevChunkIds": []
+      },
+      "760": {
+        "chunkId": "0ab5a2",
+        "hash": "81233235",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "762": {
+        "chunkId": "0ab5a2",
+        "hash": "2896f8bf",
+        "encoded": "test('should%20match%20snapshot%20for%20auto-resize%20textarea',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "763": {
+        "chunkId": "0ab5a2",
+        "hash": "3b42c1c4",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "764": {
+        "chunkId": "0ab5a2",
+        "hash": "8b32a586",
+        "encoded": "%3CTextarea%20autoResize%20placeholder=%22Auto-resize%20textarea%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "765": {
+        "chunkId": "0ab5a2",
+        "hash": "b73f6c01",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "766": {
+        "chunkId": "0ab5a2",
+        "hash": "53aeae93",
+        "encoded": "expect(container.firstChild).toMatchSnapshot('textarea-auto-resize');",
+        "prevChunkIds": []
+      },
+      "767": {
+        "chunkId": "0ab5a2",
+        "hash": "61e1265a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "769": {
+        "chunkId": "0ab5a2",
+        "hash": "bbbb4e2f",
+        "encoded": "test('should%20match%20snapshot%20for%20error%20state',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "770": {
+        "chunkId": "0ab5a2",
+        "hash": "0fd5afe3",
+        "encoded": "const%20%7B%20container%20%7D%20=%20render(",
+        "prevChunkIds": []
+      },
+      "771": {
+        "chunkId": "0ab5a2",
+        "hash": "aa8d7d57",
+        "encoded": "%3CTextarea",
+        "prevChunkIds": []
+      },
+      "772": {
+        "chunkId": "0ab5a2",
+        "hash": "ec6b2e28",
+        "encoded": "error",
+        "prevChunkIds": []
+      },
+      "773": {
+        "chunkId": "0ab5a2",
+        "hash": "8ce8cdfe",
+        "encoded": "errorMessage=%22Error%20message%22",
+        "prevChunkIds": []
+      },
+      "774": {
+        "chunkId": "0ab5a2",
+        "hash": "8c2f48a3",
+        "encoded": "placeholder=%22Error%20textarea%22",
+        "prevChunkIds": []
+      },
+      "775": {
+        "chunkId": "0ab5a2",
+        "hash": "784f97d5",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "776": {
+        "chunkId": "0ab5a2",
+        "hash": "88daa1fc",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "777": {
+        "chunkId": "0ab5a2",
+        "hash": "6696bdf0",
+        "encoded": "expect(container.firstChild).toMatchSnapshot('textarea-error');",
+        "prevChunkIds": []
+      },
+      "778": {
+        "chunkId": "0ab5a2",
+        "hash": "4392a96b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "779": {
+        "chunkId": "0ab5a2",
+        "hash": "55d2e619",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "780": {
+        "chunkId": "0ab5a2",
+        "hash": "85dc89fd",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

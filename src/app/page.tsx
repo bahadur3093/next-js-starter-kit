@@ -1,65 +1,125 @@
-import Image from "next/image";
+import { Button } from '@/components/atoms/Button';
+import { Card, CardHeader, CardBody } from '@/components/atoms/Card';
+import { Link } from '@/components/atoms/Link';
+import { Icon } from '@/components/atoms/Icon';
+import { Heading, Text } from '@/components/atoms/Typography';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
+        {/* Hero Section */}
+        <div className="space-y-4">
+          <Heading level={1} className="text-4xl font-bold tracking-tight">
+            Enterprise Starter
+          </Heading>
+          <Text className="text-lg text-gray-600 dark:text-gray-400">
+            Next.js 15 + Tailwind v4 + TypeScript
+          </Text>
+          <Text className="text-base max-w-2xl mx-auto">
+            A production-ready starter template with a comprehensive component library, 
+            modern tooling, and best practices for building scalable applications.
+          </Text>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* Quick Actions */}
+        <div className="flex flex-wrap justify-center gap-4">
+          <Button 
+            variant="primary" 
+            size="lg" 
+            icon={<Icon name="plus" />} 
+            iconPosition="leading"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Start Building
+          </Button>
+          <Link 
+            href="/showcase" 
+            variant="button" 
+            size="lg"
           >
-            Documentation
-          </a>
+            View Component Library
+          </Link>
         </div>
-      </main>
-    </div>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <Card variant="basic" elevation="medium" padding="lg">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-3">
+                <Icon name="check" color="primary" size="lg" />
+                <Heading level={3}>TypeScript Ready</Heading>
+              </div>
+            </CardHeader>
+            <CardBody>
+              <Text color="muted">
+                Fully typed components and utilities with excellent developer experience.
+              </Text>
+            </CardBody>
+          </Card>
+
+          <Card variant="basic" elevation="medium" padding="lg">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-3">
+                <Icon name="star" color="primary" size="lg" />
+                <Heading level={3}>Component Library</Heading>
+              </div>
+            </CardHeader>
+            <CardBody>
+              <Text color="muted">
+                Pre-built, accessible components following atomic design principles.
+              </Text>
+            </CardBody>
+          </Card>
+
+          <Card variant="basic" elevation="medium" padding="lg">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-3">
+                <Icon name="settings" color="primary" size="lg" />
+                <Heading level={3}>Modern Tooling</Heading>
+              </div>
+            </CardHeader>
+            <CardBody>
+              <Text color="muted">
+                Next.js 15, Tailwind CSS v4, and optimized build configuration.
+              </Text>
+            </CardBody>
+          </Card>
+        </div>
+
+        {/* Getting Started */}
+        <Card variant="basic" elevation="low" padding="lg" className="mt-12">
+          <CardHeader>
+            <Heading level={2} className="mb-4">Getting Started</Heading>
+          </CardHeader>
+          <CardBody>
+            <div className="text-left space-y-4">
+              <div>
+                <Text className="font-semibold mb-2">🚀 Quick Start:</Text>
+                <ol className="list-decimal list-inside space-y-1 text-sm text-gray-600 dark:text-gray-400">
+                  <li>Explore the component library at <code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/showcase</code></li>
+                  <li>Start building with the pre-made components in <code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/src/components/atoms</code></li>
+                  <li>Customize this page by editing <code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">/src/app/page.tsx</code></li>
+                  <li>Remove the showcase folder when ready to deploy</li>
+                </ol>
+              </div>
+              
+              <div className="flex flex-wrap gap-3 justify-center pt-4">
+                <Link href="/showcase" variant="default">
+                  View Components →
+                </Link>
+                <Text color="muted">|</Text>
+                <Link href="https://nextjs.org/docs" variant="default" showExternalIcon>
+                  Next.js Docs
+                </Link>
+                <Text color="muted">|</Text>
+                <Link href="https://tailwindcss.com/docs" variant="default" showExternalIcon>
+                  Tailwind Docs
+                </Link>
+              </div>
+            </div>
+          </CardBody>
+        </Card>
+      </div>
+    </main>
   );
 }
