@@ -59,6 +59,7 @@ jspm_packages/
 next-env.d.ts
 
 # IDE and editor files
+.slingshot/
 .vscode/
 .idea/
 *.swp
